@@ -1,0 +1,198 @@
+/* Header styles */
+
+/* Variables */
+
+$header-bg: #fff !default;
+
+
+#header { 
+	
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 0;
+	padding:0 ;
+	z-index: 100;
+	height: $header-height + 2;
+  	background:$header-bg; // $primary-color;
+  	border-top:2px solid rgba( 0, 0, 0, 0.90);
+  	
+  	
+  	//border-bottom: 1px solid #eee;
+	@include box-shadow(0 1px 0px rgba(0,0,0,0.05));
+  	@include single-transition(all, 0.5s);
+  	
+  	#logo { line-height: $header-height - 9; 
+			img { max-height: $header-height - 20;  @include single-transition(all, 0.5s);}
+		 }
+  	
+  	>.row { position: relative;	
+	  	
+  	}
+  	
+
+	/* Sticky nav styling */  	
+  	&.sticky {
+		position: fixed;
+		width: 100%;
+		left: 0;
+		top: 0;
+		padding:0 ;
+		//height: $header-height-sticky;
+		@include single-transition(all, 0.5s);
+				
+		
+		#logo { line-height: $header-height-sticky - 7; 
+			img { max-height: $header-height-sticky - 20;  @include single-transition(all, 0.5s);}
+		 }
+	}
+  	
+  	
+  	#logo {
+  	  	
+  		text-align: center !important;
+	  	display: block;
+	
+	  	img { display: inline !important; max-width: 160px; }
+  		
+	 }
+  	
+  	
+  	@media #{$large-up}{
+	  	
+	  	#logo {
+	  	
+		  	display: table-cell;
+		  	vertical-align: middle;
+	  		margin:0;  
+	  		font-size: 28px; 
+	   		font-weight: 300; 
+	  		color:#fff;
+	  		line-height: $header-height - 7;
+	  		
+	  		img { display: inline; margin: 0;   max-height:$header-height - 34; @include single-transition(all, 0.5s);}
+  		}
+
+	}
+  
+  	/* Toggle for opening search form */
+  		
+	#menu-open-search {
+		
+		position: absolute;
+		right:20px;
+		height: 34px; 
+		line-height: 32px; 
+		width: 34px; 
+		font-size: 14px;
+		display: block; 
+		text-align: center;
+		top:50%;
+		margin:-15px 0 0 0;
+		z-index: 0;
+		
+		i { 		
+			color: #252525;
+		}
+		
+		
+	}
+  	 
+  	@media #{$large-up}{
+  	
+  		#menu-open-search {
+	  		
+	  		position: relative;
+	  		right: 0;
+	  		top:0;
+	  		display: inline-block;
+	  		@include border-radius(2px);
+	  		border:1px solid rgba(0,0,0, 0.1);
+	  		margin:-15px 3px 0 4px;
+	  		background: rgba(0,0,0, 0.03);
+	  		
+	  		&:hover { background: #fafafa; }
+  		}
+  	
+  	}
+  	
+  	
+  	
+  	#header-search { 
+  		
+  		display: none; 
+  		background: #181818; 
+  		height: 60px;
+  		
+  		.row { position: relative; overflow: visible !important; @include clearfix(); padding:12px 10px 12px;
+  			
+	  		&:after {
+				  		
+				content:'';
+				@include css-triangle(4px,#181818, bottom);
+				position: absolute;
+				top:0px;
+				margin-top: -8px;
+				right:35px;
+				
+							  		
+			  }
+		 }
+  	 }
+  	 
+  	
+  	
+  	 
+  	form#header-search-form { 
+  		
+  		margin:0;
+		text-align: right;
+		display: block;
+			
+	  									
+		input { 
+			display: inline-block;
+			height:36px;
+			line-height: 34px; 
+			width:100%; 
+			text-align: left;
+			max-width: 400px; 
+			font-size: 13px !important;
+			border:0;
+			margin:0 !important;
+			padding:0 16px;
+			background: #262626;
+			border:1px solid #323232;
+			color: #eee;
+			@include border-radius(1px);
+			@include single-transition(all, .5s);
+			@include box-shadow(none);
+		}
+		
+		a {
+			display: none;
+			margin-left:10px; 
+			img{ height: 30px; width:30px; display: inline-block;}
+		}
+	}
+
+}
+
+
+/* 	
+	Admin bar fix
+	
+	When user is logged in, add a top margin to header 
+	to place below admin-bar 
+	
+*/
+
+.admin-bar {
+	
+	 #header.sticky { margin-top:32px; }
+	
+}
+
+/* 	Hide header for print  */
+
+@media only print { #header { display: none; } }

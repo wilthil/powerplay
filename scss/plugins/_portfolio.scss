@@ -1,0 +1,235 @@
+/* Styles for the portfolio plugin */
+
+/* Move to portfolio plugin */
+
+#portfolio-meta {
+	
+	padding:20px 30px 20px; 
+	border:1px solid #e3e3e3;
+	outline:4px solid #f7f7f7;	
+	margin-bottom: 30px;
+	margin-top: 30px;
+	h4 { border-bottom: 1px dotted #d4d4d4; padding-bottom:6px; }
+}
+
+ul.veuse-portfolio-skills {
+	
+	margin:4px 0 0px;
+	padding: 0;
+	list-style: none;
+
+	
+	li { 
+		display:inline-block;
+		margin:0 2px 2px 0;
+		white-space: normal;
+		
+		a { 
+			background:lighten($anchor-font-color, 20%);
+			padding:4px 10px; 
+			margin:0;
+			line-height: 1em;
+			font-size: 12px;
+			text-transform: uppercase;
+			//@include border-radius(2px);
+			color:#fff;
+			white-space: nowrap;
+			display: inline-block;
+			
+			&:hover { background: $anchor-font-color; }
+			
+		}
+	}
+
+}
+
+
+
+ /* Portfolio loop */
+ 
+ul.portfolio-meta {
+	
+	margin:0 0 20px;
+	padding: 0;
+	list-style: none;
+	
+	li {
+		display: inline-block;
+		padding: 5px 0;
+		margin-right:20px;
+		
+		&:last-child { border:none;}
+		
+		a { color:$body-font-color; margin:0;}
+		
+		span { min-width: 0px; display: inline-block; margin-right: 6px;}
+	}
+	
+}
+ 
+ul.portfolio-filter {
+ 
+ 	margin:0 0 20px;
+ 	padding:0;
+ 	list-style: none;
+ 	display: block;
+ 	@include clearfix();
+	 
+	 li { 
+	 
+	 	display: inline; 
+	 	text-transform: uppercase;
+	 	font-size: 12px;
+	 	margin: 0;
+	 	font-weight: normal; 
+		 
+		 a { padding:6px 0px; display: inline-block; margin-right:4px; margin-bottom: -2px; color: lighten( $body-font-color, 20%); }
+		 
+		 &.active a { 
+		 
+		 	color:$anchor-font-color;
+
+		 	}
+		 
+		 &:after {
+			 
+			 margin-right: 2px;
+			 content:'/';
+			 color: #ddd;
+			 
+		 }
+	 }
+ }
+ 
+ 
+.portfolio-list {
+
+	margin-bottom: 30px;
+ 
+ 	li { 
+ 	
+ 		clear: none !important;
+	 	overflow: hidden;
+	 	
+	 	br { display: none;}
+	 	
+ 	}
+ 	
+ 	
+	 .portfolio-entry {
+		 //@include box-shadow(0 1px 3px rgba(0,0,0,0.05));
+		 
+		 position: relative;
+		 overflow: hidden;
+		 margin-bottom: 20px;
+		
+	 	
+		 &:hover { 
+		 		
+		 		.overlay { opacity: 0.8; @include single-transition(all, 0.3s);} 		
+		 		
+		 		a.more-link { opacity:1; margin-bottom: 0px; @include single-transition(all, 0.5s); }
+		 		
+		 		.entry-thumbnail { 
+		 				 			
+		 			img { 
+		 				 
+		 				 //-moz-transform: scale(1.2, 1.2) rotate(5deg);
+		 				 //-webkit-transform: scale(1.2, 1.2) rotate(5deg);
+		 				  -moz-transform: scale(1.2, 1.2);
+		 				 -webkit-transform: scale(1.2, 1.2);
+		 				 @include single-transition(all, 0.3s);
+		 			}
+		 		
+		 			}
+		 		h4 { 
+		 			bottom:50%;  opacity:1; @include single-transition(all, 0.3s);
+		 			
+		 		 } 
+		 }
+		 
+		 
+		 
+		 img { z-index: 0; margin:0;}
+		 
+		 .entry-thumbnail { 
+		 	
+		 	position: relative;
+		 	z-index: 1;
+		 	margin: 0px !important; 
+		 	overflow: hidden;
+		 	bottom:0;
+		 	opacity: 1;
+		 	text-align: center;
+		
+			 
+		 	@include single-transition(all, 0.3s);
+			 
+			 img { @include single-transition(all, 0.3s); }
+			
+		 }
+		 
+		h4 { 
+		 	
+		 	opacity: 0;
+		 	@include single-transition(all, 0.3s);
+		 	position: absolute;
+		 	width:100%;
+		 	z-index: 7;
+		 	bottom:40%;
+		 	margin: 0;
+		 	text-align: center;
+		 	padding: 0 20px;
+		 	
+		 	
+		 	 margin-bottom:0;
+		 	
+		 	 a { 
+		 		
+		 		clear:both;   
+		 		margin-bottom:0; 
+		 		line-height: 1.2em;  
+		 		text-shadow: 1px 1px 0 rgba(0,0,0, 0.2);
+		 		color: #fff;
+		 		
+		 		&:hover { color:#fff;}
+		 		
+		 		}
+		 			 
+		  }
+
+		
+		 .overlay { background: $primary-color; position: absolute; top:-5px; left:-5px; width: 120% !important; height: 120% !important; opacity: 0; z-index: 5; @include single-transition(all, 0.4s); }
+		
+		 a.more-link { 
+			
+		  	font-size: 12px;
+		  	text-transform: uppercase;
+		  	text-align: center;
+		  	vertical-align: top;
+		  	display: inline-block;
+		  	
+		  	position: absolute;
+		  	bottom:0;
+		  	left:0;
+		  	z-index: 6;
+		  	width:100%;
+		  	margin-bottom: -40px;
+		  	@include single-transition(all, 0.5s);
+		  	
+		  	span {
+			  	padding:0 10px 0px 10px;
+			  	height: 30px;
+			  	line-height: 29px !important;
+			  	background: #fff;
+			  	color:$body-font-color;
+			  	text-align: center;
+			  	display: inline-block;
+			  	@include border-radius(2px 2px 0 0);
+			  	opacity: 1;
+		  	}
+			
+		}
+	 }
+	 
+ }

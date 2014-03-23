@@ -1,0 +1,27 @@
+/* Staff list */
+
+.type-staff {
+	
+	article { margin-bottom:  10px;}
+	
+	.veuse-staff-entry-thumbnail {
+		position: relative;
+		margin-bottom: 20px;					
+	}
+	
+	.veuse-staff-entry-content {
+		margin-bottom: 20px;
+		h4 { margin-bottom: 0px; color:$header-font-color;}
+		.veuse-staff-entry-meta { margin-top: 0px;}
+	}
+	
+	.veuse-staff-contactinfo {
+			
+			border-top:1px dotted #e4e4e4;
+			border-bottom:1px solid #e4e4e4;
+			padding:14px 0 12px;
+			
+			a { position: relative; margin:0; padding:0;}
+		}
+	
+}

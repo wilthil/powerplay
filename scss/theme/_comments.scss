@@ -1,0 +1,76 @@
+/** 
+  * Comments and comment-form 
+  *
+  */
+
+.comment-form {
+
+	margin-bottom: $column-gutter;
+	@include clearfix();
+
+	span.required { color:red !important; padding:4px 0 0 4px; display: inline-block; line-height: 2em; }
+
+	textarea { min-height: 100px;}
+
+	input[type=submit] {
+		@include button($padding: $button_sml, $radius:true, $bg: $primary-color, $is_input:true);
+	}
+	
+	.form-allowed-tags{
+		color:lighten($body-font-color,20%);
+		code { color:lighten($body-font-color,20%);}
+		a { color:lighten($body-font-color,20%);}
+	}
+
+}
+
+
+#commentform {
+	label { display:inline-block; }
+	span.required { display: inline-block; margin:0; line-height: 0;  }
+}
+
+#comments{
+
+	margin:30px 0 0px; 
+
+	h3.comments-title { margin-bottom: 20px;}
+
+	ol.comment-list  { list-style:none; margin:0;  padding:0px;}
+	
+	p { margin-bottom: 10px;}
+		.button{margin:0 0 10px 0;}
+		li.depth-1 {margin:0px 0 0 0;     display:block; }
+		li.depth-2 {margin:0px 0 0 54px !important;   }
+		li.depth-3 {margin:0px 0 0 108px !important;  }
+		li.depth-4 {margin:0px 0 0 162px;  display:block; }
+		li.depth-5 {margin:0px 0 0 226px;  display:block; }
+		
+		
+	.entry-meta {
+		padding:0;
+		margin:0 0 10px;
+		@include clearfix();
+		
+		h4 {margin:0 0 5px; line-height: 1em; }
+		
+		.comment-author{
+			
+			width:54px; 
+			height:46px; 
+			display:inline-block; 
+			float:left; 
+			padding:0; 
+			border:0;
+			margin:0;
+			
+			img { padding:0; margin: 0;}
+		}
+		
+		.comment-edit-link { border-left:1px solid darken(#fff, 5%); padding-left:10px; margin-left:10px; }
+		.comment-reply-link { border-left:1px solid darken(#fff, 5%); padding-left:10px; margin-left:10px;}
+		
+	}
+	
+	.single-comment{ margin-bottom:30px;}
+}

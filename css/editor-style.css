@@ -1,0 +1,47 @@
+/* line 1, ../scss/editor-style.scss */
+body#tinymce.wp-editor {
+  /* 0, 640px */
+  /* 641px, 1023px */
+  /* 1024px, 1440px */
+  /* 1441px, 1920px */
+  /* 1921px */
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-size: 13px;
+}
+/* line 8, ../scss/editor-style.scss */
+body#tinymce.wp-editor h1, body#tinymce.wp-editor h2, body#tinymce.wp-editor h3, body#tinymce.wp-editor h4, body#tinymce.wp-editor h5, body#tinymce.wp-editor h6, body#tinymce.wp-editor p {
+  font-family: "Open Sans", Helvetica, sans-serif;
+}
+/* line 10, ../scss/editor-style.scss */
+body#tinymce.wp-editor h1, body#tinymce.wp-editor h2, body#tinymce.wp-editor h3, body#tinymce.wp-editor h4, body#tinymce.wp-editor h5 {
+  font-weight: 600 !important;
+  line-height: 1.4 !important;
+}
+/* line 17, ../scss/editor-style.scss */
+body#tinymce.wp-editor h1 {
+  font-size: 2.46154rem;
+}
+/* line 18, ../scss/editor-style.scss */
+body#tinymce.wp-editor h2 {
+  font-size: 1.61538rem;
+}
+/* line 19, ../scss/editor-style.scss */
+body#tinymce.wp-editor h3 {
+  font-size: 1.46154rem;
+}
+/* line 20, ../scss/editor-style.scss */
+body#tinymce.wp-editor h4 {
+  font-size: 1.30769rem;
+}
+/* line 21, ../scss/editor-style.scss */
+body#tinymce.wp-editor h5 {
+  font-size: 1rem;
+}
+/* line 22, ../scss/editor-style.scss */
+body#tinymce.wp-editor h6 {
+  font-size: 1rem;
+}
+/* line 23, ../scss/editor-style.scss */
+body#tinymce.wp-editor p {
+  font-size: 13px;
+}

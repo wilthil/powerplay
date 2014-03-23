@@ -1,0 +1,2383 @@
+# Copyright (C) 2013 the WordPress team
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Quantum Theme\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tags/twentythirteen\n"
+"POT-Creation-Date: 2014-03-16 22:14+0100\n"
+"PO-Revision-Date: 2014-03-16 22:18+0100\n"
+"Last-Translator: Andreas Wilthil <andreas@siteman.no>\n"
+"Language-Team: LANGUAGE <andreas.wilthil@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-SearchPath-0: ..\n"
+"X-Poedit-SearchPath-1: .\n"
+
+#: ../404.php:6
+msgid "We are sorry!"
+msgstr "Beklager!"
+
+#: ../404.php:8
+msgid ""
+"The page you were looking for appears to have been moved, deleted or does "
+"not exist. Perhaps do a search to find what you are looking for?"
+msgstr ""
+"Siden du ser etter kan ha blitt flyttet, slettet eller eksisterer ikke. "
+
+#: ../comments.php:40
+msgid "Comment navigation"
+msgstr "Navigér i kommentarer"
+
+#: ../comments.php:41
+msgid "&larr; Older Comments"
+msgstr "&larr; Eldre kommentarer"
+
+#: ../comments.php:42
+msgid "Newer Comments &rarr;"
+msgstr "Nyere kommentarer &rarr;"
+
+#: ../comments.php:47
+msgid "Comments are closed."
+msgstr "Kommentarfeltet er stengt."
+
+#: ../comments.php:61
+msgid "Leave a Reply"
+msgstr "Legg igjen en kommentar"
+
+#: ../comments.php:62
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr "Legg igjen en beskjed til %s"
+
+#: ../comments.php:63
+msgid "Cancel Reply"
+msgstr "Angre"
+
+#: ../comments.php:64
+msgid "Post Comment"
+msgstr "Legg inn kommentar"
+
+#: ../comments.php:66
+msgid "Enter comment..."
+msgstr ""
+
+#: ../comments.php:71
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr "Du må være <a href=\"%s\">logget inn</a> for å kommentere."
+
+#: ../comments.php:77
+#, php-format
+msgid ""
+"Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of "
+"this account\">Log out?</a>"
+msgstr ""
+"Logget inn som <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out "
+"of this account\">Logge ut?</a>"
+
+#: ../comments.php:106 ../bbpress/form-user-edit.php:14
+#: ../bbpress/form-user-edit.php:19
+msgid "Name"
+msgstr "Navn"
+
+#: ../comments.php:111 ../loop-staff.php:114 ../bbpress/form-user-edit.php:103
+#: ../bbpress/form-user-register.php:28
+msgid "Email"
+msgstr "E-post"
+
+#: ../comments.php:116 ../bbpress/form-user-edit.php:57
+msgid "Website"
+msgstr "Nettside"
+
+#: ../content-single.php:23 ../loop-search.php:33
+msgid "Posted by"
+msgstr "Skrevet av"
+
+#: ../content-single.php:24 ../loop-search.php:34
+msgid "Filed in"
+msgstr "Lagret i"
+
+#: ../content-single.php:45
+msgid "Related posts"
+msgstr "Relaterte innlegg"
+
+#: ../content-title.php:27 ../content-title.php:33 ../options-config.php:463
+msgid "Blog"
+msgstr "Blogg"
+
+#: ../content-title.php:30
+msgid "Portfolio"
+msgstr "Portefølje"
+
+#: ../content-title.php:44
+msgid "Posts published in category"
+msgstr "Innlegg publisert i kategori"
+
+#: ../content-title.php:47
+msgid "Posts tagged with"
+msgstr "Innlegg merket med"
+
+#: ../content-title.php:50 ../content-title.php:56
+msgid "Posts published in"
+msgstr "Innlegg publisert i"
+
+#: ../content-title.php:53
+msgid "Posts published on"
+msgstr "Innlegg publisert den"
+
+#: ../content-title.php:68
+msgid "Search results for"
+msgstr "Søkeresultat for "
+
+#: ../content-title.php:75
+msgid "article"
+msgstr "artikkel"
+
+#: ../content-title.php:78
+msgid "articles"
+msgstr "artikler"
+
+#: ../content-title.php:89
+msgid "404 Error"
+msgstr "404 - Side ikke funnet"
+
+#: ../format-audio.php:35
+msgid ""
+"Post-format has been set to \"Audio\", but no audio source or audio file has "
+"not been specified."
+msgstr ""
+"Post-format har blitt satt til \"Audio\", men ingen audiokilde eller audio-"
+"fil har blitt spesifisert."
+
+#: ../format-video.php:36
+msgid ""
+"Post-format has been set to \"Video\", but no video source or video file has "
+"not been specified."
+msgstr ""
+"Post-format har blitt satt til \"Video\", men ingen video kilde eller video-"
+"fil har blitt spesifisert."
+
+#: ../functions.php:255
+#, fuzzy
+msgid "Primary Navigation"
+msgstr "Navigér i kommentarer"
+
+#: ../functions.php:256
+#, fuzzy
+msgid "Footer Navigation"
+msgstr "Navigér i kommentarer"
+
+#: ../functions.php:338
+msgid "1/4 width"
+msgstr "Kvart bredde"
+
+#: ../functions.php:339
+msgid "1/3 width"
+msgstr "Tredjedels bredde"
+
+#: ../functions.php:340
+msgid "1/2 width"
+msgstr "Halv bredde"
+
+#: ../functions.php:341
+msgid "3/4 width"
+msgstr "Tre kvart bredde"
+
+#: ../functions.php:342
+msgid "Full width"
+msgstr "Full bredde"
+
+#: ../functions.php:343
+msgid "1/4 width - cropped"
+msgstr ""
+
+#: ../functions.php:344
+msgid "1/3 width - cropped"
+msgstr ""
+
+#: ../functions.php:345
+msgid "1/2 width - cropped"
+msgstr ""
+
+#: ../functions.php:346
+msgid "3/4 width - cropped"
+msgstr ""
+
+#: ../functions.php:347
+msgid "Full width - cropped"
+msgstr ""
+
+#: ../functions.php:372 ../bbpress/user-details.php:65
+#: ../framework/functions.php:122 ../woocommerce/myaccount/my-address.php:68
+msgid "Edit"
+msgstr "Redigér"
+
+#: ../functions.php:373 ../framework/functions.php:123
+msgid "Reply"
+msgstr "Svar"
+
+#: ../functions.php:378 ../framework/functions.php:128
+msgid "Comment is awaiting moderation"
+msgstr "Kommentaren avventer moderasjon"
+
+#: ../functions.php:586 ../framework/functions.php:339
+msgid "Invalid sidebar ID"
+msgstr "Ugyldig sidebar ID"
+
+#: ../functions.php:606 ../header.php:53
+msgid "Navigation"
+msgstr "Navigasjon"
+
+#: ../functions.php:910 ../framework/plugin-activation.php:143
+msgid "Install Required Plugins"
+msgstr "Installér påkrevde innstikk"
+
+#: ../functions.php:911 ../framework/plugin-activation.php:144
+msgid "Install Plugins"
+msgstr "Installér innstikk"
+
+#: ../functions.php:912 ../framework/plugin-activation.php:145
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr "Installérer innstikk: %s"
+
+#: ../functions.php:913
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: ../functions.php:924 ../framework/plugin-activation.php:157
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: ../functions.php:925 ../framework/plugin-activation.php:159
+#: ../framework/plugin-activation.php:1883
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: ../functions.php:926
+#, php-format
+msgid "All plugins installed and activated successfully. %s"
+msgstr ""
+
+#: ../header.php:99
+msgid "To search, type and hit enter"
+msgstr "Skriv søkeord"
+
+#: ../loop-portfolio.php:31
+msgid "All"
+msgstr ""
+
+#: ../loop-portfolio.php:100
+msgid "View details"
+msgstr "Vis detaljer"
+
+#: ../loop-posts copy.php:83 ../loop-posts.php:83 ../loop-search.php:45
+msgid "No entries found. Perhaps try a search?"
+msgstr "Ingen innlegg funnet. "
+
+#: ../loop-staff.php:107
+msgid "Get to know"
+msgstr "Bli kjent med"
+
+#: ../loop-staff.php:120
+msgid "Phone:"
+msgstr "Telefon:"
+
+#: ../loop-staff.php:126
+msgid "Mobile:"
+msgstr "Mobil:"
+
+#: ../loop-staff.php:133
+msgid "Facebook"
+msgstr ""
+
+#: ../loop-staff.php:139
+msgid "LinkedIn"
+msgstr ""
+
+#: ../loop-staff.php:145
+msgid "Twitter"
+msgstr ""
+
+#: ../options-config.php:22
+msgid "A Section added by hook"
+msgstr ""
+
+#: ../options-config.php:23
+msgid ""
+"<p class=\"description\">This is a section created by adding a filter to the "
+"sections array. Can be used by child themes to add/remove sections from the "
+"options.</p>"
+msgstr ""
+
+#: ../options-config.php:72
+#, php-format
+msgid "Customize &#8220;%s&#8221;"
+msgstr ""
+
+#: ../options-config.php:91
+#, php-format
+msgid "By %s"
+msgstr "Av %s"
+
+#: ../options-config.php:92
+#, php-format
+msgid "Version %s"
+msgstr "Versjon %s"
+
+#: ../options-config.php:93
+msgid "Tags"
+msgstr "Stikkord"
+
+#: ../options-config.php:97
+#, php-format
+msgid "This <a href=\"%1$s\">child theme</a> requires its parent theme, %2$s."
+msgstr ""
+
+#: ../options-config.php:98
+msgid "http://codex.wordpress.org/Child_Themes"
+msgstr ""
+
+#: ../options-config.php:207 ../options-config.php:211
+msgid "Options"
+msgstr "Innstillinger"
+
+#: ../options-config.php:253
+msgid "Theme Information 1"
+msgstr "Temainformasjon 1"
+
+#: ../options-config.php:254 ../options-config.php:259
+msgid "<p>This is the tab content, HTML is allowed.</p>"
+msgstr ""
+
+#: ../options-config.php:258
+msgid "Theme Information 2"
+msgstr "Temainformasjon 2"
+
+#: ../options-config.php:263
+msgid "<p>This is the sidebar content, HTML is allowed.</p>"
+msgstr ""
+
+#: ../options-config.php:268
+msgid ""
+"<p>This text is displayed below the options panel. It isn't required, but "
+"more info is always better! The footer_text field accepts all HTML.</p>"
+msgstr ""
+
+#: ../options-config.php:328
+msgid "General Settings"
+msgstr ""
+
+#: ../options-config.php:336
+msgid "Site Logo"
+msgstr "Nettsted logo"
+
+#: ../options-config.php:338
+msgid "Basic media uploader with disabled URL input field."
+msgstr ""
+
+#: ../options-config.php:339
+msgid "Upload any media using the WordPress native uploader"
+msgstr ""
+
+#: ../options-config.php:345
+msgid "Header Height"
+msgstr "Høyde på header"
+
+#: ../options-config.php:346
+msgid "Set a maximum pixel height for your site header"
+msgstr "Set en maksimumshøyde på nettstedets header"
+
+#: ../options-config.php:354
+msgid "Header Height on sticky-menu"
+msgstr "Header høyde på klebrig header"
+
+#: ../options-config.php:355
+msgid ""
+"Set a maximum pixel height for your site header when menu is sticked to page "
+"top"
+msgstr ""
+
+#: ../options-config.php:363
+msgid "Logo Max-width"
+msgstr "Logo maks høyde"
+
+#: ../options-config.php:364
+msgid "Set a maximum pixel width for your site logo"
+msgstr "Sett en maksimumshøyde for din logo"
+
+#: ../options-config.php:372
+msgid "Logo Top Margin"
+msgstr "Logo avstand til toppen"
+
+#: ../options-config.php:373
+msgid "Add some spacing above your site logo"
+msgstr ""
+
+#: ../options-config.php:381
+msgid "Logo Bottom Margin"
+msgstr ""
+
+#: ../options-config.php:382
+msgid "Add some below above your site logo"
+msgstr ""
+
+#: ../options-config.php:392
+#, fuzzy
+msgid "Site favicon"
+msgstr "Nettsted layout"
+
+#: ../options-config.php:394
+msgid "Insert a favicon."
+msgstr ""
+
+#: ../options-config.php:403
+msgid "Site Layout"
+msgstr ""
+
+#: ../options-config.php:404
+msgid "Select boxed or full width layout."
+msgstr ""
+
+#: ../options-config.php:420
+msgid "Page Layout"
+msgstr ""
+
+#: ../options-config.php:421
+msgid ""
+"Select default layout for pages. You can override this on page level by "
+"selecting a tempate."
+msgstr ""
+
+#: ../options-config.php:435
+msgid "Post Layout"
+msgstr ""
+
+#: ../options-config.php:436
+msgid "Select default layout for posts."
+msgstr ""
+
+#: ../options-config.php:450
+msgid "Tracking Code"
+msgstr ""
+
+#: ../options-config.php:451
+msgid ""
+"Paste your Google Analytics (or other) tracking code here. This will be "
+"added into the footer template of your theme."
+msgstr ""
+
+#: ../options-config.php:471
+msgid "Blog and Archive Layout"
+msgstr ""
+
+#: ../options-config.php:472
+msgid "Select default layout for blog, archive, category and archive pages."
+msgstr ""
+
+#: ../options-config.php:485
+#, fuzzy
+msgid "Blog Columns"
+msgstr "Kolonner"
+
+#: ../options-config.php:486
+msgid "Select how many columns to display on blog"
+msgstr ""
+
+#: ../options-config.php:500
+#, fuzzy
+msgid "Masonry layout"
+msgstr "Layout for bildegalleri"
+
+#: ../options-config.php:501
+msgid ""
+"Select this if you want your blog to be listed with the masononry-effect"
+msgstr ""
+
+#: ../options-config.php:509
+#, fuzzy
+msgid "Blog sidebar"
+msgstr "Slett sidebar"
+
+#: ../options-config.php:510 ../options-config.php:520
+#: ../options-config.php:530 ../options-config.php:540
+msgid "Select a sidebar"
+msgstr "Velg en sidebar"
+
+#: ../options-config.php:511
+msgid "Select a sidebar to show on the blog page"
+msgstr ""
+
+#: ../options-config.php:519
+#, fuzzy
+msgid "Category sidebar"
+msgstr "Slett sidebar"
+
+#: ../options-config.php:521
+msgid "Select a sidebar to show on category-pages"
+msgstr ""
+
+#: ../options-config.php:529
+#, fuzzy
+msgid "Archives sidebar"
+msgstr "Slett sidebar"
+
+#: ../options-config.php:531
+msgid "Select a sidebar to show on archive-pages"
+msgstr ""
+
+#: ../options-config.php:539
+#, fuzzy
+msgid "Search page sidebar"
+msgstr "Velg en sidebar"
+
+#: ../options-config.php:541
+msgid "Select a sidebar to show on search-page"
+msgstr ""
+
+#: ../options-config.php:552 ../includes/customizer.php:278
+msgid "Footer"
+msgstr ""
+
+#: ../options-config.php:559
+msgid "Footer Text Top"
+msgstr ""
+
+#: ../options-config.php:568
+msgid "Footer Text Left"
+msgstr ""
+
+#: ../options-config.php:576
+msgid "Footer Text Right"
+msgstr ""
+
+#: ../options-config.php:590
+msgid "Styling Options"
+msgstr ""
+
+#: ../options-config.php:595
+msgid "Theme Stylesheet"
+msgstr ""
+
+#: ../options-config.php:596
+msgid "Select your themes alternative color scheme."
+msgstr ""
+
+#: ../options-config.php:604
+msgid "Primary Theme Color"
+msgstr ""
+
+#: ../options-config.php:613
+msgid "Secondary Theme Color"
+msgstr ""
+
+#: ../options-config.php:622
+msgid "Body Background Color"
+msgstr ""
+
+#: ../options-config.php:623
+msgid "Pick a background color for the theme."
+msgstr ""
+
+#: ../options-config.php:631
+msgid "Header Background Color"
+msgstr ""
+
+#: ../options-config.php:632
+msgid "Pick a background color for the header."
+msgstr "Velg enn bakgrunnsfarge for header"
+
+#: ../options-config.php:640
+msgid "Content Background Color"
+msgstr ""
+
+#: ../options-config.php:641
+msgid "Pick a background color for the content area."
+msgstr ""
+
+#: ../options-config.php:650
+msgid "Footer Background Color"
+msgstr ""
+
+#: ../options-config.php:651
+msgid "Pick a background color for the footer."
+msgstr ""
+
+#: ../options-config.php:669
+msgid "Links Color Option"
+msgstr ""
+
+#: ../options-config.php:682
+msgid "Links Color in Footer"
+msgstr ""
+
+#: ../options-config.php:696
+msgid "Links Color in Main Menu"
+msgstr ""
+
+#: ../options-config.php:709
+msgid "Header Border Option"
+msgstr ""
+
+#: ../options-config.php:710
+msgid "Only color validation can be done on this field type"
+msgstr ""
+
+#: ../options-config.php:712
+msgid "This is the description field, again good for additional info."
+msgstr ""
+
+#: ../options-config.php:732
+msgid "Custom CSS"
+msgstr ""
+
+#: ../options-config.php:733
+msgid "Quickly add some CSS to your theme by adding it to this block."
+msgstr ""
+
+#: ../options-config.php:743
+msgid "Typography"
+msgstr ""
+
+#: ../options-config.php:744
+msgid "<p class=\"description\">Change typograhy settings</p>"
+msgstr ""
+
+#: ../options-config.php:750
+msgid "Typography for H1 (Header 1)"
+msgstr ""
+
+#: ../options-config.php:776
+msgid "Typography for H2  (Header 2)"
+msgstr ""
+
+#: ../options-config.php:790 ../options-config.php:817
+#: ../options-config.php:845 ../options-config.php:872
+#: ../options-config.php:899 ../options-config.php:926
+msgid "Typography option with each property can be called individually."
+msgstr ""
+
+#: ../options-config.php:803
+msgid "Typography for H3  (Header 3)"
+msgstr ""
+
+#: ../options-config.php:831
+msgid "Typography for H4  (Header 4)"
+msgstr ""
+
+#: ../options-config.php:858
+msgid "Typography for H5  (Header 5)"
+msgstr ""
+
+#: ../options-config.php:885
+msgid "Typography for h6  (Header 6)"
+msgstr ""
+
+#: ../options-config.php:912
+msgid "Typography for body and paragraph"
+msgstr ""
+
+#: ../options-config.php:963
+msgid "<strong>Theme URL:</strong> "
+msgstr ""
+
+#: ../options-config.php:964
+msgid "<strong>Author:</strong> "
+msgstr ""
+
+#: ../options-config.php:965
+msgid "<strong>Version:</strong> "
+msgstr ""
+
+#: ../options-config.php:967
+msgid "<strong>Tags:</strong> "
+msgstr ""
+
+#: ../options-config.php:973 ../options-config.php:991
+msgid "Documentation"
+msgstr ""
+
+#: ../options-config.php:983
+msgid "Theme Information"
+msgstr ""
+
+#: ../post-meta.php:38
+msgid "Page Elements"
+msgstr ""
+
+#: ../post-meta.php:61
+msgid ""
+"Select the elements you want to show on your page or post. At least one "
+"element needs to be enabled."
+msgstr ""
+
+#: ../post-meta.php:66 ../post-meta.php:169
+msgid "Title"
+msgstr "Tittel"
+
+#: ../post-meta.php:67
+msgid "Excerpt"
+msgstr "Utdrag"
+
+#: ../post-meta.php:68
+msgid "Content"
+msgstr "Innhold"
+
+#: ../post-meta.php:69
+msgid "Submenu"
+msgstr "Undermeny"
+
+#: ../post-meta.php:70
+msgid "Featured image"
+msgstr ""
+
+#: ../post-meta.php:88
+msgid "Image Gallery"
+msgstr "Bildegalleri"
+
+#: ../post-meta.php:111
+msgid "Gallery images"
+msgstr "Galleribilder"
+
+#: ../post-meta.php:117
+msgid ""
+"Select or upload images to display in gallery.<br><br>Images can be "
+"rearranged via drag and drop."
+msgstr ""
+
+#: ../post-meta.php:127
+msgid "Gallery settings"
+msgstr "Innstillinger for bildegalleri"
+
+#: ../post-meta.php:133
+msgid "Gallery layout"
+msgstr "Layout for bildegalleri"
+
+#: ../post-meta.php:140
+msgid "Display as slideshow"
+msgstr "Vis som slideshow"
+
+#: ../post-meta.php:141
+msgid "Display as thumbnails"
+msgstr "Vis som miniatyrbilder"
+
+#: ../post-meta.php:148
+msgid "Columns"
+msgstr "Kolonner"
+
+#: ../post-meta.php:149
+msgid "Number of columns for thumbnail layout"
+msgstr "Antall kolonner"
+
+#: ../post-meta.php:160
+msgid "Lightbox"
+msgstr "Lightbox"
+
+#: ../post-meta.php:161
+msgid "Open lightbox when you click on the image"
+msgstr "Åpne stor versjon av bilde i lightbox når man klikker på bildet."
+
+#: ../post-meta.php:170
+msgid "Show image title"
+msgstr "Vis bildetittel"
+
+#: ../post-meta.php:178
+msgid "Caption"
+msgstr "Overskrift"
+
+#: ../post-meta.php:179
+msgid "Show image description"
+msgstr "Vis bildebeskrivelse"
+
+#: ../post-meta.php:199
+msgid "Post audio"
+msgstr "Audio"
+
+#: ../post-meta.php:209 ../post-meta.php:278
+#: ../framework/plugin-activation.php:1332
+msgid "Source"
+msgstr "Kilde"
+
+#: ../post-meta.php:214
+msgid "Audio source"
+msgstr "Audio kildefil"
+
+#: ../post-meta.php:221 ../post-meta.php:230
+msgid "Self-hosted audio"
+msgstr ""
+
+#: ../post-meta.php:222 ../post-meta.php:253
+msgid "Embed audio"
+msgstr "Embed lydfil"
+
+#: ../post-meta.php:237
+msgid "Select audio-files from media-library, or upload audio-files."
+msgstr ""
+
+#: ../post-meta.php:247
+msgid "Embedded audio"
+msgstr ""
+
+#: ../post-meta.php:255
+msgid "Enter URL to the audiofile you want to embed."
+msgstr ""
+
+#: ../post-meta.php:269
+msgid "Post video"
+msgstr "Video"
+
+#: ../post-meta.php:285
+msgid "Video source"
+msgstr ""
+
+#: ../post-meta.php:292 ../post-meta.php:301
+msgid "Self-hosted video"
+msgstr ""
+
+#: ../post-meta.php:293 ../post-meta.php:324
+msgid "Embed video"
+msgstr ""
+
+#: ../post-meta.php:308
+msgid "Select video-files from media-library, or upload video-files."
+msgstr ""
+
+#: ../post-meta.php:318
+msgid "Embedded video"
+msgstr ""
+
+#: ../post-meta.php:326
+msgid "Enter URL to the videofile you want to embed."
+msgstr ""
+
+#: ../post-meta.php:363
+msgid "Revolution slider"
+msgstr ""
+
+#: ../post-meta.php:375 ../post-meta.php:383 ../post-meta.php:391
+msgid "Select a slider"
+msgstr "Velg slideshow"
+
+#: ../single-portfolio.php:36
+msgid "Project details"
+msgstr "Prosjekt detaljer"
+
+#: ../single-portfolio.php:42
+msgid "Client:"
+msgstr "Kunde"
+
+#: ../single-portfolio.php:43
+msgid "Launch:"
+msgstr "Lansering:"
+
+#: ../single-portfolio.php:44
+msgid "Credits:"
+msgstr "Kreditteringer:"
+
+#: ../single-portfolio.php:46
+msgid "Visit project"
+msgstr "Vis prosjekt"
+
+#: ../single-portfolio.php:56
+msgid "Work performed"
+msgstr "Arbeid utført"
+
+#: ../single-portfolio.php:97
+msgid "Related work"
+msgstr "Relaterte prosjekter"
+
+#: ../template-sidebar-left.php:5
+msgid "Sidebar left"
+msgstr "Meny til venstre"
+
+#: ../template-sidebar-right.php:5
+msgid "Sidebar right"
+msgstr "Meny til høyre"
+
+#: ../bbpress/content-single-topic-lead.php:18
+#: ../bbpress/content-single-topic-lead.php:90
+msgid "Creator"
+msgstr ""
+
+#: ../bbpress/content-single-topic-lead.php:22
+#: ../bbpress/content-single-topic-lead.php:94 ../bbpress/loop-topics.php:19
+msgid "Topic"
+msgstr "Tema"
+
+#: ../bbpress/content-statistics.php:17
+msgid "Registered Users"
+msgstr "Registrerte brukere"
+
+#: ../bbpress/content-statistics.php:22
+msgid "Forums"
+msgstr "Forumer"
+
+#: ../bbpress/content-statistics.php:27 ../bbpress/loop-forums.php:20
+msgid "Topics"
+msgstr "Temaer"
+
+#: ../bbpress/content-statistics.php:32 ../bbpress/loop-forums.php:21
+#: ../bbpress/loop-replies.php:32 ../bbpress/loop-replies.php:70
+#: ../bbpress/loop-topics.php:21
+msgid "Replies"
+msgstr "Svar"
+
+#: ../bbpress/content-statistics.php:37
+msgid "Topic Tags"
+msgstr ""
+
+#: ../bbpress/content-statistics.php:44
+msgid "Empty Topic Tags"
+msgstr ""
+
+#: ../bbpress/content-statistics.php:53
+msgid "Hidden Topics"
+msgstr "Skjulte temaer"
+
+#: ../bbpress/content-statistics.php:64
+msgid "Hidden Replies"
+msgstr "Skjulte svar"
+
+#: ../bbpress/feedback-logged-in.php:13
+msgid "You are already logged in."
+msgstr ""
+
+#: ../bbpress/feedback-no-access.php:13
+msgid "Private"
+msgstr ""
+
+#: ../bbpress/feedback-no-access.php:16
+msgid "You do not have permission to view this forum."
+msgstr ""
+
+#: ../bbpress/feedback-no-forums.php:13
+msgid "Oh bother! No forums were found here!"
+msgstr ""
+
+#: ../bbpress/feedback-no-replies.php:13
+msgid "Oh bother! No replies were found here!"
+msgstr ""
+
+#: ../bbpress/feedback-no-search.php:13
+msgid "Oh bother! No search results were found here!"
+msgstr ""
+
+#: ../bbpress/feedback-no-topics.php:13
+msgid "Oh bother! No topics were found here!"
+msgstr ""
+
+#: ../bbpress/form-anonymous.php:17
+msgid "Author Information"
+msgstr ""
+
+#: ../bbpress/form-anonymous.php:17
+msgid "Your information:"
+msgstr ""
+
+#: ../bbpress/form-anonymous.php:22
+msgid "Name (required):"
+msgstr ""
+
+#: ../bbpress/form-anonymous.php:27
+msgid "Mail (will not be published) (required):"
+msgstr ""
+
+#: ../bbpress/form-anonymous.php:32
+msgid "Website:"
+msgstr "Nettside:"
+
+#: ../bbpress/form-forum.php:35 ../bbpress/form-topic.php:41
+#, php-format
+msgid "Now Editing &ldquo;%s&rdquo;"
+msgstr ""
+
+#: ../bbpress/form-forum.php:37
+#, php-format
+msgid "Create New Forum in &ldquo;%s&rdquo;"
+msgstr ""
+
+#: ../bbpress/form-forum.php:37
+msgid "Create New Forum"
+msgstr ""
+
+#: ../bbpress/form-forum.php:47
+msgid ""
+"This forum is closed to new content, however your account still allows you "
+"to do so."
+msgstr ""
+
+#: ../bbpress/form-forum.php:55 ../bbpress/form-reply.php:44
+#: ../bbpress/form-topic.php:61
+msgid "Your account has the ability to post unrestricted HTML content."
+msgstr ""
+
+#: ../bbpress/form-forum.php:67
+#, php-format
+msgid "Forum Name (Maximum Length: %d):"
+msgstr ""
+
+#: ../bbpress/form-forum.php:82 ../bbpress/form-reply.php:64
+#: ../bbpress/form-topic.php:90
+msgid ""
+"You may use these <abbr title=\"HyperText Markup Language\">HTML</abbr> tags "
+"and attributes:"
+msgstr ""
+
+#: ../bbpress/form-forum.php:91
+msgid "Forum Type:"
+msgstr ""
+
+#: ../bbpress/form-forum.php:100
+msgid "Status:"
+msgstr ""
+
+#: ../bbpress/form-forum.php:109
+msgid "Visibility:"
+msgstr ""
+
+#: ../bbpress/form-forum.php:118
+msgid "Parent Forum:"
+msgstr ""
+
+#: ../bbpress/form-forum.php:123
+msgid "(No Parent)"
+msgstr ""
+
+#: ../bbpress/form-forum.php:138 ../bbpress/form-reply-move.php:72
+#: ../bbpress/form-reply.php:135 ../bbpress/form-topic-merge.php:93
+#: ../bbpress/form-topic-split.php:97 ../bbpress/form-topic.php:203
+msgid "Submit"
+msgstr ""
+
+#: ../bbpress/form-forum.php:161
+#, php-format
+msgid "The forum &#8216;%s&#8217; is closed to new content."
+msgstr ""
+
+#: ../bbpress/form-forum.php:169
+msgid "You cannot create new forums."
+msgstr ""
+
+#: ../bbpress/form-forum.php:169
+msgid "You must be logged in to create new forums."
+msgstr ""
+
+#: ../bbpress/form-protected.php:14
+msgid "Protected"
+msgstr ""
+
+#: ../bbpress/form-reply-move.php:24
+#, php-format
+msgid "Move reply \"%s\""
+msgstr ""
+
+#: ../bbpress/form-reply-move.php:29
+msgid ""
+"You can either make this reply a new topic with a new title, or merge it "
+"into an existing topic."
+msgstr ""
+
+#: ../bbpress/form-reply-move.php:33
+msgid ""
+"If you choose an existing topic, replies will be ordered by the time and "
+"date they were created."
+msgstr ""
+
+#: ../bbpress/form-reply-move.php:37
+msgid "Move Method"
+msgstr ""
+
+#: ../bbpress/form-reply-move.php:41 ../bbpress/form-topic-split.php:41
+#, php-format
+msgid "New topic in <strong>%s</strong> titled:"
+msgstr ""
+
+#: ../bbpress/form-reply-move.php:42
+#, php-format
+msgid "Moved: %s"
+msgstr ""
+
+#: ../bbpress/form-reply-move.php:49 ../bbpress/form-topic-split.php:49
+msgid "Use an existing topic in this forum:"
+msgstr ""
+
+#: ../bbpress/form-reply-move.php:68 ../bbpress/form-topic-merge.php:89
+#: ../bbpress/form-topic-split.php:93
+msgid "<strong>WARNING:</strong> This process cannot be undone."
+msgstr ""
+
+#: ../bbpress/form-reply-move.php:85
+msgid "You do not have the permissions to edit this reply!"
+msgstr ""
+
+#: ../bbpress/form-reply-move.php:85
+msgid "You cannot edit this reply."
+msgstr ""
+
+#: ../bbpress/form-reply.php:29
+#, php-format
+msgid "Reply To: %s"
+msgstr ""
+
+#: ../bbpress/form-reply.php:36
+msgid ""
+"This topic is marked as closed to new replies, however your posting "
+"capabilities still allow you to do so."
+msgstr ""
+
+#: ../bbpress/form-reply.php:75
+msgid "Tags:"
+msgstr ""
+
+#: ../bbpress/form-reply.php:93 ../bbpress/form-topic.php:164
+msgid "Notify the author of follow-up replies via email"
+msgstr ""
+
+#: ../bbpress/form-reply.php:97 ../bbpress/form-topic.php:168
+msgid "Notify me of follow-up replies via email"
+msgstr ""
+
+#: ../bbpress/form-reply.php:114 ../bbpress/form-topic.php:184
+msgid "Keep a log of this edit:"
+msgstr ""
+
+#: ../bbpress/form-reply.php:118 ../bbpress/form-topic.php:188
+msgid "Optional reason for editing:"
+msgstr ""
+
+#: ../bbpress/form-reply.php:158
+#, php-format
+msgid "The topic &#8216;%s&#8217; is closed to new replies."
+msgstr ""
+
+#: ../bbpress/form-reply.php:166 ../bbpress/form-topic.php:226
+#, php-format
+msgid "The forum &#8216;%s&#8217; is closed to new topics and replies."
+msgstr ""
+
+#: ../bbpress/form-reply.php:174
+msgid "You cannot reply to this topic."
+msgstr ""
+
+#: ../bbpress/form-reply.php:174
+msgid "You must be logged in to reply to this topic."
+msgstr ""
+
+#: ../bbpress/form-search.php:14
+msgid "Search for:"
+msgstr ""
+
+#: ../bbpress/form-topic-merge.php:24
+#, php-format
+msgid "Merge topic \"%s\""
+msgstr ""
+
+#: ../bbpress/form-topic-merge.php:29
+msgid ""
+"Select the topic to merge this one into. The destination topic will remain "
+"the lead topic, and this one will change into a reply."
+msgstr ""
+
+#: ../bbpress/form-topic-merge.php:30
+msgid ""
+"To keep this topic as the lead, go to the other topic and use the merge tool "
+"from there instead."
+msgstr ""
+
+#: ../bbpress/form-topic-merge.php:34
+msgid ""
+"All replies within both topics will be merged chronologically. The order of "
+"the merged replies is based on the time and date they were posted. If the "
+"destination topic was created after this one, it's post date will be updated "
+"to second earlier than this one."
+msgstr ""
+
+#: ../bbpress/form-topic-merge.php:38
+msgid "Destination"
+msgstr ""
+
+#: ../bbpress/form-topic-merge.php:42
+msgid "Merge with this topic:"
+msgstr ""
+
+#: ../bbpress/form-topic-merge.php:56
+msgid "There are no other topics in this forum to merge with."
+msgstr ""
+
+#: ../bbpress/form-topic-merge.php:64 ../bbpress/form-topic-split.php:68
+msgid "Topic Extras"
+msgstr ""
+
+#: ../bbpress/form-topic-merge.php:71
+msgid "Merge topic subscribers"
+msgstr ""
+
+#: ../bbpress/form-topic-merge.php:76
+msgid "Merge topic favoriters"
+msgstr ""
+
+#: ../bbpress/form-topic-merge.php:81
+msgid "Merge topic tags"
+msgstr ""
+
+#: ../bbpress/form-topic-merge.php:106 ../bbpress/form-topic-split.php:110
+msgid "You do not have the permissions to edit this topic!"
+msgstr ""
+
+#: ../bbpress/form-topic-merge.php:106 ../bbpress/form-topic-split.php:110
+msgid "You cannot edit this topic."
+msgstr ""
+
+#: ../bbpress/form-topic-split.php:24
+#, php-format
+msgid "Split topic \"%s\""
+msgstr ""
+
+#: ../bbpress/form-topic-split.php:29
+msgid ""
+"When you split a topic, you are slicing it in half starting with the reply "
+"you just selected. Choose to use that reply as a new topic with a new title, "
+"or merge those replies into an existing topic."
+msgstr ""
+
+#: ../bbpress/form-topic-split.php:33
+msgid ""
+"If you use the existing topic option, replies within both topics will be "
+"merged chronologically. The order of the merged replies is based on the time "
+"and date they were posted."
+msgstr ""
+
+#: ../bbpress/form-topic-split.php:37
+msgid "Split Method"
+msgstr ""
+
+#: ../bbpress/form-topic-split.php:42
+#, php-format
+msgid "Split: %s"
+msgstr ""
+
+#: ../bbpress/form-topic-split.php:75
+msgid "Copy subscribers to the new topic"
+msgstr ""
+
+#: ../bbpress/form-topic-split.php:80
+msgid "Copy favoriters to the new topic"
+msgstr ""
+
+#: ../bbpress/form-topic-split.php:85
+msgid "Copy topic tags to the new topic"
+msgstr ""
+
+#: ../bbpress/form-topic-tag.php:18
+#, php-format
+msgid "Manage Tag: \"%s\""
+msgstr ""
+
+#: ../bbpress/form-topic-tag.php:22
+msgid "Rename"
+msgstr ""
+
+#: ../bbpress/form-topic-tag.php:25
+msgid "Leave the slug empty to have one automatically generated."
+msgstr ""
+
+#: ../bbpress/form-topic-tag.php:29
+msgid ""
+"Changing the slug affects its permalink. Any links to the old slug will stop "
+"working."
+msgstr ""
+
+#: ../bbpress/form-topic-tag.php:35
+msgid "Name:"
+msgstr ""
+
+#: ../bbpress/form-topic-tag.php:40
+msgid "Slug:"
+msgstr ""
+
+#: ../bbpress/form-topic-tag.php:59
+msgid "Merge"
+msgstr ""
+
+#: ../bbpress/form-topic-tag.php:62
+msgid "Merging tags together cannot be undone."
+msgstr ""
+
+#: ../bbpress/form-topic-tag.php:68
+msgid "Existing tag:"
+msgstr ""
+
+#: ../bbpress/form-topic-tag.php:73
+#, php-format
+msgid ""
+"Are you sure you want to merge the \"%s\" tag into the tag you specified?"
+msgstr ""
+
+#: ../bbpress/form-topic-tag.php:88
+msgid "Delete"
+msgstr ""
+
+#: ../bbpress/form-topic-tag.php:91
+msgid "This does not delete your topics. Only the tag itself is deleted."
+msgstr ""
+
+#: ../bbpress/form-topic-tag.php:94
+msgid "Deleting a tag cannot be undone."
+msgstr ""
+
+#: ../bbpress/form-topic-tag.php:95
+msgid "Any links to this tag will no longer function."
+msgstr ""
+
+#: ../bbpress/form-topic-tag.php:101
+#, php-format
+msgid ""
+"Are you sure you want to delete the \"%s\" tag? This is permanent and cannot "
+"be undone."
+msgstr ""
+
+#: ../bbpress/form-topic.php:43
+#, php-format
+msgid "Create New Topic in &ldquo;%s&rdquo;"
+msgstr ""
+
+#: ../bbpress/form-topic.php:43
+msgid "Create New Topic"
+msgstr ""
+
+#: ../bbpress/form-topic.php:53
+msgid ""
+"This forum is marked as closed to new topics, however your posting "
+"capabilities still allow you to do so."
+msgstr ""
+
+#: ../bbpress/form-topic.php:75
+#, php-format
+msgid "Topic Title (Maximum Length: %d):"
+msgstr ""
+
+#: ../bbpress/form-topic.php:101
+msgid "Topic Tags:"
+msgstr ""
+
+#: ../bbpress/form-topic.php:114
+msgid "Forum:"
+msgstr ""
+
+#: ../bbpress/form-topic.php:117
+msgid "(No Forum)"
+msgstr ""
+
+#: ../bbpress/form-topic.php:133
+msgid "Topic Type:"
+msgstr ""
+
+#: ../bbpress/form-topic.php:145
+msgid "Topic Status:"
+msgstr ""
+
+#: ../bbpress/form-topic.php:234
+msgid "You cannot create new topics."
+msgstr ""
+
+#: ../bbpress/form-topic.php:234
+msgid "You must be logged in to create new topics."
+msgstr ""
+
+#: ../bbpress/form-user-edit.php:24
+msgid "First Name"
+msgstr ""
+
+#: ../bbpress/form-user-edit.php:29
+msgid "Last Name"
+msgstr ""
+
+#: ../bbpress/form-user-edit.php:34
+msgid "Nickname"
+msgstr ""
+
+#: ../bbpress/form-user-edit.php:39
+msgid "Display Name"
+msgstr ""
+
+#: ../bbpress/form-user-edit.php:49 ../bbpress/form-user-edit.php:52
+msgid "Contact Info"
+msgstr ""
+
+#: ../bbpress/form-user-edit.php:74 ../bbpress/form-user-edit.php:77
+msgid "About Yourself"
+msgstr ""
+
+#: ../bbpress/form-user-edit.php:74 ../bbpress/form-user-edit.php:77
+msgid "About the user"
+msgstr ""
+
+#: ../bbpress/form-user-edit.php:82
+msgid "Biographical Info"
+msgstr ""
+
+#: ../bbpress/form-user-edit.php:90 ../bbpress/form-user-edit.php:93
+msgid "Account"
+msgstr ""
+
+#: ../bbpress/form-user-edit.php:98 ../bbpress/form-user-login.php:17
+#: ../bbpress/form-user-register.php:23
+msgid "Username"
+msgstr ""
+
+#: ../bbpress/form-user-edit.php:115
+#, php-format
+msgid ""
+"There is a pending email address change to <code>%1$s</code>. <a href=\"%2$s"
+"\">Cancel</a>"
+msgstr ""
+
+#: ../bbpress/form-user-edit.php:124
+msgid "New Password"
+msgstr ""
+
+#: ../bbpress/form-user-edit.php:127
+msgid ""
+"If you would like to change the password type a new one. Otherwise leave "
+"this blank."
+msgstr ""
+
+#: ../bbpress/form-user-edit.php:130
+msgid "Type your new password again."
+msgstr ""
+
+#: ../bbpress/form-user-edit.php:133
+msgid ""
+"Your password should be at least ten characters long. Use upper and lower "
+"case letters, numbers, and symbols to make it even stronger."
+msgstr ""
+
+#: ../bbpress/form-user-edit.php:143 ../bbpress/form-user-edit.php:146
+msgid "User Role"
+msgstr ""
+
+#: ../bbpress/form-user-edit.php:153
+msgid "Network Role"
+msgstr ""
+
+#: ../bbpress/form-user-edit.php:156
+msgid "Grant this user super admin privileges for the Network."
+msgstr ""
+
+#: ../bbpress/form-user-edit.php:173
+msgid "Save Changes"
+msgstr ""
+
+#: ../bbpress/form-user-edit.php:178
+msgid "Update Profile"
+msgstr ""
+
+#: ../bbpress/form-user-edit.php:178
+msgid "Update User"
+msgstr ""
+
+#: ../bbpress/form-user-login.php:14 ../bbpress/form-user-login.php:35
+msgid "Log In"
+msgstr ""
+
+#: ../bbpress/form-user-login.php:22
+msgid "Password"
+msgstr ""
+
+#: ../bbpress/form-user-login.php:28
+msgid "Keep me signed in"
+msgstr ""
+
+#: ../bbpress/form-user-lost-pass.php:14
+msgid "Lost Password"
+msgstr ""
+
+#: ../bbpress/form-user-lost-pass.php:18
+msgid "Username or Email"
+msgstr ""
+
+#: ../bbpress/form-user-lost-pass.php:27
+msgid "Reset My Password"
+msgstr ""
+
+#: ../bbpress/form-user-register.php:14
+msgid "Create an Account"
+msgstr ""
+
+#: ../bbpress/form-user-register.php:17
+msgid "Your username must be unique, and cannot be changed later."
+msgstr ""
+
+#: ../bbpress/form-user-register.php:18
+msgid ""
+"We use your email address to email you a secure password and verify your "
+"account."
+msgstr ""
+
+#: ../bbpress/form-user-register.php:36
+msgid "Register"
+msgstr ""
+
+#: ../bbpress/form-user-roles.php:13
+msgid "Blog Role"
+msgstr ""
+
+#: ../bbpress/form-user-roles.php:20
+msgid "Forum Role"
+msgstr ""
+
+#: ../bbpress/loop-forums.php:19
+msgid "Forum"
+msgstr ""
+
+#: ../bbpress/loop-forums.php:21 ../bbpress/loop-replies.php:24
+#: ../bbpress/loop-replies.php:66 ../bbpress/loop-topics.php:21
+msgid "Posts"
+msgstr ""
+
+#: ../bbpress/loop-forums.php:22 ../bbpress/loop-topics.php:22
+msgid "Freshness"
+msgstr ""
+
+#: ../bbpress/loop-replies.php:18 ../bbpress/loop-replies.php:60
+#: ../bbpress/loop-search.php:18 ../bbpress/loop-search.php:40
+msgid "Author"
+msgstr ""
+
+#: ../bbpress/loop-search-forum.php:16
+#, php-format
+msgid "Last updated %s"
+msgstr ""
+
+#: ../bbpress/loop-search-forum.php:26
+msgid "Forum: "
+msgstr ""
+
+#: ../bbpress/loop-search-reply.php:24
+msgid "In reply to: "
+msgstr ""
+
+#: ../bbpress/loop-search-topic.php:26
+msgid "Topic: "
+msgstr ""
+
+#: ../bbpress/loop-search-topic.php:33
+msgid "in group forum "
+msgstr ""
+
+#: ../bbpress/loop-search-topic.php:37
+msgid "in forum "
+msgstr ""
+
+#: ../bbpress/loop-search.php:22 ../bbpress/loop-search.php:44
+msgid "Search Results"
+msgstr ""
+
+#: ../bbpress/loop-single-reply.php:21
+msgid "in reply to: "
+msgstr ""
+
+#: ../bbpress/loop-single-topic.php:60
+#, php-format
+msgid "Started by: %1$s"
+msgstr ""
+
+#: ../bbpress/loop-single-topic.php:68
+#, php-format
+msgid "in: <a href=\"%1$s\">%2$s</a>"
+msgstr ""
+
+#: ../bbpress/loop-topics.php:20
+msgid "Voices"
+msgstr ""
+
+#: ../bbpress/user-details.php:29 ../bbpress/user-profile.php:15
+msgid "Profile"
+msgstr ""
+
+#: ../bbpress/user-details.php:35
+msgid "Topics Started"
+msgstr ""
+
+#: ../bbpress/user-details.php:41
+msgid "Replies Created"
+msgstr ""
+
+#: ../bbpress/user-details.php:48
+msgid "Favorites"
+msgstr ""
+
+#: ../bbpress/user-details.php:58
+msgid "Subscriptions"
+msgstr ""
+
+#: ../bbpress/user-favorites.php:15
+msgid "Favorite Forum Topics"
+msgstr ""
+
+#: ../bbpress/user-favorites.php:28
+msgid "You currently have no favorite topics."
+msgstr ""
+
+#: ../bbpress/user-favorites.php:28
+msgid "This user has no favorite topics."
+msgstr ""
+
+#: ../bbpress/user-profile.php:24
+#, php-format
+msgid "Forum Role: %s"
+msgstr ""
+
+#: ../bbpress/user-profile.php:25
+#, php-format
+msgid "Topics Started: %s"
+msgstr ""
+
+#: ../bbpress/user-profile.php:26
+#, php-format
+msgid "Replies Created: %s"
+msgstr ""
+
+#: ../bbpress/user-replies-created.php:15
+msgid "Forum Replies Created"
+msgstr ""
+
+#: ../bbpress/user-replies-created.php:28
+msgid "You have not replied to any topics."
+msgstr ""
+
+#: ../bbpress/user-replies-created.php:28
+msgid "This user has not replied to any topics."
+msgstr ""
+
+#: ../bbpress/user-subscriptions.php:19
+msgid "Subscribed Forums"
+msgstr ""
+
+#: ../bbpress/user-subscriptions.php:28
+msgid "You are not currently subscribed to any forums."
+msgstr ""
+
+#: ../bbpress/user-subscriptions.php:28
+msgid "This user is not currently subscribed to any forums."
+msgstr ""
+
+#: ../bbpress/user-subscriptions.php:34
+msgid "Subscribed Topics"
+msgstr ""
+
+#: ../bbpress/user-subscriptions.php:47
+msgid "You are not currently subscribed to any topics."
+msgstr ""
+
+#: ../bbpress/user-subscriptions.php:47
+msgid "This user is not currently subscribed to any topics."
+msgstr ""
+
+#: ../bbpress/user-topics-created.php:15
+msgid "Forum Topics Started"
+msgstr ""
+
+#: ../bbpress/user-topics-created.php:28
+msgid "You have not created any topics."
+msgstr ""
+
+#: ../bbpress/user-topics-created.php:28
+msgid "This user has not created any topics."
+msgstr ""
+
+#: ../framework/functions.php:517
+msgid "Home"
+msgstr ""
+
+#: ../framework/functions.php:766
+msgid "g:i a"
+msgstr ""
+
+#: ../framework/functions.php:769
+#, php-format
+msgid "Minute %1$s"
+msgstr ""
+
+#: ../framework/functions.php:769
+msgid "i"
+msgstr ""
+
+#: ../framework/functions.php:772
+msgid "g a"
+msgstr ""
+
+#: ../framework/functions.php:783 ../framework/functions.php:789
+#: ../framework/functions.php:794 ../framework/functions.php:799
+#: ../framework/functions.php:864
+msgid "Y"
+msgstr ""
+
+#: ../framework/functions.php:784 ../framework/functions.php:795
+#: ../framework/functions.php:868
+msgid "F"
+msgstr ""
+
+#: ../framework/functions.php:785 ../framework/functions.php:872
+msgid "d"
+msgstr ""
+
+#: ../framework/functions.php:790
+#, php-format
+msgid "Week %1$s"
+msgstr ""
+
+#: ../framework/functions.php:806
+#, php-format
+msgid "Search results for &quot;%1$s&quot;"
+msgstr "Søkeresultat for &quot;%1$s&quot;"
+
+#: ../framework/functions.php:810
+msgid "404 Not Found"
+msgstr "404 - Siden ikke funnet"
+
+#: ../framework/functions.php:1402
+msgid "Continue reading"
+msgstr "Les mer"
+
+#: ../framework/functions.php:1403
+msgid "Go back "
+msgstr ""
+
+#: ../framework/plugin-activation.php:146
+msgid "Something went wrong."
+msgstr "Noe gikk galt."
+
+#: ../framework/plugin-activation.php:158
+#, fuzzy
+msgid "Return to the dashboard"
+msgstr "Gå tilbake til dashboard."
+
+#: ../framework/plugin-activation.php:160
+#, fuzzy
+msgid "The following plugin was activated successfully:"
+msgstr "Følgende innstikk ble installert: %s"
+
+#: ../framework/plugin-activation.php:161
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr "Alle innstikk er installert og aktivert. %1$s"
+
+#: ../framework/plugin-activation.php:162
+msgid "Dismiss this notice"
+msgstr "Fjern denne meldingen"
+
+#: ../framework/plugin-activation.php:514
+#: ../framework/plugin-activation.php:2095
+msgid "Return to the Dashboard"
+msgstr "Gå tilbake til dashboard."
+
+#: ../framework/plugin-activation.php:1124
+msgid "External Link"
+msgstr "Ekstern lenke"
+
+#: ../framework/plugin-activation.php:1129
+msgid "Private Repository"
+msgstr ""
+
+#: ../framework/plugin-activation.php:1132
+msgid "Pre-Packaged"
+msgstr ""
+
+#: ../framework/plugin-activation.php:1136
+msgid "WordPress Repository"
+msgstr ""
+
+#: ../framework/plugin-activation.php:1139
+msgid "Required"
+msgstr "Påkrevet"
+
+#: ../framework/plugin-activation.php:1139
+msgid "Recommended"
+msgstr "Anbefalt"
+
+#: ../framework/plugin-activation.php:1142
+msgid "Not Installed"
+msgstr "Ikke installert"
+
+#: ../framework/plugin-activation.php:1144
+msgid "Installed But Not Activated"
+msgstr "Installert, men ikke aktivert."
+
+#: ../framework/plugin-activation.php:1244
+#: ../framework/plugin-activation.php:1352
+msgid "Install"
+msgstr "Installèr"
+
+#: ../framework/plugin-activation.php:1266
+#: ../framework/plugin-activation.php:1353
+msgid "Activate"
+msgstr "Aktivèr"
+
+#: ../framework/plugin-activation.php:1315
+#, php-format
+msgid ""
+"No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the "
+"Dashboard\">Return to the Dashboard</a>"
+msgstr ""
+
+#: ../framework/plugin-activation.php:1331
+msgid "Plugin"
+msgstr "Innstikk"
+
+#: ../framework/plugin-activation.php:1333
+msgid "Type"
+msgstr "Type"
+
+#: ../framework/plugin-activation.php:1334
+msgid "Status"
+msgstr "Status"
+
+#: ../framework/plugin-activation.php:1866
+msgid "Install package not available."
+msgstr "Installasjonsfil ikke tilgjengelig"
+
+#: ../framework/plugin-activation.php:1867
+#, php-format
+msgid "Downloading install package from <span class=\"code\">%s</span>&#8230;"
+msgstr ""
+
+#: ../framework/plugin-activation.php:1868
+msgid "Unpacking the package&#8230;"
+msgstr ""
+
+#: ../framework/plugin-activation.php:1869
+msgid "Installing the plugin&#8230;"
+msgstr ""
+
+#: ../framework/plugin-activation.php:1870
+msgid "Plugin install failed."
+msgstr ""
+
+#: ../framework/plugin-activation.php:1871
+msgid "Plugin installed successfully."
+msgstr ""
+
+#: ../framework/plugin-activation.php:1882
+msgid "Plugin activation failed."
+msgstr "Aktivering av innstikk feilet."
+
+#: ../framework/plugin-activation.php:1992
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: ../framework/plugin-activation.php:1993
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: ../framework/plugin-activation.php:1993
+#: ../framework/plugin-activation.php:2002
+msgid "Show Details"
+msgstr "Vis detaljer"
+
+#: ../framework/plugin-activation.php:1993
+#: ../framework/plugin-activation.php:2002
+msgid "Hide Details"
+msgstr "SKjul detaljer"
+
+#: ../framework/plugin-activation.php:1994
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: ../framework/plugin-activation.php:1995
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../framework/plugin-activation.php:1999
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: ../framework/plugin-activation.php:2000
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: ../framework/plugin-activation.php:2001
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: ../framework/plugin-activation.php:2002
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: ../framework/plugin-activation.php:2003
+msgid "All installations have been completed."
+msgstr ""
+
+#: ../framework/plugin-activation.php:2004
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../includes/compat-pagebuilder.php:7
+msgid "Edge to edge - content fills the entire browser width."
+msgstr ""
+
+#: ../includes/compat-pagebuilder.php:8
+msgid "Edge to edge, grey background - content fills the entire browser width."
+msgstr ""
+
+#: ../includes/compat-pagebuilder.php:9
+msgid "Edge to edge, dark background - content fills the entire browser width."
+msgstr ""
+
+#: ../includes/compat-pagebuilder.php:10
+msgid "White with border"
+msgstr ""
+
+#: ../includes/compat-pagebuilder.php:11
+msgid "Grey background"
+msgstr ""
+
+#: ../includes/compat-pagebuilder.php:12
+msgid "Dark background"
+msgstr ""
+
+#: ../includes/compat-pagebuilder.php:13
+msgid "Full width white"
+msgstr ""
+
+#: ../includes/compat-pagebuilder.php:14
+#, fuzzy
+msgid "Full width grey"
+msgstr "Fullbredde eller normal bredde"
+
+#: ../includes/compat-pagebuilder.php:15
+#, fuzzy
+msgid "Full width dark"
+msgstr "Fullbredde eller normal bredde"
+
+#: ../includes/compat-woocommerce.php:57
+msgid "View cart"
+msgstr ""
+
+#: ../includes/compat-woocommerce.php:57
+msgid "Added to cart"
+msgstr ""
+
+#: ../includes/contextual-help.php:13
+msgid "Image Gallery Panel"
+msgstr "Bildegalleri"
+
+#: ../includes/contextual-help.php:25
+msgid ""
+"You can use the Image Gallery panel to create image sliders and a photo "
+"gallery."
+msgstr "Du kan bruke bildegalleri til å lage bilde-slideshow og fotogalleri"
+
+#: ../includes/contextual-help.php:26
+msgid ""
+"Add images via the button \"Select or Upload Images\". Hold CTRL on your "
+"keyboard to select multiple images."
+msgstr ""
+
+#: ../includes/contextual-help.php:27
+msgid ""
+"In \"Gallery Settings\", enter the appropriate settings for your gallery."
+msgstr ""
+
+#: ../includes/contextual-help.php:30 ../includes/contextual-help.php:68
+msgid "Read the full documentation on Veuse.com."
+msgstr ""
+
+#: ../includes/contextual-help.php:50
+msgid "Video Panel"
+msgstr ""
+
+#: ../includes/contextual-help.php:62
+msgid ""
+"You can use the Video panel to insert a featured video on your page or post."
+msgstr ""
+
+#: ../includes/contextual-help.php:63
+msgid ""
+"First, select if you want to use a self-hosted video or embed a video from "
+"an external website like Youtube or Vimeo."
+msgstr ""
+
+#: ../includes/contextual-help.php:64
+msgid ""
+"If you want to use a self-hosted video, klick on \"Select or Upload Files\", "
+"and select a video file."
+msgstr ""
+
+#: ../includes/contextual-help.php:65
+msgid ""
+"If you want to embed a video from Youtube or Vimeo, add the url to the video "
+"page in the Embed video input field."
+msgstr ""
+
+#: ../includes/customizer.php:72
+msgid "Media Library"
+msgstr ""
+
+#: ../includes/customizer.php:83
+msgid "Open Library"
+msgstr ""
+
+#: ../includes/customizer.php:110
+msgid "Site layout"
+msgstr "Nettsted layout"
+
+#: ../includes/customizer.php:125
+msgid "Select layout"
+msgstr ""
+
+#: ../includes/customizer.php:146
+msgid "Defalt layout for pages"
+msgstr ""
+
+#: ../includes/customizer.php:168
+msgid "Defalt layout for posts"
+msgstr ""
+
+#: ../includes/customizer.php:182
+msgid "Logo"
+msgstr ""
+
+#: ../includes/customizer.php:198
+msgid "Logo top margin"
+msgstr ""
+
+#: ../includes/customizer.php:215
+msgid "Logo bottom margin"
+msgstr ""
+
+#: ../includes/customizer.php:234
+msgid "Logo Max Width"
+msgstr ""
+
+#: ../includes/customizer.php:314
+msgid "Footer Credits Bottom Left"
+msgstr ""
+
+#: ../includes/customizer.php:331
+msgid "Footer Credits Bottom Right"
+msgstr ""
+
+#: ../includes/customizer.php:342
+msgid "Colors"
+msgstr "Farger"
+
+#: ../includes/customizer.php:361
+msgid "Body background color"
+msgstr ""
+
+#: ../includes/customizer.php:427
+msgid "Footer background color"
+msgstr ""
+
+#: ../includes/customizer.php:449
+msgid "Main theme color"
+msgstr ""
+
+#: ../includes/customizer.php:470
+msgid "Link Color"
+msgstr "Lenke farge"
+
+#: ../includes/customizer.php:491
+msgid "Link color on hover"
+msgstr "Lenke farge når musepeker holdes over"
+
+#: ../includes/sidebar-generator.php:167
+msgid "Create sidebars"
+msgstr ""
+
+#: ../includes/sidebar-generator.php:192
+msgid "Sidebar Generator"
+msgstr "Sidebar generator"
+
+#: ../includes/sidebar-generator.php:195
+msgid ""
+"Here you can create new sidebars. These sidebars will be selectable in the "
+"Sidebars panel in posts and pages"
+msgstr ""
+"Her kan du lage nye sidebarer/widget-områder. Disse sidebar-områdene vil "
+"være mulig å sette inn på sider og innlegg. "
+
+#: ../includes/sidebar-generator.php:198
+msgid "+ Add Sidebar"
+msgstr "+ Ny sidebar"
+
+#: ../includes/sidebar-generator.php:205
+msgid "Sidebars"
+msgstr "Sidebarer"
+
+#: ../includes/sidebar-generator.php:206
+msgid "CSS class"
+msgstr "Css klasse"
+
+#: ../includes/sidebar-generator.php:220
+msgid "Delete sidebar"
+msgstr "Slett sidebar"
+
+#: ../includes/sidebar-generator.php:228
+msgid "No Sidebars created"
+msgstr "Ingen sidebarer laget"
+
+#: ../woocommerce/cart/cart.php:27
+msgid "Product"
+msgstr ""
+
+#: ../woocommerce/cart/cart.php:28
+msgid "Price"
+msgstr ""
+
+#: ../woocommerce/cart/cart.php:29
+msgid "Quantity"
+msgstr "Antall"
+
+#: ../woocommerce/cart/cart.php:30
+msgid "Total"
+msgstr "Sum"
+
+#: ../woocommerce/cart/cart.php:47
+msgid "Remove this item"
+msgstr "Fjern dette elementet"
+
+#: ../woocommerce/cart/cart.php:74
+msgid "Available on backorder"
+msgstr ""
+
+#: ../woocommerce/cart/cart.php:118
+msgid "Coupon"
+msgstr ""
+
+#: ../woocommerce/cart/cart.php:118
+msgid "Coupon code"
+msgstr ""
+
+#: ../woocommerce/cart/cart.php:118
+msgid "Apply Coupon"
+msgstr ""
+
+#: ../woocommerce/cart/cart.php:125
+msgid "Update Cart"
+msgstr ""
+
+#: ../woocommerce/cart/cart.php:125
+msgid "Proceed to Checkout"
+msgstr ""
+
+#: ../woocommerce/checkout/form-checkout.php:20
+#, fuzzy
+msgid "You must be logged in to checkout."
+msgstr "Du må være <a href=\"%s\">logget inn</a> for å kommentere."
+
+#: ../woocommerce/checkout/form-checkout.php:51
+msgid "Your order"
+msgstr ""
+
+#: ../woocommerce/loop/no-products-found.php:14
+msgid "No products were found matching your selection."
+msgstr ""
+
+#: ../woocommerce/loop/orderby.php:22
+msgid "Default sorting"
+msgstr ""
+
+#: ../woocommerce/loop/orderby.php:23
+msgid "Sort by popularity"
+msgstr ""
+
+#: ../woocommerce/loop/orderby.php:24
+msgid "Sort by average rating"
+msgstr ""
+
+#: ../woocommerce/loop/orderby.php:25
+msgid "Sort by newness"
+msgstr ""
+
+#: ../woocommerce/loop/orderby.php:26
+msgid "Sort by price: low to high"
+msgstr ""
+
+#: ../woocommerce/loop/orderby.php:27
+msgid "Sort by price: high to low"
+msgstr ""
+
+#: ../woocommerce/loop/result-count.php:30
+msgid "Showing the single result"
+msgstr ""
+
+#: ../woocommerce/loop/result-count.php:32
+#, php-format
+msgid "Showing all %d results"
+msgstr ""
+
+#: ../woocommerce/loop/sale-flash.php:16
+#: ../woocommerce/single-product/sale-flash.php:16
+msgid "Sale!"
+msgstr ""
+
+#: ../woocommerce/loop/view-details.php:11
+#, fuzzy
+msgid "Details"
+msgstr "Vis detaljer"
+
+#: ../woocommerce/myaccount/my-address.php:17
+msgid "My Addresses"
+msgstr ""
+
+#: ../woocommerce/myaccount/my-address.php:19
+#: ../woocommerce/myaccount/my-address.php:25
+msgid "Billing Address"
+msgstr ""
+
+#: ../woocommerce/myaccount/my-address.php:20
+msgid "Shipping Address"
+msgstr ""
+
+#: ../woocommerce/myaccount/my-address.php:23
+msgid "My Address"
+msgstr ""
+
+#: ../woocommerce/myaccount/my-address.php:35
+msgid "The following addresses will be used on the checkout page by default."
+msgstr ""
+
+#: ../woocommerce/myaccount/my-address.php:63
+msgid "You have not set up this type of address yet."
+msgstr ""
+
+#: ../woocommerce/single-product/meta.php:20
+msgid "SKU:"
+msgstr ""
+
+#: ../woocommerce/single-product/meta.php:20
+msgid "n/a"
+msgstr ""
+
+#: ../woocommerce/single-product/rating.php:23
+#, php-format
+msgid "Rated %s out of 5"
+msgstr ""
+
+#: ../woocommerce/single-product/rating.php:25
+#: ../woocommerce/single-product/review.php:27
+msgid "out of 5"
+msgstr ""
+
+#: ../woocommerce/single-product/related.php:36
+#, fuzzy
+msgid "Related Products"
+msgstr "Relaterte innlegg"
+
+#: ../woocommerce/single-product/review.php:26
+#, php-format
+msgid "Rated %d out of 5"
+msgstr ""
+
+#: ../woocommerce/single-product/review.php:34
+msgid "Your comment is awaiting approval"
+msgstr ""
+
+#: ../woocommerce/single-product/review.php:43
+msgid "verified owner"
+msgstr ""
+
+#: ../woocommerce/single-product/up-sells.php:39
+msgid "You may also like&hellip;"
+msgstr ""
+
+#: ../woocommerce/single-product/add-to-cart/variable.php:25
+#, fuzzy
+msgid "Choose an option"
+msgstr "Overskrift"
+
+#: ../woocommerce/single-product/add-to-cart/variable.php:73
+msgid "Clear selection"
+msgstr ""
+
+#: ../woocommerce/single-product/add-to-cart/variable.php:103
+msgid "This product is currently out of stock and unavailable."
+msgstr ""
+
+#: ../woocommerce/single-product/tabs/additional-information.php:14
+#, fuzzy
+msgid "Additional Information"
+msgstr "Personlig informasjon"
+
+#: ../woocommerce/single-product/tabs/description.php:14
+msgid "Product Description"
+msgstr ""
+
+#~ msgid "Posted on"
+#~ msgstr "Publisert den"
+
+#~ msgid "by"
+#~ msgstr "av"
+
+#~ msgid "Info"
+#~ msgstr "Informasjon"
+
+#~ msgid "How to use"
+#~ msgstr "Instruksjoner"
+
+#~ msgid ""
+#~ "To display the audio on your page or post, set post format to \"Audio\""
+#~ msgstr ""
+#~ "For å presentere lyd på din side eller innlegg, set format til \"Audio\"."
+
+#~ msgid ""
+#~ "To display the video on your page or post, set post format to \"Video\""
+#~ msgstr "For å vise videoen som fremhevet media, sett format til \"Video\""
+
+#~ msgid "Save All Changes"
+#~ msgstr "Lagre  alle endringer"
+
+#~ msgid "Options Reset"
+#~ msgstr "Nullstill innstillinger til originalinnstillinger"
+
+#~ msgid "Full name"
+#~ msgstr "Fullt navn"
+
+#~ msgid "One"
+#~ msgstr "En"
+
+#~ msgid "Two"
+#~ msgstr "To"
+
+#~ msgid "Three"
+#~ msgstr "Tre"
+
+#~ msgid "Four"
+#~ msgstr "Fire"
+
+#~ msgid "Five"
+#~ msgstr "Fem"
+
+#~ msgid "Upload a logo to your site header."
+#~ msgstr "Last opp en logo til din nettsiders \"header\""
+
+#~ msgid "Display Subnavigation As Default"
+#~ msgstr "Vis undermenyer som standard på sider"
+
+#~ msgid "Footer Copyright Notice"
+#~ msgstr "Footer copyright tekst"
+
+#~ msgid "Anchor color"
+#~ msgstr "Lenke farge"
+
+#~ msgid "Change the color for links."
+#~ msgstr "Endre farge for lenker"
+
+#~ msgid "Anchor color on hover"
+#~ msgstr "Lenke farge når musepekeren holdes over"

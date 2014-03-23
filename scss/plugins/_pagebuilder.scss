@@ -1,0 +1,83 @@
+/* Styles for pagebuilder rows */
+
+/* Parallax */
+
+.panel-grid.parallax {
+
+	overflow: visible !important;
+	
+	.panel-row-style {  	
+		background-attachment: fixed !important;
+		background-size: cover !important;
+		position: relative;
+		background-position: center top;
+		
+	}
+}
+
+
+.panel-row-style-fullwidth-grey {
+
+	background: #F6F6F6;
+	zoom:1;
+	margin: 0 -2000px;
+	padding: 30px 2000px 15px;
+	@include clearfix();
+}
+
+.panel-row-style-fullwidth-white {
+	
+	background: #fff;
+	zoom:1;
+	margin: 0 -2000px;
+	padding: 30px 2000px 0px;
+}
+
+.panel-row-style-fullwidth-dark {
+	
+	background: #252525;
+	zoom:1;
+	margin: 0 -2000px;
+	padding: 30px 2000px 0px;
+
+}
+
+
+.panel-grid:first-child {
+	padding-top:0 !important;
+	margin-top: -30px !important;
+	
+ 	.panel-row-style,
+ 	.panel-row-style-fullwidth-grey,
+ 	.panel-row-style-fullwidth-dark,
+ 	.panel-row-style-fullwidth-white {
+ 	
+		position: relative;
+		margin-top:-30px !important;
+		
+	}
+}
+
+.panel-grid:last-child {
+	
+	.panel-row-style-fullwidth-grey,
+	.panel-row-style-fullwidth-dark,
+	.panel-row-style-fullwidth-white {
+	
+		position: relative;
+		margin-top:0 !important;
+		bottom: -30px !important; 
+	}
+}
+
+.panel-row-style-edge {
+	
+	position: relative;
+	margin: -30px -2000px 0 !important;
+	padding:0px;
+	> .panel-grid-cell { margin:0 auto; padding: 0; 
+	  .row { max-width:1140px; margin: 0 auto;}  	  
+	}
+}
+
+

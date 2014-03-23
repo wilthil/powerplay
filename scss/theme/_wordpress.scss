@@ -1,0 +1,66 @@
+/* Required Wordpress classes
+========================================= */
+
+.gallery-caption {opacity: 1;}
+.sticky{ display:block;}
+.bypostauthor{ display: block;}
+
+.alignleft {
+	float:left;
+	margin:0 20px 20px 0;
+	}
+
+.alignright {
+	float:right;
+	margin:0 0 20px 20px;
+	}
+
+
+.aligncenter,
+img.aligncenter {
+	clear:both;
+	display: block;
+	margin-left:auto;
+	margin-right: auto;
+	margin-bottom:0;
+	}
+
+.alignleft-nomarginbottom {
+	float:left;
+	margin:0 20px 0 0 !important
+	}
+
+.alignright-nomarginbottom {
+	float:right; margin:0 0 0 20px !important
+	}
+
+.baseline-right {
+	float:right;
+	vertical-align:baseline;
+	display:block;
+	margin-left:20px;
+	}
+
+.wp-caption {
+
+	line-height: 1.3em;
+	margin-bottom: 20px;
+	width: auto !important;
+	text-align: center;
+	background: #fafafa;
+	padding:20px;
+	border: 1px solid #eee;
+	border-bottom-color: #ddd;
+	}
+
+.wp-caption img {
+	margin:0 0 10px;
+	display: inline;
+
+	}
+
+.wp-caption p.wp-caption-text {
+	color: #555;
+	margin:0;
+
+	}

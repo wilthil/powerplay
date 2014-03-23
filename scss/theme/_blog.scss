@@ -1,0 +1,218 @@
+/* Styles for blog */
+
+/* Globals */
+
+ul.entry-meta {
+	margin:0 0 10px;
+	padding: 10px 0;
+	list-style: none;
+	//border-top:1px solid #e4e4e4;
+	//border-bottom: 1px solid #e4e4e4;
+	
+	> li {
+		padding:0;
+		margin:0 20px 0 0;
+		display: inline;
+		color:$body-font-color;
+		font-size: 11px;
+		text-transform: uppercase;
+		
+		&.more-link { float: right; margin-right: 0;
+			
+			a { color:$anchor-font-color;	}
+		}
+		
+		a { 
+			font-size: 11px;
+			display: inline; 
+			font-weight: normal;
+			color:$body-font-color;
+			&:hover { text-decoration: underline;}
+		}
+		
+		//i { height: 28px;  display: inline-block; margin:0; line-height: 27px; margin-right:6px;	}
+		/*
+		&:after {
+			
+			content:'/';
+			margin:0 0 0 5px;
+			color:#ddd;
+		}
+		*/
+		
+		&:last-child:after { content:'';}	
+	}
+}
+ul.post-categories {
+	
+	margin:0;
+	padding:0;
+	list-style: none;
+	display:inline;
+	
+	li { display: inline;}
+	
+}
+
+
+
+/* Single blog posts */
+
+/* Related posts */
+
+.related-posts {
+	
+	margin: 10px 0 30px;
+	padding: 0;
+	list-style: none;
+	
+	li {
+		
+		@include clearfix();
+		display: block;
+		border-bottom: 1px dotted #d4d4d4;
+		margin-bottom: 10px;
+		padding-bottom: 9px;
+		
+		
+		.entry-thumbnail { 
+			float: left;
+			width:10%;
+			min-height: 48px;
+			display: block;
+			background: #f0f0f0;
+		}
+		
+		.entry-data {
+			display: block;
+			padding:0 30px;
+			float: left;
+			width: 90%;
+			
+			.entry-date { display: block; line-height: 1; color:#aaa; font-size: 12px;}
+		}
+		
+	}
+	
+	
+}
+
+/* Blog loop */
+
+
+.post-list {
+	
+	article {
+	
+		margin:0 0 30px;
+		padding:0 0 0px;
+	
+		//.entry-media { margin-bottom: 0;}
+		}
+		.entry-content { 
+			@include clearfix();
+			//background: #fff;
+			padding:0px 0px 30px;
+			margin:0;
+			//@include box-shadow(0 1px 3px rgba(0,0,0,0.05));
+			//border-bottom: 1px solid rgba(0,0,0,0.15);
+			
+		
+	}	
+	
+	.entry-date {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		line-height: 1;
+		margin-top: 0px;
+		
+
+				
+		li { text-align: center; width: 40px;}
+		li.day { 
+			
+			 
+			background: #fafafa;
+			@include gradient(#fafafa, #fcfcfc); 
+			border:1px solid #e7e7e7;
+			@include border-radius(3px);
+			margin-bottom: 8px;
+			position: relative;
+			@include box-shadow(inset 0 -1px 0 #fff, inset 0 -2px 0 #e1e1e1);
+			
+			span {
+				font-size: 21px;
+				border-top:1px solid #fff;
+				position: relative;
+				z-index: 1;
+				min-height:40px; 
+				line-height: 40px; 
+				color:#181818;
+				display: block;
+				font-weight: bold;
+				
+			}
+			
+			&:before {
+				
+				content: '';
+				position: absolute;
+				height: 1px;
+				width: 100%;
+				top:50%;
+				left:0;
+				border-top:1px solid #e7e7e7;
+				border-bottom:1px solid #fff;
+				z-index: 0;
+				margin-top: -1px;
+			
+				
+			}
+			
+		 }
+		li.month {
+			
+			font-size: 11px;
+			text-transform:uppercase;
+			
+			
+			
+		}
+		li.year {}
+		
+	}
+}
+
+
+
+
+/* Salvattore grids (Masjonry effect) */
+
+#grid { 
+	margin:0 -15px; 
+	display: block;
+	clear: both;
+		
+}
+
+.salvattore-column { padding:0 15px;}
+#grid[data-columns-3]::before {
+	content: '3 .salvattore-column.size-1of3';
+}
+
+/* These are the classes that are going to be applied: */
+.salvattore-column { float: left; }
+.size-1of3 { width: 33.333%; }
+
+#grid[data-columns-2]::before {
+	content: '2 .salvattore-column.size-1of2';
+}
+
+/* These are the classes that are going to be applied: */
+.salvattore-column { float: left; }
+.size-1of2 { width: 50%; }
+
+
+/* Also, don't forget to add this: */
+[data-columns]::before { display: none; }

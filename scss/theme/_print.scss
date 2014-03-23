@@ -1,0 +1,11 @@
+/* Styles for print 
+==================================== */
+
+@media only print{
+	
+	#header, 
+	#footer,
+	#comments,
+	.breadcrumbs { display: none;}
+	
+}

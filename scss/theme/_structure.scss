@@ -1,0 +1,97 @@
+/* Structural elements */
+
+/* Site structure */
+
+/* Add mixins for adding correct columns for content and sidebar based on template */
+
+$content-grid-size: 9;
+$sidebar-grid-size: 3;
+$subnav-grid-size: 2;
+
+/* On medium screen resolutions */
+	
+	@media #{$large-up}{
+		
+		
+		/* Default */
+		#post-content {
+			@include grid-column($content-grid-size, $float: left);
+		}
+		
+		
+		
+		.blog #post-content {
+			@include grid-column($content-grid-size, $float: left);
+		}
+		
+		
+		
+		/* Pages with sidebar on left */
+		
+		.sidebar-left #post-content {
+			@include grid-column($content-grid-size, $float: right);
+			border-left:1px solid darken(#fff,5%);
+			
+		}
+		
+				
+		/* Pages with sidebar on right */
+		
+		.sidebar-right #post-content {
+			@include grid-column($content-grid-size, $float: left);
+			border-right:1px solid darken(#fff,5%);
+		}
+		
+		
+		
+		
+		#sidebar {
+			@include grid-column($sidebar-grid-size, $float: left );
+			
+			
+			//padding-right:30px !important;
+		}
+
+		.sidebar-right #sidebar { border-left:1px solid darken(#fff,5%); left:-1px !important; position: relative;  }
+		.sidebar-left #sidebar { border-right:1px solid darken(#fff,5%); right:-1px !important; position: relative; }
+		
+		.single-product,
+		.error404,
+		.fullwidth,
+		.page-template-template-portfolio-php {
+			
+			#post-content { @include grid-column(12, $float: false); 
+				
+				
+				 border-left:none !important;
+				 border-right:none !important;
+			}
+		}
+
+	}
+
+	/* On medium screens and smaller */
+	@media #{$medium-down}{
+
+		/* Main content wrapper on pages with sidebar */
+		#post-content {
+			@include grid-column(12, $float: false);
+		}
+		/* Sidebar */
+		#sidebar {
+			@include grid-column(12, $float: false);
+		}
+		
+		#post-inner {
+			@include grid-column(12,  $float: left);
+		}
+		
+		#subnav {
+			
+			@include grid-column(12,  $float: right);
+			
+		}
+
+
+	}
+

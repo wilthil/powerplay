@@ -1,0 +1,458 @@
+/* ----------------------------------------------------------
+
+	Global theme styles */
+
+/* ---------------------------------------------------------- */
+
+body,html { background-color: $body-bg; min-height: 100%; }
+
+/* Wrapping div */
+
+#wrapper { 
+	
+	overflow: hidden; 
+	@include clearfix(); 
+	padding-top: $header-height; 
+	position: relative; 
+	background: #f7f7f7;
+	
+	}
+
+.boxed-layout {
+	
+	#wrapper {
+		
+		width:100%;
+		max-width: $row-width + emCalc(40px);
+		margin:0 auto;
+	}
+	
+}
+
+
+/* Page title
+============================================ */
+
+#page-title-wrapper {
+  		
+	background:  rgba(255,255,255, 0.3) url('../images/diagonal-lines.png');
+	@include clearfix();
+	margin-bottom:0px;
+	border-bottom: 1px solid #e7e7e7;
+	//@include box-shadow(inset 0 -1px 3px rgba(0,0,0,0.05));
+	padding-top:25px; 
+	padding-bottom:23px;
+	
+	h1#page-title {
+	
+	  	display: block;
+	  	//text-transform: uppercase;
+	  	margin: 0;
+	  	padding:0;
+	  	line-height: 1.4em; 
+	  	font-size: 21px; 
+	  	position: relative;
+  	
+  		> i { 
+		
+			margin:-3px 10px -4px 0; 
+			display: inline-block; 
+			width:25px; 
+			height: 25px; 
+			line-height: 26px; 
+			background: $primary-color; 
+			color:#fff;
+			font-size: 14px; 
+			text-align: center;
+			position: relative; top:-2px;
+			@include border-radius(1px);
+				  			
+		}
+
+    			
+		h3#post-excerpt {
+
+		  	font-weight: 300 !important;
+		  	margin:0px 0 10px !important;
+		  	text-shadow: 1px 1px 0 rgba(#fff, .7);
+		  	line-height: 1.2em;
+	  	
+	  	}
+	  	
+	}
+}
+
+
+	 
+
+/* Page content */
+
+#content { 
+  	
+  	
+  	padding:0;
+  	margin:0;
+  	
+   	
+  	@media #{$medium-down}{
+	  		
+	  		h1#page-title  { 
+	  			
+	  			margin-bottom:10px; 
+	  			text-align: center;
+	  			
+		  		
+		  		span { display:block !important;  float:none; font-size: 24px; margin-top: 10px; clear: both; text-align:center;}
+		  		i { display: inline-block !important; float: none; clear: both;  text-align: center; margin: 0;}
+		  		
+	  		}
+	  	
+	  		h3#post-excerpt  { text-align: center; }
+	  		
+	  		
+	  	
+  	}
+  	
+  	#post-content {
+  		padding-top: 30px;
+  		padding-bottom: 30px;
+  		margin-bottom:0px;  
+  		
+  					  
+  	}
+  	
+  	#sidebar { padding-top:30px;}
+  	
+  	.entry-media { margin-bottom: 20px;}
+  	.entry-thumbnail { margin-bottom: 20px;}
+}
+
+
+/* Previos post / next post links */
+
+a[rel=prev], a[rel=next] { 	
+			
+	display: inline-block; 
+	margin:-4px 2px 0; 
+	padding:0px;
+  	text-transform: uppercase;
+  	font-weight: 400;
+  	text-align: center;
+  	
+  	i { 
+  		background: $primary-color;
+  		color:#fff; 
+  		line-height: 24px; 
+  		display: inline-block;  
+  		height: 25px; 
+  		width:25px;  
+		margin:0; 
+		text-align: center;
+		@include border-radius(1px);
+	}
+		  	
+		 
+}
+	  		  	
+	  	
+#post-content {
+  	
+  	a[rel=prev], a[rel=next] {
+	  	padding:0px 15px;
+	  	width:auto;
+	  	background: $primary-color;
+	  	color: #fff;
+	  	font-size: 12px;
+	  	line-height: 36px;
+	  	@include border-radius(2px);
+	  	
+	  	i { color:#fff; background: none; line-height: 36px; height:36px; margin:0;}
+	  	
+	  	&:hover {
+	  	
+	  		background: $primary-color;
+	  		color: #fff;
+	  	
+	  			i { color:#fff;}
+	  		}
+  	}
+  	
+  	a[rel=prev] { padding-left:4px;}
+  	a[rel=next] { padding-right:4px;} 
+  	  	
+}
+
+
+/* 
+
+	Forms 
+	
+	Overrides foundation form styles 
+   
+*/
+
+input[type=text],
+input[type=email],
+input[type=number],
+textarea {
+	
+	@include border-radius(2px);
+}
+
+input[type=submit],
+input[type=reset],
+input[type=button] { 
+	
+	text-transform: uppercase;
+	font-size: 12px;
+	background: $primary-color;
+	border:none;
+	padding:0 20px; 
+	line-height: 30px;
+	@include border-radius(2px);
+	color:#fff;
+	font-weight: 600;
+	
+	&:hover {background: darken($primary-color, 10%);}
+	
+	&.postfix { padding:0 20px;}
+}
+
+textarea { min-height: 100px;}
+
+.button,
+.veuse-button { @include border-radius(2px); margin-right: 4px; }
+
+table .button,
+table .veuse-button { margin-bottom: 0;}
+
+
+
+/* Breadcrumbs */
+
+.breadcrumb-wrapper {
+	
+	text-align: center; margin:0 0 0px;
+  	  	  	
+	ul.breadcrumbs { 
+		
+		display: inline-block; 
+		float: none; 
+		
+		margin:-2px 0 10px; padding:0;
+		  	
+	  	li { 
+	  		overflow: visible;
+	  		display: inline-block;
+	  		font-size: 12px;
+	  	
+	  		&:after {
+		  		
+		  		content:'›';
+		  		margin: 0 4px;
+	  		}
+	  	
+	  		&:last-child {
+	  			
+	  			&:after { content:'';}
+	  			a { color: $body-font-color;}
+	  		}	
+	  	}
+	}
+}
+
+@media #{$large-up} {
+	
+	.breadcrumb-wrapper {
+		
+		text-align: right;
+	  	top:7px;
+	  	 
+	  	
+	  	.breadcrumbs {
+		  	
+		  	margin:0; 
+		  	padding:0;
+		  	
+	  	}
+		
+	}
+}
+
+/* Responsive video */
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; 
+    height: 0; 
+    overflow: hidden;
+ 
+	iframe,
+	object,
+	embed {
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+	    
+	}
+
+}
+
+/* Pagination */
+
+#pager {
+	
+	clear: both;
+	
+	span, a { 
+	
+		display: inline-block; 
+		text-align: center; 
+		width:28px; 
+		height: 28px; 
+		line-height: 28px; 
+		background: #f4f4f4; 
+		color: $body-font-color;
+		font-size: 12px;
+		margin:0;
+		
+		.fa { font-size: 14px;}
+		
+		
+		&.current, &:hover { background: $primary-color; color: #fff;}
+	}
+	
+}
+
+/* Tooltips */
+
+/*
+Tipr drop 1.0
+Copyright (c) 2013 Tipue
+Tipr is released under the MIT License
+http://www.tipue.com/tipr
+*/
+
+
+.tipr_content
+{
+     box-sizing: padding-box;
+     color: #fff; 
+     background-color: #484848;
+     border:none;
+     padding: 6px 12px;
+     @include border-radius(2px);
+     min-width: 160px;
+     max-width: 400px;
+     text-align: center;
+     font-size: 12px;
+}
+.tipr_container_bottom
+{
+     display: none;
+     position: absolute;
+     margin-top: 13px;
+     z-index: 1000;
+}
+.tipr_container_top
+{
+     display: none;
+     position: absolute;
+     bottom: 40px;
+     z-index: 1000;
+}
+.tipr_point_top, .tipr_point_bottom 
+{
+    position: relative;
+	background: #484848;
+	
+}
+.tipr_point_top:after, .tipr_point_top:before
+{
+	position: absolute;
+	pointer-events: none;
+	border: solid transparent;
+	top: 100%;
+	content: "";
+	height: 0;
+	width: 0;
+}
+.tipr_point_top:after
+{
+	border-top-color: #484848;
+	border-width: 5px;
+	left: 50%;
+	margin-left: -5px;
+}
+.tipr_point_top:before 
+{
+
+	border-width: 5px;
+	left: 50%;
+	margin-left: -5px;
+}
+.tipr_point_bottom:after, .tipr_point_bottom:before
+{
+	position: absolute;
+	pointer-events: none;
+	border: solid transparent;
+	bottom: 100%;
+	content: "";
+	height: 0;
+	width: 0;
+}
+.tipr_point_bottom:after
+{
+	border-bottom-color: #484848;
+	border-width: 5px;
+	left: 50%;
+	margin-left: -5px;
+}
+.tipr_point_bottom:before 
+{
+	border-bottom-color: #484848;
+	border-width: 5px;
+	left: 50%;
+	margin-left: -5px;
+}
+
+/* Misc */
+
+abbr.required {
+	
+	text-decoration: none;
+	border:none;
+	cursor: inherit;
+	color:$primary-color;
+	
+}
+.veuse-callout {
+	outline:none !important;
+	h3 { line-height: 1.5em; margin-top: 10px;}
+}
+
+
+.if-not-logged-in { display: inline-block;}
+.if-logged-in { display: none;}
+
+.logged-in {
+	.if-not-logged-in { display: none;}
+	.if-logged-in { display: inline-block;}
+}
+
+
+/* Hides page elements. Faded in by jQuery */
+@media only screen{
+	.js {
+	
+		#post-title-wrapper h3,
+		#post-content > .entry-content { opacity: 0.1; }
+		
+		#post-content .entry-content .panel,
+		#post-content .entry-content > ul,
+		#post-content > article { opacity: 0.1; }
+	}
+}

@@ -1,0 +1,137 @@
+#sidebar .widget {
+	
+	margin-bottom: 30px;
+}
+
+.widget {
+		  	 
+
+	//p:last-child { margin-bottom: 0;}
+			  	
+	.widget-title { 
+	
+		font-size: 16px; 
+		padding-bottom: 10px; 
+		border-bottom: 2px solid $secondary-color; 
+		font-weight: 600; 
+		position: relative;
+		margin-bottom: 20px;
+		
+			 
+		&:after { 
+				 
+			position: absolute;
+			bottom:-2px;
+			border-bottom:2px solid $primary-color;
+			width:30px;
+			content:'';
+			left:0;
+		}
+		
+	} 
+			 
+			 
+	/* Lists in widgets - default styles */
+			 
+	ul {
+		  	
+		list-style: none;
+		margin:0;
+		padding:0;
+				  	
+	  	li {
+	  	  		/*
+	  		padding-left:20px;
+		  	
+		  	&:before {
+							
+				font-family: 'FontAwesome';
+				content: "\f0da";
+				margin:-1px 6px 0 -20px;
+			}	
+		  	*/
+		  	
+		  	
+		  	a { color:lighten($body-font-color,10%);
+			  	
+			  	
+			  	&:hover { color:$anchor-font-color;}
+		  	}
+		  	
+		  	ul {
+			  	
+			  	margin:0 0 0 10px;
+			  	
+			  	li {
+				  	
+				  	
+				  	font-size: 90%;
+				  	
+				  	a { 
+				  						  	
+				  		color: lighten($body-font-color, 30%);  
+						padding-left:0px;  
+							  	
+				  	}
+			  	}	
+		  	}
+	  	}	  	
+  	}
+  	
+  	&.widget_veuse_slider_widget{ padding-bottom: 30px !important;}
+
+  	&.widget_meta,
+  	&.widget_categories,
+  	&.widget_recent-posts,
+  	&.widget_recent-comments,
+  	&.widget_rss,
+  	&.widget_archives,
+  	&.widget_nav_menu {
+		 
+		 ul {
+			 
+			 li {
+			 	margin:0 0 2px; 
+			 	line-height: 1.3em;
+			  }
+		 }
+	 }
+	 
+	 &.widget_meta {
+		 
+		 ul {
+			 
+			 li {
+			 	margin:0 0 4px; 
+			  }
+		 }
+	 }
+			 
+	 &.widget_calendar {
+		 
+		 table { border:0; background: #fff; width:100%; border-spacing:1px !important;   border-collapse:collapse;
+			 caption { margin: 4px 0 8px; text-align: left; font-weight: bold;}
+			 thead, tfoot, tr,td,th { background: transparent;}
+			 th,td { padding:4px;}
+			 
+			 thead {
+				 background: transparent !important;
+				 th { text-align: center;} 
+			 }
+			 
+			 
+			 tbody {
+			 	td { background: #fff !important; text-align: center;}
+			 	}
+			 
+			 tfoot {
+				 background: transparent !important;
+				 #prev {text-align: left; padding:2px 4px; font-weight: normal;}
+				 #next {text-align: right; padding:2px 4px; font-weight: normal;}
+				 
+			 }
+		 }
+	 }
+
+ 	  	
+}

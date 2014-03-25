@@ -22,12 +22,12 @@ function veuse_gallery_add_help_tab($prefix) {
 function veuse_gallery_add_help_tab_content(){
 	?>
 	<p>
-	<?php _e('You can use the Image Gallery panel to create image sliders and a photo gallery.', 'veuse'); ?>
+	<?php _e('You can use the Image Gallery panel to create image sliders or an image gallery.', 'veuse'); ?>
 	<?php _e('Add images via the button "Select or Upload Images". Hold CTRL on your keyboard to select multiple images.', 'veuse'); ?>
 	<?php _e('In "Gallery Settings", enter the appropriate settings for your gallery.', 'veuse'); ?>
 	</p>
 	<p>
-		<?php printf( __( "Read the full documentation on Veuse.com.", 'so-panels' ), 'http://veuse.com/documentation/' ); ?>
+		<?php printf( __( "Read the full documentation on veuse.com.", 'veuse' ), 'http://veuse.com/documentation/' ); ?>
 	</p>
 	<?php
 }

@@ -1,75 +1,21 @@
 <?php
 
-/**
-	ReduxFramework Sample Config File
-	For full documentation, please visit http://reduxframework.com/docs/
-**/
-
-
-
-/*
- *
- * Custom function for filtering the sections array. Good for child themes to override or add to the sections.
- * Simply include this function in the child themes functions.php file.
- *
- * NOTE: the defined constansts for URLs, and directories will NOT be available at this point in a child theme,
- * so you must use get_template_directory_uri() if you want to use any of the built in icons
- *
- */
-function add_another_section($sections){
-    //$sections = array();
-    $sections[] = array(
-        'title' => __('A Section added by hook', 'veuse'),
-        'desc' => __('<p class="description">This is a section created by adding a filter to the sections array. Can be used by child themes to add/remove sections from the options.</p>', 'veuse'),
-		'icon' => 'paper-clip',
-		'icon_class' => 'icon-large',
-        // Leave this as a blank section, no options just some intro text set above.
-        'fields' => array()
-    );
-
-    return $sections;
-}
-add_filter('redux-opts-sections-redux-sample', 'add_another_section');
-
-
-/*
- * 
- * Custom function for filtering the args array given by a theme, good for child themes to override or add to the args array.
- *
- */
-function change_framework_args($args){
-    //$args['dev_mode'] = false;
-    
-    return $args;
-}
-//add_filter('redux-opts-args-redux-sample-file', 'change_framework_args');
-
-
-/*
- *
- * Most of your editing will be done in this section.
- *
- * Here you can override default values, uncomment args and change their values.
- * No $args are required, but they can be over ridden if needed.
- *
- */
 function setup_framework_options(){
     $args = array();
 
-
     // For use with a tab below
-		$tabs = array();
+	$tabs = array();
 
-		ob_start();
+	ob_start();
 
-		$ct = wp_get_theme();
-        $theme_data = $ct;
-        $item_name = $theme_data->get('Name'); 
-		$tags = $ct->Tags;
-		$screenshot = $ct->get_screenshot();
-		$class = $screenshot ? 'has-screenshot' : '';
+	$ct = wp_get_theme();
+    $theme_data = $ct;
+    $item_name = $theme_data->get('Name'); 
+	$tags = $ct->Tags;
+	$screenshot = $ct->get_screenshot();
+	$class = $screenshot ? 'has-screenshot' : '';
 
-		$customize_title = sprintf( __( 'Customize &#8220;%s&#8221;' ), $ct->display('Name') );
+	$customize_title = sprintf( __( 'Customize &#8220;%s&#8221;','veuse' ), $ct->display('Name') );
 
 		?>
 		<div id="current-theme" class="<?php echo esc_attr( $class ); ?>">
@@ -173,6 +119,7 @@ function setup_framework_options(){
     //$args['admin_stylesheet'] = 'standard';
 
     // Setup custom links in the footer for share icons
+    /*
     $args['share_icons']['twitter'] = array(
         'link' => 'http://twitter.com/andreaswilthil',
         'title' => 'Follow me on Twitter', 
@@ -183,7 +130,7 @@ function setup_framework_options(){
         'title' => 'Find me on LinkedIn', 
         'img' => ReduxFramework::$_url . 'assets/img/social/LinkedIn.png'
     );
-
+	*/
     // Enable the import/export feature.
     // Default: true
     //$args['show_import_export'] = false;
@@ -241,13 +188,14 @@ function setup_framework_options(){
 	// Set the icon type. Set to "iconfont" for Font Awesome, or "image" for traditional.
 	// Redux no longer ships with standard icons!
 	// Default: iconfont
-	//$args['icon_type'] = 'image';
+	$args['icon_type'] = 'iconfont';
 
     // Disable the panel sections showing as submenu items.
     // Default: true
     //$args['allow_sub_menu'] = false;
         
     // Set ANY custom page help tabs, displayed using the new help tab API. Tabs are shown in order of definition.
+    /*
     $args['help_tabs'][] = array(
         'id' => 'redux-opts-1',
         'title' => __('Theme Information 1', 'veuse'),
@@ -258,14 +206,16 @@ function setup_framework_options(){
         'title' => __('Theme Information 2', 'veuse'),
         'content' => __('<p>This is the tab content, HTML is allowed.</p>', 'veuse')
     );
+    
+    */
 
     // Set the help sidebar for the options page.                                        
-    $args['help_sidebar'] = __('<p>This is the sidebar content, HTML is allowed.</p>', 'veuse');
+    //$args['help_sidebar'] = __('<p>This is the sidebar content, HTML is allowed.</p>', 'veuse');
 
 
    
     // Add content after the form.
-    $args['footer_text'] = __('<p>This text is displayed below the options panel. It isn\'t required, but more info is always better! The footer_text field accepts all HTML.</p>', 'veuse');
+   // $args['footer_text'] = __('<p>This text is displayed below the options panel. It isn\'t required, but more info is always better! The footer_text field accepts all HTML.</p>', 'veuse');
 
     // Set footer/credit line.
     //$args['footer_credit'] = __('<p>This text is displayed in the options panel footer across from the WordPress version (where it normally says \'Thank you for creating with WordPress\'). This field accepts all HTML.</p>', 'veuse');
@@ -335,8 +285,8 @@ function setup_framework_options(){
 			'url'=> true,
 			'title' => __('Site Logo', 'veuse'),
 			'compiler' => 'true',
-			'desc'=> __('Basic media uploader with disabled URL input field.', 'veuse'),
-			'subtitle' => __('Upload any media using the WordPress native uploader', 'veuse'),
+			'desc'=> __('', 'veuse'),
+			'subtitle' => __('Select or upload logo', 'veuse'),
 			),
 			
 			array(
@@ -395,6 +345,20 @@ function setup_framework_options(){
 			//'subtitle' => __('Upload any media using the WordPress native uploader', 'veuse'),
 			),
 			
+			array(
+				'id'=>'menu_layout',
+				'type' => 'select',
+				'compiler'=>true,
+				'title' => __('Menu Layout', 'veuse'), 
+				'subtitle' => __('', 'veuse'),
+				'options' => array(
+						'regular' => 'Regular menu',
+						'mobile' => 'Collapsed menu'
+					),
+				'default' => 'regular-layout'
+				),
+
+			
 						
 			array(
 				'id'=>'site_layout',
@@ -408,6 +372,7 @@ function setup_framework_options(){
 					),
 				'default' => 'fullwidth-layout'
 				),
+
 			
 			
 			
@@ -703,6 +668,7 @@ function setup_framework_options(){
 				)
 			),
 			
+			/*
 			array(
 				'id'=>'header-border',
 				'type' => 'border',
@@ -712,6 +678,7 @@ function setup_framework_options(){
 				'desc' => __('This is the description field, again good for additional info.', 'veuse'),
 				'default' => array('color' => '#1e73be', 'style' => 'solid', 'width'=>'3')
 				),
+			*/
 			/*	
 			array(
 				'id'=>'spacing',
@@ -747,7 +714,7 @@ function setup_framework_options(){
 			array(
 				'id'=>'typography_h1',
 				'type' => 'typography', 
-				'title' => __('Typography for H1 (Header 1)', 'veuse'),
+				'title' => __('Header 1', 'veuse'),
 				//'compiler'=>true, // Use if you want to hook in your own CSS compiler
 				'google'=>true, // Disable google fonts. Won't work if you haven't defined your google api key
 				'font-backup'=>true, // Select a backup non-google font in addition to a google font
@@ -761,7 +728,7 @@ function setup_framework_options(){
 				//'preview'=>false, // Disable the previewer
 				'output' => array('h1'), // An array of CSS selectors to apply this font style to dynamically
 				'units'=>'px', // Defaults to px
-				//'subtitle'=> __('Typography option with each property can be called individually.', 'veuse'),
+				'subtitle'=> __('', 'veuse'),
 				'default'=> array(
 					'color'=>"", 
 					'font-style'=>'700', 
@@ -773,7 +740,7 @@ function setup_framework_options(){
 			array(
 				'id'=>'typography_h2',
 				'type' => 'typography', 
-				'title' => __('Typography for H2  (Header 2)', 'veuse'),
+				'title' => __('Header 2', 'veuse'),
 				//'compiler'=>true, // Use if you want to hook in your own CSS compiler
 				'google'=>true, // Disable google fonts. Won't work if you haven't defined your google api key
 				'font-backup'=>true, // Select a backup non-google font in addition to a google font
@@ -787,7 +754,7 @@ function setup_framework_options(){
 				//'preview'=>false, // Disable the previewer
 				'output' => array('h2'), // An array of CSS selectors to apply this font style to dynamically
 				'units'=>'px', // Defaults to px
-				'subtitle'=> __('Typography option with each property can be called individually.', 'veuse'),
+				'subtitle'=> __('', 'veuse'),
 				'default'=> array(
 					'color'=>"", 
 					'font-style'=>'700', 
@@ -800,7 +767,7 @@ function setup_framework_options(){
 			array(
 				'id'=>'typography_h3',
 				'type' => 'typography', 
-				'title' => __('Typography for H3  (Header 3)', 'veuse'),
+				'title' => __('Header 3', 'veuse'),
 				//'compiler'=>true, // Use if you want to hook in your own CSS compiler
 				'google'=>true, // Disable google fonts. Won't work if you haven't defined your google api key
 				'font-backup'=>true, // Select a backup non-google font in addition to a google font
@@ -814,7 +781,7 @@ function setup_framework_options(){
 				//'preview'=>false, // Disable the previewer
 				'output' => array('h3'), // An array of CSS selectors to apply this font style to dynamically
 				'units'=>'px', // Defaults to px
-				'subtitle'=> __('Typography option with each property can be called individually.', 'veuse'),
+				'subtitle'=> __('', 'veuse'),
 				'default'=> array(
 					'color'=>"", 
 					'font-style'=>'700', 
@@ -828,7 +795,7 @@ function setup_framework_options(){
 			array(
 				'id'=>'typography_h4',
 				'type' => 'typography', 
-				'title' => __('Typography for H4  (Header 4)', 'veuse'),
+				'title' => __('Header 4', 'veuse'),
 				//'compiler'=>true, // Use if you want to hook in your own CSS compiler
 				'google'=>true, // Disable google fonts. Won't work if you haven't defined your google api key
 				'font-backup'=>true, // Select a backup non-google font in addition to a google font
@@ -842,7 +809,7 @@ function setup_framework_options(){
 				//'preview'=>false, // Disable the previewer
 				'output' => array('h4'), // An array of CSS selectors to apply this font style to dynamically
 				'units'=>'px', // Defaults to px
-				'subtitle'=> __('Typography option with each property can be called individually.', 'veuse'),
+				'subtitle'=> __('', 'veuse'),
 				'default'=> array(
 					'color'=>"", 
 					'font-style'=>'700', 
@@ -855,7 +822,7 @@ function setup_framework_options(){
 			array(
 				'id'=>'typography_h5',
 				'type' => 'typography', 
-				'title' => __('Typography for H5  (Header 5)', 'veuse'),
+				'title' => __('Header 5', 'veuse'),
 				//'compiler'=>true, // Use if you want to hook in your own CSS compiler
 				'google'=>true, // Disable google fonts. Won't work if you haven't defined your google api key
 				'font-backup'=>true, // Select a backup non-google font in addition to a google font
@@ -869,7 +836,7 @@ function setup_framework_options(){
 				//'preview'=>false, // Disable the previewer
 				'output' => array('h5'), // An array of CSS selectors to apply this font style to dynamically
 				'units'=>'px', // Defaults to px
-				'subtitle'=> __('Typography option with each property can be called individually.', 'veuse'),
+				'subtitle'=> __('', 'veuse'),
 				'default'=> array(
 					'color'=>"", 
 					'font-style'=>'700', 
@@ -882,7 +849,7 @@ function setup_framework_options(){
 			array(
 				'id'=>'typography_h6',
 				'type' => 'typography', 
-				'title' => __('Typography for h6  (Header 6)', 'veuse'),
+				'title' => __('Header 6', 'veuse'),
 				//'compiler'=>true, // Use if you want to hook in your own CSS compiler
 				'google'=>true, // Disable google fonts. Won't work if you haven't defined your google api key
 				'font-backup'=>true, // Select a backup non-google font in addition to a google font
@@ -896,7 +863,7 @@ function setup_framework_options(){
 				//'preview'=>false, // Disable the previewer
 				'output' => array('h6'), // An array of CSS selectors to apply this font style to dynamically
 				'units'=>'px', // Defaults to px
-				'subtitle'=> __('Typography option with each property can be called individually.', 'veuse'),
+				'subtitle'=> __('', 'veuse'),
 				'default'=> array(
 					'color'=>"", 
 					'font-style'=>'400', 
@@ -909,7 +876,7 @@ function setup_framework_options(){
 			array(
 				'id'=>'typography_body',
 				'type' => 'typography', 
-				'title' => __('Typography for body and paragraph', 'veuse'),
+				'title' => __('Body and paragraph', 'veuse'),
 				//'compiler'=>true, // Use if you want to hook in your own CSS compiler
 				'google'=>true, // Disable google fonts. Won't work if you haven't defined your google api key
 				'font-backup'=>true, // Select a backup non-google font in addition to a google font
@@ -923,7 +890,7 @@ function setup_framework_options(){
 				//'preview'=>false, // Disable the previewer
 				'output' => array('body,p'), // An array of CSS selectors to apply this font style to dynamically
 				'units'=>'px', // Defaults to px
-				'subtitle'=> __('Typography option with each property can be called individually.', 'veuse'),
+				'subtitle'=> __('', 'veuse'),
 				'default'=> array(
 					'color'=>"", 
 					'font-style'=>'300', 
@@ -944,19 +911,19 @@ function setup_framework_options(){
 	$tabs = array();
 
 	if (function_exists('wp_get_theme')){
-	$theme_data = wp_get_theme();
-	$theme_uri = $theme_data->get('ThemeURI');
-	$description = $theme_data->get('Description');
-	$author = $theme_data->get('Author');
-	$version = $theme_data->get('Version');
-	$tags = $theme_data->get('Tags');
-	}else{
-	$theme_data = get_theme_data(trailingslashit(get_stylesheet_directory()).'style.css');
-	$theme_uri = $theme_data['URI'];
-	$description = $theme_data['Description'];
-	$author = $theme_data['Author'];
-	$version = $theme_data['Version'];
-	$tags = $theme_data['Tags'];
+		$theme_data = wp_get_theme();
+		$theme_uri = $theme_data->get('ThemeURI');
+		$description = $theme_data->get('Description');
+		$author = $theme_data->get('Author');
+		$version = $theme_data->get('Version');
+		$tags = $theme_data->get('Tags');
+		}else{
+		$theme_data = get_theme_data(trailingslashit(get_stylesheet_directory()).'style.css');
+		$theme_uri = $theme_data['URI'];
+		$description = $theme_data['Description'];
+		$author = $theme_data['Author'];
+		$version = $theme_data['Version'];
+		$tags = $theme_data['Tags'];
 	}	
 
 	$theme_info = '<div class="redux-framework-section-desc">';
@@ -976,7 +943,7 @@ function setup_framework_options(){
 	}//if
 
 	
-
+	/*
     $tabs['item_info'] = array(
 		'icon' => 'info-sign',
 		'icon_class' => 'icon-large',
@@ -992,7 +959,7 @@ function setup_framework_options(){
             'content' => nl2br(file_get_contents(trailingslashit(dirname(__FILE__)) . 'README.html'))
         );
     }
-
+	*/
     global $ReduxFramework;
     $ReduxFramework = new ReduxFramework($sections, $args, $tabs);
 

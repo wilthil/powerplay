@@ -224,6 +224,8 @@ $primary-menu-sub-font-color: #505050;
 }
 
 @media #{$large-up} {
+
+	#header[data-layout=regular]{
 	
 	/* Mega menu */
 		
@@ -356,12 +358,33 @@ $primary-menu-sub-font-color: #505050;
 				
 			}
 			
-						
-		}
+		}					
+	}
 }		
 /* End mega-menu */
 
 @media #{$large-up} {
+
+	#header[data-layout=regular]{ 
+		
+		#open-menu-mobile { display: block; }
+		
+		#primary-nav-container { 
+			text-align:right; 
+			margin: 0 15px 0 0; 
+			position: static; 
+			background: transparent; 
+			width:auto; 
+			display: inline-block;
+			min-height: 0;
+			height: auto;
+			overflow: visible;
+			background: transparent;
+		}
+	}
+	
+	
+	#header[data-layout=regular]{
 	
 	// Hide toggle button
 	#open-menu-mobile { display: none; }
@@ -614,6 +637,7 @@ $primary-menu-sub-font-color: #505050;
 	  			}
 	  		 }
   		}	
+  	}
   	}
 }
 

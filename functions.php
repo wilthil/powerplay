@@ -1,4 +1,48 @@
 <?php 
+if(!is_admin()){
+
+	function wp_admin_bar_new_item() {
+		global $wp_admin_bar;
+		$wp_admin_bar->add_menu(array(
+		'id' => 'screen-mobile-p',
+		'title' => '<i class="fa fa-mobile"></i>',
+		'href' => '#',
+		'meta' =>  array( 'title' => __('Mobile portrait','veuse') )
+		));
+		
+		$wp_admin_bar->add_menu(array(
+		'id' => 'screen-mobile-l',
+		'title' => '<i class="fa fa-mobile fa-rotate-90"></i>',
+		'href' => '#',
+		'meta' =>  array( 'title' => __('Mobile landscape','veuse') )
+		));
+		
+		
+		$wp_admin_bar->add_menu(array(
+		'id' => 'screen-tablet-p',
+		'title' => '<i class="fa fa-tablet"></i>',
+		'href' => '#',
+		'meta' =>  array( 'title' => __('Tablet portrait','veuse') )
+		));
+		
+		$wp_admin_bar->add_menu(array(
+		'id' => 'screen-tablet-l',
+		'title' => '<i class="fa fa-tablet fa-rotate-90"></i>',
+		'href' => '#',
+		'meta' =>  array( 'title' => __('Tablet landscape','veuse') )
+		));
+		
+		$wp_admin_bar->add_menu(array(
+		'id' => 'screen-desktop',
+		'title' => '<i class="fa fa-desktop"></i>',
+		'href' => '#',
+		'meta' =>  array( 'title' => __('Desktop','veuse') )
+		));
+	}
+	
+	add_action('wp_before_admin_bar_render', 'wp_admin_bar_new_item');
+}
+
 
 require_once(get_stylesheet_directory().'/includes/documentation/documentation.php');
 
@@ -45,6 +89,7 @@ if(!function_exists('show_posts_nav')){
 		return ($wp_query->max_num_pages > 1);
 	}
 }
+
 
 
 
@@ -174,7 +219,7 @@ function veuse_widgets_init() {
 		'id' => 'primary_footer',
 		'before_title' => '<h4 class="widget-title"><span>',
 		'after_title' => '</span></h4>',
-		'before_widget' => '<div class="small-12 large-'. $footer_widget_count .' columns"><aside  id="%1$s" class="widget %2$s ">',
+		'before_widget' => '<div class="small-12 medium-6 large-'. $footer_widget_count .' columns"><aside  id="%1$s" class="widget %2$s ">',
 		'after_widget' => '</aside></div>'
 	));
 	

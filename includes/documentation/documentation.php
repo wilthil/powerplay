@@ -14,25 +14,38 @@ function veuse_documentation_init(){
 
 // Add menu page
 function veuse_documentation_add_options_page() {
-	add_theme_page('Veuse Documentation Page', 'Theme Docs', 'manage_options', 'documentation', 'veuse_documentation_render_form');
+	add_theme_page('Veuse Documentation Page', __('Theme Docs','veuse'), 'manage_options', 'documentation', 'veuse_documentation_render_form');
 
 }
 
+function get_supported_languages(){
+	
+	
+	$languages = array(
+	
+		'en_US', 'nb_NO'
+	);
+	
+	
+	return $languages;
+	
+}
 
 
 function get_all_tabs(){
 	
 	 $tabs = array( 
     	
-    	'intro' 		=> 'Intro', 
-    	'theme-options' => 'Theme options', 
-    	'sidebars'		=> 'Sidebars',
-    	'menus'			=> 'Menus',
-    	'pages' 		=> 'Pages',
-    	'posts' 		=> 'Posts',
-    	'portfolio' 	=> 'Portfolio',
-    	'misc'			=> 'Other post types',
-    	'shortcodes'	=> 'Shortcodes',
+    	'intro' 		=> __('Intro','veuse'), 
+    	'theme-options' => __('Theme options','veuse'),
+    	'pagebuilder'	=> __('Page Builder','veuse'), 
+    	'sidebars'		=> __('Sidebars','veuse'),
+    	'menus'			=> __('Menus','veuse'),
+    	'pages' 		=> __('Pages','veuse'),
+    	'posts' 		=> __('Posts','veuse'),
+    	'portfolio' 	=> __('Portfolio','veuse'),
+    	'misc'			=> __('Other post types','veuse'),
+    	'shortcodes'	=> __('Shortcodes','veuse'),
     	
     	
     	);
@@ -42,9 +55,7 @@ function get_all_tabs(){
 // Render the Plugin options form
 function veuse_docs_admin_tabs( $current = 'intro' ) {
 
-
-	
-    
+	    
     $tabs = get_all_tabs();  
      
     echo '<h3 class="nav-tab-wrapper" style="padding-left:0; border-bottom:0;">';
@@ -66,7 +77,11 @@ function veuse_documentation_render_form(){
 	
 	
 	
+	
 	?>
+	
+	
+	
 	<style>
 		#veuse-documentation-wrapper a { text-decoration: none;}
 		#veuse-documentation-wrapper .about-text { margin: 1em 0; }
@@ -81,13 +96,25 @@ function veuse_documentation_render_form(){
 	<div class="wrap about-wrap">
 
 		<div class="icon32" id="icon-options-general"><br></div>
-		<h2><?php echo $theme_name;?> <?php _e('documentation','veuse-documentation');?></h2>
-		<p>
-		<?php echo sprintf( __( 'Here you find instructions on how to use the %s theme. For more in-depth info, please check out http://veuse.com/support.', 'veuse-documentation' ), $theme_name);?>
-		</p>
+		<h2><?php echo sprintf( __('%s documentation','veuse'), $theme_name );?></h2>
+		<p><?php echo sprintf( __( 'Here you find instructions on how to use the %s theme. For more in-depth info, please check out http://veuse.com/support.', 'veuse' ), $theme_name);?></p>
 		
 		<?php
 		
+		echo get_locale();
+		
+		$locale = get_locale();
+		$languages = get_supported_languages();
+	
+		if( in_array($locale , $languages ) ) {
+			
+			$lang_path = $locale;
+			
+		} else {
+			
+			$lang_path = 'en_US';
+		}
+
 		$docpath = get_stylesheet_directory().'/includes/documentation';
 		
 		if ( isset ( $_GET['tab'] ) ) veuse_docs_admin_tabs($_GET['tab']); else veuse_docs_admin_tabs('intro'); ?>
@@ -110,7 +137,7 @@ function veuse_documentation_render_form(){
 					//$text = file_get_contents($docpath."/pages/$tab.php");		
 					//echo nl2br($text);
 					
-					include("pages/$tab.php");
+					include("$lang_path/$tab.php");
 										
 					echo '</div>';
 					

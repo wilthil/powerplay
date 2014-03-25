@@ -68,6 +68,21 @@
 
 	 /* Widgets in footer */
 	 
+	 /* Columns - layout for medium-screens */
+	 @media #{$medium-up} {
+		 
+		 .medium-6:nth-child(1n) { clear: left;}
+		 .medium-6:nth-child(2n) { clear: right;}
+		 
+	 }
+	 
+	 @media #{$large-up} {
+		 
+		 .medium-6:nth-child(1n) { clear: none;}
+		 .medium-6:nth-child(2n) { clear: none;}
+		 
+	 }
+	 
 	.widget {
 	
 		margin-bottom: 30px;
@@ -114,7 +129,9 @@
 				}
 			}
 		}			
-	}		  	  
+	}
+	
+	table, tbody, tr, td, th { background: transparent !important;}		  	  
 
 
 	#footer-address {
@@ -125,7 +142,7 @@
 		   p:last-child { margin-bottom: 0; }
 		  
 		  .columns {
-			  font-size: 90%;
+			  font-size: .95em;
 		  }
 		  
 		  @media #{$medium-down}{
@@ -152,6 +169,7 @@
 				padding:0;
 				margin:0 0 0 0px;
 				line-height: 1.5em;
+				font-size: .95em;
 				
 				&:first-child:before { content:''; margin:0;}
 				

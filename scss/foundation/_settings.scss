@@ -73,8 +73,9 @@ $info-color: #a0d3e8;
 // $shiny-edge-active-color: rgba(#000, .2);
 
 // Media Query Ranges
-$small-range: (0em, 40em); /* 0, 640px */
-$medium-range: (40.063em, 63.938em); /* 641px, 1023px */
+$small-range: (0em, 39.938em); /* 0, 640px */
+$medium-range: (40em, 63.938em); /* 641px, 1023px */
+//$medium-range: (40.063em, 63.938em); /* 641px, 1023px */
 $large-range: (64em, 90em); /* 1024px, 1440px */
 $xlarge-range: (90.063em, 120em); /* 1441px, 1920px */
 $xxlarge-range: (120.063em); /* 1921px */

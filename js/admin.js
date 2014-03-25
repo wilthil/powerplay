@@ -62,5 +62,8 @@
 jQuery(document).ready(function($){
 	    
 	$('#grid-styles-dialog').addMediaUpload();
+	
+	
+	
 	    
 });

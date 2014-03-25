@@ -187,9 +187,13 @@ $header-bg: #fff !default;
 	
 */
 
-.admin-bar {
-	
-	 #header.sticky { margin-top:32px; }
+@media #{$large-up}{
+
+	.admin-bar {
+		
+		 #header.sticky { margin-top:32px; }
+		
+	}
 	
 }
 

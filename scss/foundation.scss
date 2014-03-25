@@ -91,3 +91,20 @@ $header-height-sticky: 90px !default;
 @import "plugins/portfolio";
 @import "plugins/staff";
 @import "plugins/uikit";
+
+.ab-item i { font-family: FontAwesome !important; }
+
+iframe#responsiveview { border:0; height:100%; position: fixed; left:50%; top:20px !important;
+	
+		@include single-transition(all, 0.5s);
+	
+}
+
+.hide-adminbar #wpadminbar { display: none !important; }
+
+#responsiveview[data-id="320"]{ width:100%; max-width: 320px; margin-left: -160px; }
+#responsiveview[data-id="640"]{ width:100%; max-width: 640px; margin-left: -320px; }
+#responsiveview[data-id="768"]{ width:100%; max-width: 768px; margin-left: -384px; top:0;}
+#responsiveview[data-id="1024"]{width:100%; max-width: 1024px; margin-left: -512px; top:0;}
+
+#responsiveview  #wpadminbar { display: none;}

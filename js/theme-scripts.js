@@ -131,6 +131,105 @@
 
     
     jQuery(document).ready(function($){
+    
+    	var pathname = window.location;
+    	var wrapper = $('#wrapper');
+    	//alert(pathname);
+    
+			
+		
+		$("#responsiveview").contents().find('html').addClass('hide-adminbar');	
+		
+		
+		function hideAdminbar(){
+			
+			setTimeout(function() {
+					$("#responsiveview").contents().find('html').addClass('hide-adminbar');	
+			}, 1000);
+		}
+		
+		$(document).on('click','#wp-admin-bar-screen-mobile-p a',function(){
+		
+			if ( wrapper.css('display') == 'none' ){
+				
+				$('#responsiveview').attr('data-id','320');
+				$("#responsiveview").contents().find("#wpadminbar").hide();			
+			}
+					
+			else {
+				
+				wrapper.hide('');
+				$('body').prepend('<iframe id="responsiveview" data-id="320" src="'+pathname+'"></iframe>');
+				$('#responsiveview').css({'height': $(window).height() - 40});	
+				hideAdminbar();
+			
+			}
+			return false;
+		});
+		
+		
+		$(document).on('click','#wp-admin-bar-screen-mobile-l a',function(){
+		
+			if( wrapper.css('display') == 'none' ){
+				$('#responsiveview').attr('data-id','640');
+				$("#responsiveview").contents().find("#wpadminbar").hide();
+			}
+			
+			else {
+				wrapper.hide();
+				$('body').prepend('<iframe id="responsiveview" data-id="640" src="'+pathname+'"></iframe>');
+				$('#responsiveview').css({'height': $(window).height() - 40});
+				hideAdminbar();	
+			}
+			return false;
+		});
+		
+		$(document).on('click','#wp-admin-bar-screen-tablet-p a',function(){
+		
+			if( wrapper.css('display') == 'none' ){
+				$('#responsiveview').attr('data-id','768');
+				$("#responsiveview").contents().find("#wpadminbar").hide();
+			}
+			
+			else {
+				wrapper.hide();
+				$('body').prepend('<iframe id="responsiveview" data-id="768" src="'+pathname+'"></iframe>');
+				$('#responsiveview').css({'height': $(window).height()- 40});
+				
+				hideAdminbar();
+				
+			}
+			return false;
+		});
+		
+		$(document).on('click','#wp-admin-bar-screen-tablet-l a',function(){
+		
+			if( wrapper.css('display') == 'none' ){
+				$('#responsiveview').attr('data-id','1024');
+				$("#responsiveview").contents().find("#wpadminbar").hide();
+			}
+			
+			else {
+				wrapper.hide();
+				$('body').prepend('<iframe id="responsiveview" data-id="1024" src="'+pathname+'"></iframe>');
+				$('#responsiveview').css({'height': $(window).height()- 40});
+				hideAdminbar();
+					
+				
+			}
+			return false;
+		});
+		
+		$(document).on('click','#wp-admin-bar-screen-desktop a',function(){
+		
+			wrapper.show();
+			$('#responsiveview').remove();
+		
+			
+			return false;
+		});
+		
+		
         	
     	$('.parallax > div').parallax({ speed: 0.5 });
     		

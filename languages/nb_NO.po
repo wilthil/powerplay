@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Quantum Theme\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tags/twentythirteen\n"
-"POT-Creation-Date: 2014-03-16 22:14+0100\n"
-"PO-Revision-Date: 2014-03-16 22:18+0100\n"
+"POT-Creation-Date: 2014-03-25 15:56+0100\n"
+"PO-Revision-Date: 2014-03-25 15:57+0100\n"
 "Last-Translator: Andreas Wilthil <andreas@siteman.no>\n"
 "Language-Team: LANGUAGE <andreas.wilthil@gmail.com>\n"
 "MIME-Version: 1.0\n"
@@ -63,7 +63,7 @@ msgstr "Legg inn kommentar"
 
 #: ../comments.php:66
 msgid "Enter comment..."
-msgstr ""
+msgstr "Skriv kommentar"
 
 #: ../comments.php:71
 #, php-format
@@ -105,11 +105,12 @@ msgstr "Lagret i"
 msgid "Related posts"
 msgstr "Relaterte innlegg"
 
-#: ../content-title.php:27 ../content-title.php:33 ../options-config.php:463
+#: ../content-title.php:27 ../content-title.php:33 ../options-config.php:413
 msgid "Blog"
 msgstr "Blogg"
 
-#: ../content-title.php:30
+#: ../content-title.php:30 ../includes/documentation/documentation.php:46
+#: ../includes/documentation/nb_NO/portfolio.php:1
 msgid "Portfolio"
 msgstr "Portefølje"
 
@@ -161,121 +162,122 @@ msgstr ""
 "Post-format har blitt satt til \"Video\", men ingen video kilde eller video-"
 "fil har blitt spesifisert."
 
-#: ../functions.php:255
-#, fuzzy
+#: ../functions.php:10
+msgid "Mobile portrait"
+msgstr "Mobil - stående"
+
+#: ../functions.php:17
+msgid "Mobile landscape"
+msgstr "Mobil - liggende"
+
+#: ../functions.php:25
+msgid "Tablet portrait"
+msgstr "Nettbrett - stående"
+
+#: ../functions.php:32
+msgid "Tablet landscape"
+msgstr "Nettbrett - liggende"
+
+#: ../functions.php:39
+msgid "Desktop"
+msgstr "PC/laptop"
+
+#: ../functions.php:242
 msgid "Primary Navigation"
-msgstr "Navigér i kommentarer"
+msgstr "Hovedmeny"
 
-#: ../functions.php:256
-#, fuzzy
+#: ../functions.php:243
 msgid "Footer Navigation"
-msgstr "Navigér i kommentarer"
+msgstr "Footer-meny"
 
-#: ../functions.php:338
+#: ../functions.php:318
 msgid "1/4 width"
 msgstr "Kvart bredde"
 
-#: ../functions.php:339
+#: ../functions.php:319
 msgid "1/3 width"
 msgstr "Tredjedels bredde"
 
-#: ../functions.php:340
+#: ../functions.php:320
 msgid "1/2 width"
 msgstr "Halv bredde"
 
-#: ../functions.php:341
+#: ../functions.php:321
 msgid "3/4 width"
 msgstr "Tre kvart bredde"
 
-#: ../functions.php:342
+#: ../functions.php:322
 msgid "Full width"
 msgstr "Full bredde"
 
-#: ../functions.php:343
+#: ../functions.php:323
 msgid "1/4 width - cropped"
-msgstr ""
+msgstr "Kvart bredde"
 
-#: ../functions.php:344
+#: ../functions.php:324
 msgid "1/3 width - cropped"
-msgstr ""
+msgstr "Tredjedels bredde"
 
-#: ../functions.php:345
+#: ../functions.php:325
 msgid "1/2 width - cropped"
-msgstr ""
+msgstr "Halv bredde"
 
-#: ../functions.php:346
+#: ../functions.php:326
 msgid "3/4 width - cropped"
-msgstr ""
+msgstr "Tre kvart bredde"
 
-#: ../functions.php:347
+#: ../functions.php:327
 msgid "Full width - cropped"
-msgstr ""
+msgstr "Full bredde - beskåret høyde"
 
-#: ../functions.php:372 ../bbpress/user-details.php:65
-#: ../framework/functions.php:122 ../woocommerce/myaccount/my-address.php:68
-msgid "Edit"
-msgstr "Redigér"
-
-#: ../functions.php:373 ../framework/functions.php:123
-msgid "Reply"
-msgstr "Svar"
-
-#: ../functions.php:378 ../framework/functions.php:128
-msgid "Comment is awaiting moderation"
-msgstr "Kommentaren avventer moderasjon"
-
-#: ../functions.php:586 ../framework/functions.php:339
-msgid "Invalid sidebar ID"
-msgstr "Ugyldig sidebar ID"
-
-#: ../functions.php:606 ../header.php:53
-msgid "Navigation"
-msgstr "Navigasjon"
-
-#: ../functions.php:910 ../framework/plugin-activation.php:143
+#: ../functions.php:628 ../framework/plugin-activation.php:143
 msgid "Install Required Plugins"
 msgstr "Installér påkrevde innstikk"
 
-#: ../functions.php:911 ../framework/plugin-activation.php:144
+#: ../functions.php:629 ../framework/plugin-activation.php:144
 msgid "Install Plugins"
 msgstr "Installér innstikk"
 
-#: ../functions.php:912 ../framework/plugin-activation.php:145
+#: ../functions.php:630 ../framework/plugin-activation.php:145
 #, php-format
 msgid "Installing Plugin: %s"
 msgstr "Installérer innstikk: %s"
 
-#: ../functions.php:913
+#: ../functions.php:631
 msgid "Something went wrong with the plugin API."
-msgstr ""
+msgstr "Noe gikk galt med plugin API"
 
-#: ../functions.php:924 ../framework/plugin-activation.php:157
+#: ../functions.php:642 ../framework/plugin-activation.php:157
 msgid "Return to Required Plugins Installer"
-msgstr ""
+msgstr "Gå tilbake til installatør for påkrevde innstikk."
 
-#: ../functions.php:925 ../framework/plugin-activation.php:159
+#: ../functions.php:643 ../framework/plugin-activation.php:159
 #: ../framework/plugin-activation.php:1883
 msgid "Plugin activated successfully."
-msgstr ""
+msgstr "Innstikket ble aktivert."
 
-#: ../functions.php:926
+#: ../functions.php:644
 #, php-format
 msgid "All plugins installed and activated successfully. %s"
-msgstr ""
+msgstr "Alle innstikk ble installert og aktivert. %s"
 
-#: ../header.php:99
+#: ../header-1.php:25 ../header-2.php:47
+msgid "Navigation"
+msgstr "Navigasjon"
+
+#: ../header-1.php:66 ../header-2.php:70
 msgid "To search, type and hit enter"
 msgstr "Skriv søkeord"
 
-#: ../loop-portfolio.php:31
+#: ../loop-portfolio.php:38
 msgid "All"
-msgstr ""
+msgstr "Alle"
 
-#: ../loop-portfolio.php:100
+#: ../loop-portfolio.php:98 ../woocommerce/content-product.php:64
 msgid "View details"
 msgstr "Vis detaljer"
 
-#: ../loop-posts copy.php:83 ../loop-posts.php:83 ../loop-search.php:45
+#: ../loop-posts.php:83 ../loop-search.php:45
 msgid "No entries found. Perhaps try a search?"
 msgstr "Ingen innlegg funnet. "
 
@@ -303,562 +305,511 @@ msgstr ""
 msgid "Twitter"
 msgstr ""
 
-#: ../options-config.php:22
-msgid "A Section added by hook"
-msgstr ""
-
-#: ../options-config.php:23
-msgid ""
-"<p class=\"description\">This is a section created by adding a filter to the "
-"sections array. Can be used by child themes to add/remove sections from the "
-"options.</p>"
-msgstr ""
-
-#: ../options-config.php:72
+#: ../options-config.php:18
 #, php-format
 msgid "Customize &#8220;%s&#8221;"
-msgstr ""
+msgstr "Tilpass &#8220;%s&#8221;"
 
-#: ../options-config.php:91
+#: ../options-config.php:37
 #, php-format
 msgid "By %s"
 msgstr "Av %s"
 
-#: ../options-config.php:92
+#: ../options-config.php:38
 #, php-format
 msgid "Version %s"
 msgstr "Versjon %s"
 
-#: ../options-config.php:93
+#: ../options-config.php:39
 msgid "Tags"
 msgstr "Stikkord"
 
-#: ../options-config.php:97
+#: ../options-config.php:43
 #, php-format
 msgid "This <a href=\"%1$s\">child theme</a> requires its parent theme, %2$s."
 msgstr ""
 
-#: ../options-config.php:98
+#: ../options-config.php:44
 msgid "http://codex.wordpress.org/Child_Themes"
 msgstr ""
 
-#: ../options-config.php:207 ../options-config.php:211
-msgid "Options"
-msgstr "Innstillinger"
+#: ../options-config.php:154 ../options-config.php:158
+msgid "Theme Options"
+msgstr "Temainnstillinger"
 
-#: ../options-config.php:253
-msgid "Theme Information 1"
-msgstr "Temainformasjon 1"
-
-#: ../options-config.php:254 ../options-config.php:259
-msgid "<p>This is the tab content, HTML is allowed.</p>"
-msgstr ""
-
-#: ../options-config.php:258
-msgid "Theme Information 2"
-msgstr "Temainformasjon 2"
-
-#: ../options-config.php:263
-msgid "<p>This is the sidebar content, HTML is allowed.</p>"
-msgstr ""
-
-#: ../options-config.php:268
-msgid ""
-"<p>This text is displayed below the options panel. It isn't required, but "
-"more info is always better! The footer_text field accepts all HTML.</p>"
-msgstr ""
-
-#: ../options-config.php:328
+#: ../options-config.php:278
 msgid "General Settings"
-msgstr ""
+msgstr "Generelle innstillinger"
 
-#: ../options-config.php:336
+#: ../options-config.php:286
 msgid "Site Logo"
 msgstr "Nettsted logo"
 
-#: ../options-config.php:338
-msgid "Basic media uploader with disabled URL input field."
-msgstr ""
+#: ../options-config.php:289
+msgid "Select or upload logo"
+msgstr "Velg eller last opp logo"
 
-#: ../options-config.php:339
-msgid "Upload any media using the WordPress native uploader"
-msgstr ""
-
-#: ../options-config.php:345
+#: ../options-config.php:295
 msgid "Header Height"
 msgstr "Høyde på header"
 
-#: ../options-config.php:346
+#: ../options-config.php:296
 msgid "Set a maximum pixel height for your site header"
 msgstr "Set en maksimumshøyde på nettstedets header"
 
-#: ../options-config.php:354
+#: ../options-config.php:304
 msgid "Header Height on sticky-menu"
 msgstr "Header høyde på klebrig header"
 
-#: ../options-config.php:355
+#: ../options-config.php:305
 msgid ""
 "Set a maximum pixel height for your site header when menu is sticked to page "
 "top"
 msgstr ""
 
-#: ../options-config.php:363
+#: ../options-config.php:313
 msgid "Logo Max-width"
 msgstr "Logo maks høyde"
 
-#: ../options-config.php:364
+#: ../options-config.php:314
 msgid "Set a maximum pixel width for your site logo"
 msgstr "Sett en maksimumshøyde for din logo"
 
-#: ../options-config.php:372
+#: ../options-config.php:322
 msgid "Logo Top Margin"
 msgstr "Logo avstand til toppen"
 
-#: ../options-config.php:373
+#: ../options-config.php:323
 msgid "Add some spacing above your site logo"
 msgstr ""
 
-#: ../options-config.php:381
+#: ../options-config.php:331
 msgid "Logo Bottom Margin"
 msgstr ""
 
-#: ../options-config.php:382
+#: ../options-config.php:332
 msgid "Add some below above your site logo"
 msgstr ""
 
-#: ../options-config.php:392
-#, fuzzy
+#: ../options-config.php:342
 msgid "Site favicon"
-msgstr "Nettsted layout"
+msgstr "Nettsted favicon"
 
-#: ../options-config.php:394
+#: ../options-config.php:344
 msgid "Insert a favicon."
-msgstr ""
+msgstr "Sett inn et favicon"
 
-#: ../options-config.php:403
+#: ../options-config.php:353
 msgid "Site Layout"
-msgstr ""
+msgstr "Nettstedlayout"
 
-#: ../options-config.php:404
+#: ../options-config.php:354
 msgid "Select boxed or full width layout."
 msgstr ""
 
-#: ../options-config.php:420
+#: ../options-config.php:370
 msgid "Page Layout"
-msgstr ""
+msgstr "Layout på sider"
 
-#: ../options-config.php:421
+#: ../options-config.php:371
 msgid ""
 "Select default layout for pages. You can override this on page level by "
 "selecting a tempate."
 msgstr ""
 
-#: ../options-config.php:435
+#: ../options-config.php:385
 msgid "Post Layout"
-msgstr ""
+msgstr "Layout på innlegg"
 
-#: ../options-config.php:436
+#: ../options-config.php:386
 msgid "Select default layout for posts."
 msgstr ""
 
-#: ../options-config.php:450
+#: ../options-config.php:400
 msgid "Tracking Code"
 msgstr ""
 
-#: ../options-config.php:451
+#: ../options-config.php:401
 msgid ""
 "Paste your Google Analytics (or other) tracking code here. This will be "
 "added into the footer template of your theme."
 msgstr ""
 
-#: ../options-config.php:471
+#: ../options-config.php:421
 msgid "Blog and Archive Layout"
-msgstr ""
+msgstr "Layout for blogg og arkivsider"
 
-#: ../options-config.php:472
+#: ../options-config.php:422
 msgid "Select default layout for blog, archive, category and archive pages."
-msgstr ""
+msgstr "Velg standard layout for blogg, arkiv og kategorisider. "
 
-#: ../options-config.php:485
-#, fuzzy
+#: ../options-config.php:435
 msgid "Blog Columns"
-msgstr "Kolonner"
+msgstr "Kolonner i blogg"
 
-#: ../options-config.php:486
+#: ../options-config.php:436
 msgid "Select how many columns to display on blog"
 msgstr ""
 
-#: ../options-config.php:500
-#, fuzzy
+#: ../options-config.php:450
 msgid "Masonry layout"
-msgstr "Layout for bildegalleri"
+msgstr ""
 
-#: ../options-config.php:501
+#: ../options-config.php:451
 msgid ""
 "Select this if you want your blog to be listed with the masononry-effect"
 msgstr ""
 
-#: ../options-config.php:509
-#, fuzzy
+#: ../options-config.php:459
 msgid "Blog sidebar"
-msgstr "Slett sidebar"
+msgstr "Blogg sidebar"
 
-#: ../options-config.php:510 ../options-config.php:520
-#: ../options-config.php:530 ../options-config.php:540
+#: ../options-config.php:460 ../options-config.php:470
+#: ../options-config.php:480 ../options-config.php:490
 msgid "Select a sidebar"
 msgstr "Velg en sidebar"
 
-#: ../options-config.php:511
+#: ../options-config.php:461
 msgid "Select a sidebar to show on the blog page"
 msgstr ""
 
-#: ../options-config.php:519
-#, fuzzy
+#: ../options-config.php:469
 msgid "Category sidebar"
-msgstr "Slett sidebar"
+msgstr "Kategori sidebar"
 
-#: ../options-config.php:521
+#: ../options-config.php:471
 msgid "Select a sidebar to show on category-pages"
 msgstr ""
 
-#: ../options-config.php:529
-#, fuzzy
+#: ../options-config.php:479
 msgid "Archives sidebar"
-msgstr "Slett sidebar"
+msgstr "Arkiv sidebar"
 
-#: ../options-config.php:531
+#: ../options-config.php:481
 msgid "Select a sidebar to show on archive-pages"
 msgstr ""
 
-#: ../options-config.php:539
-#, fuzzy
+#: ../options-config.php:489
 msgid "Search page sidebar"
-msgstr "Velg en sidebar"
+msgstr "Søkeside sidebar"
 
-#: ../options-config.php:541
+#: ../options-config.php:491
 msgid "Select a sidebar to show on search-page"
 msgstr ""
 
-#: ../options-config.php:552 ../includes/customizer.php:278
+#: ../options-config.php:502 ../includes/customizer.php:278
 msgid "Footer"
 msgstr ""
 
-#: ../options-config.php:559
+#: ../options-config.php:509
 msgid "Footer Text Top"
 msgstr ""
 
-#: ../options-config.php:568
+#: ../options-config.php:518
 msgid "Footer Text Left"
-msgstr ""
+msgstr "Footer tekst - venstre side"
 
-#: ../options-config.php:576
+#: ../options-config.php:526
 msgid "Footer Text Right"
-msgstr ""
+msgstr "Footer tekst - høyre side"
 
-#: ../options-config.php:590
+#: ../options-config.php:540
 msgid "Styling Options"
-msgstr ""
+msgstr "Farger og stiler"
 
-#: ../options-config.php:595
+#: ../options-config.php:545
 msgid "Theme Stylesheet"
-msgstr ""
+msgstr "Tema stilark"
 
-#: ../options-config.php:596
+#: ../options-config.php:546
 msgid "Select your themes alternative color scheme."
 msgstr ""
 
-#: ../options-config.php:604
+#: ../options-config.php:554
 msgid "Primary Theme Color"
-msgstr ""
+msgstr "Hovedfarge"
 
-#: ../options-config.php:613
-msgid "Secondary Theme Color"
-msgstr ""
-
-#: ../options-config.php:622
+#: ../options-config.php:572
 msgid "Body Background Color"
-msgstr ""
+msgstr "Side bakgrunnsfarge"
 
-#: ../options-config.php:623
+#: ../options-config.php:573
 msgid "Pick a background color for the theme."
 msgstr ""
 
-#: ../options-config.php:631
+#: ../options-config.php:581
 msgid "Header Background Color"
 msgstr ""
 
-#: ../options-config.php:632
+#: ../options-config.php:582
 msgid "Pick a background color for the header."
 msgstr "Velg enn bakgrunnsfarge for header"
 
-#: ../options-config.php:640
+#: ../options-config.php:590
 msgid "Content Background Color"
-msgstr ""
+msgstr "Innholdsfelt - bakgrunnsfarge"
 
-#: ../options-config.php:641
+#: ../options-config.php:591
 msgid "Pick a background color for the content area."
-msgstr ""
+msgstr "Velg en bakgrunnsfarge for innholdsfelt"
 
-#: ../options-config.php:650
+#: ../options-config.php:600
 msgid "Footer Background Color"
-msgstr ""
+msgstr "Footer - bakgrunnsfarge"
 
-#: ../options-config.php:651
+#: ../options-config.php:601
 msgid "Pick a background color for the footer."
-msgstr ""
+msgstr "Velg en bakgrunnsfarge for footer"
 
-#: ../options-config.php:669
+#: ../options-config.php:619
 msgid "Links Color Option"
-msgstr ""
+msgstr "Farge på lenker"
 
-#: ../options-config.php:682
+#: ../options-config.php:632
 msgid "Links Color in Footer"
-msgstr ""
+msgstr "Farge på lenker i footer"
+
+#: ../options-config.php:646
+msgid "Links Color in Main Menu"
+msgstr "Farge på lenker i hovedmeny"
+
+#: ../options-config.php:684
+msgid "Custom CSS"
+msgstr "Egen CSS"
+
+#: ../options-config.php:685
+msgid "Quickly add some CSS to your theme by adding it to this block."
+msgstr "Her kan du legge til stiler."
+
+#: ../options-config.php:695
+msgid "Typography"
+msgstr "Typografi"
 
 #: ../options-config.php:696
-msgid "Links Color in Main Menu"
-msgstr ""
-
-#: ../options-config.php:709
-msgid "Header Border Option"
-msgstr ""
-
-#: ../options-config.php:710
-msgid "Only color validation can be done on this field type"
-msgstr ""
-
-#: ../options-config.php:712
-msgid "This is the description field, again good for additional info."
-msgstr ""
-
-#: ../options-config.php:732
-msgid "Custom CSS"
-msgstr ""
-
-#: ../options-config.php:733
-msgid "Quickly add some CSS to your theme by adding it to this block."
-msgstr ""
-
-#: ../options-config.php:743
-msgid "Typography"
-msgstr ""
-
-#: ../options-config.php:744
 msgid "<p class=\"description\">Change typograhy settings</p>"
-msgstr ""
+msgstr "<p class=\"description\">Endre typografiske innstillinger</p>"
 
-#: ../options-config.php:750
-msgid "Typography for H1 (Header 1)"
-msgstr ""
+#: ../options-config.php:702
+msgid "Header 1"
+msgstr "Overskrift 1"
 
-#: ../options-config.php:776
-msgid "Typography for H2  (Header 2)"
-msgstr ""
+#: ../options-config.php:728
+msgid "Header 2"
+msgstr "Overskrift 2"
 
-#: ../options-config.php:790 ../options-config.php:817
-#: ../options-config.php:845 ../options-config.php:872
-#: ../options-config.php:899 ../options-config.php:926
-msgid "Typography option with each property can be called individually."
-msgstr ""
+#: ../options-config.php:755
+msgid "Header 3"
+msgstr "Overskrift 3"
 
-#: ../options-config.php:803
-msgid "Typography for H3  (Header 3)"
-msgstr ""
+#: ../options-config.php:783
+msgid "Header 4"
+msgstr "Overskrift 4"
 
-#: ../options-config.php:831
-msgid "Typography for H4  (Header 4)"
-msgstr ""
+#: ../options-config.php:810
+msgid "Header 5"
+msgstr "Overskrift 5"
 
-#: ../options-config.php:858
-msgid "Typography for H5  (Header 5)"
-msgstr ""
+#: ../options-config.php:837
+msgid "Header 6"
+msgstr "Overskrift 6"
 
-#: ../options-config.php:885
-msgid "Typography for h6  (Header 6)"
-msgstr ""
+#: ../options-config.php:864
+msgid "Body and paragraph"
+msgstr "Brødtekst"
 
-#: ../options-config.php:912
-msgid "Typography for body and paragraph"
-msgstr ""
-
-#: ../options-config.php:963
+#: ../options-config.php:915
 msgid "<strong>Theme URL:</strong> "
 msgstr ""
 
-#: ../options-config.php:964
+#: ../options-config.php:916
 msgid "<strong>Author:</strong> "
 msgstr ""
 
-#: ../options-config.php:965
+#: ../options-config.php:917
 msgid "<strong>Version:</strong> "
 msgstr ""
 
-#: ../options-config.php:967
+#: ../options-config.php:919
 msgid "<strong>Tags:</strong> "
 msgstr ""
 
-#: ../options-config.php:973 ../options-config.php:991
+#: ../options-config.php:925
 msgid "Documentation"
-msgstr ""
-
-#: ../options-config.php:983
-msgid "Theme Information"
-msgstr ""
+msgstr "Dokumentasjon"
 
 #: ../post-meta.php:38
 msgid "Page Elements"
-msgstr ""
+msgstr "Sideelementer"
 
 #: ../post-meta.php:61
 msgid ""
 "Select the elements you want to show on your page or post. At least one "
 "element needs to be enabled."
 msgstr ""
+"Velg elementene du ønsker å vise på siden. Minst ett element må være valgt."
 
-#: ../post-meta.php:66 ../post-meta.php:169
+#: ../post-meta.php:62
+msgid ""
+"<p>PS! Featured video does not work on pages using the Page Builder by "
+"SiteOrigin. Use the video-widget instead.</p>"
+msgstr ""
+"<p>PS! Fremhevet bilder virker ikke på sider som bruker Page Builder av "
+"SiteOrigin.  Bruk da video-widget i stedet.</p>"
+
+#: ../post-meta.php:67 ../post-meta.php:170
 msgid "Title"
 msgstr "Tittel"
 
-#: ../post-meta.php:67
+#: ../post-meta.php:68
 msgid "Excerpt"
 msgstr "Utdrag"
 
-#: ../post-meta.php:68
+#: ../post-meta.php:69
 msgid "Content"
 msgstr "Innhold"
 
-#: ../post-meta.php:69
+#: ../post-meta.php:70
 msgid "Submenu"
 msgstr "Undermeny"
 
-#: ../post-meta.php:70
+#: ../post-meta.php:71
 msgid "Featured image"
-msgstr ""
+msgstr "Fremhevet bilde"
 
-#: ../post-meta.php:88
-msgid "Image Gallery"
+#: ../post-meta.php:72
+msgid "Featured gallery"
 msgstr "Bildegalleri"
 
-#: ../post-meta.php:111
+#: ../post-meta.php:73
+msgid "Featured video"
+msgstr "Fremhevet video"
+
+#: ../post-meta.php:91
+msgid "Featured Gallery"
+msgstr "Bildegalleri"
+
+#: ../post-meta.php:112
 msgid "Gallery images"
 msgstr "Galleribilder"
 
-#: ../post-meta.php:117
+#: ../post-meta.php:118
 msgid ""
 "Select or upload images to display in gallery.<br><br>Images can be "
 "rearranged via drag and drop."
 msgstr ""
+"Velg eller last opp bilder for å bruke i bildegalleri. Rekkefølgen kan "
+"endres via drag & drop."
 
-#: ../post-meta.php:127
+#: ../post-meta.php:128
 msgid "Gallery settings"
 msgstr "Innstillinger for bildegalleri"
 
-#: ../post-meta.php:133
+#: ../post-meta.php:134
 msgid "Gallery layout"
 msgstr "Layout for bildegalleri"
 
-#: ../post-meta.php:140
+#: ../post-meta.php:141
 msgid "Display as slideshow"
 msgstr "Vis som slideshow"
 
-#: ../post-meta.php:141
-msgid "Display as thumbnails"
+#: ../post-meta.php:142
+msgid "Display as thumbnails in a grid"
 msgstr "Vis som miniatyrbilder"
 
-#: ../post-meta.php:148
-msgid "Columns"
-msgstr "Kolonner"
-
 #: ../post-meta.php:149
+msgid "Columns for grid view"
+msgstr "Antall kolonner i kolonnevisning"
+
+#: ../post-meta.php:150
 msgid "Number of columns for thumbnail layout"
 msgstr "Antall kolonner"
 
-#: ../post-meta.php:160
+#: ../post-meta.php:161
 msgid "Lightbox"
 msgstr "Lightbox"
 
-#: ../post-meta.php:161
+#: ../post-meta.php:162
 msgid "Open lightbox when you click on the image"
 msgstr "Åpne stor versjon av bilde i lightbox når man klikker på bildet."
 
-#: ../post-meta.php:170
+#: ../post-meta.php:171
 msgid "Show image title"
 msgstr "Vis bildetittel"
 
-#: ../post-meta.php:178
+#: ../post-meta.php:179
 msgid "Caption"
 msgstr "Overskrift"
 
-#: ../post-meta.php:179
+#: ../post-meta.php:180
 msgid "Show image description"
 msgstr "Vis bildebeskrivelse"
 
-#: ../post-meta.php:199
+#: ../post-meta.php:200
 msgid "Post audio"
 msgstr "Audio"
 
-#: ../post-meta.php:209 ../post-meta.php:278
+#: ../post-meta.php:210 ../post-meta.php:279
 #: ../framework/plugin-activation.php:1332
 msgid "Source"
 msgstr "Kilde"
 
-#: ../post-meta.php:214
+#: ../post-meta.php:215
 msgid "Audio source"
 msgstr "Audio kildefil"
 
-#: ../post-meta.php:221 ../post-meta.php:230
+#: ../post-meta.php:222 ../post-meta.php:231
 msgid "Self-hosted audio"
 msgstr ""
 
-#: ../post-meta.php:222 ../post-meta.php:253
+#: ../post-meta.php:223 ../post-meta.php:254
 msgid "Embed audio"
 msgstr "Embed lydfil"
 
-#: ../post-meta.php:237
+#: ../post-meta.php:238
 msgid "Select audio-files from media-library, or upload audio-files."
 msgstr ""
 
-#: ../post-meta.php:247
+#: ../post-meta.php:248
 msgid "Embedded audio"
 msgstr ""
 
-#: ../post-meta.php:255
+#: ../post-meta.php:256
 msgid "Enter URL to the audiofile you want to embed."
 msgstr ""
 
-#: ../post-meta.php:269
-msgid "Post video"
-msgstr "Video"
+#: ../post-meta.php:270
+msgid "Featured Video"
+msgstr ""
 
-#: ../post-meta.php:285
+#: ../post-meta.php:286
 msgid "Video source"
 msgstr ""
 
-#: ../post-meta.php:292 ../post-meta.php:301
+#: ../post-meta.php:293 ../post-meta.php:302
 msgid "Self-hosted video"
 msgstr ""
 
-#: ../post-meta.php:293 ../post-meta.php:324
+#: ../post-meta.php:294 ../post-meta.php:325
 msgid "Embed video"
 msgstr ""
 
-#: ../post-meta.php:308
+#: ../post-meta.php:309
 msgid "Select video-files from media-library, or upload video-files."
 msgstr ""
 
-#: ../post-meta.php:318
+#: ../post-meta.php:319
 msgid "Embedded video"
 msgstr ""
 
-#: ../post-meta.php:326
+#: ../post-meta.php:327
 msgid "Enter URL to the videofile you want to embed."
 msgstr ""
 
-#: ../post-meta.php:363
+#: ../post-meta.php:364
 msgid "Revolution slider"
 msgstr ""
 
-#: ../post-meta.php:375 ../post-meta.php:383 ../post-meta.php:391
+#: ../post-meta.php:376 ../post-meta.php:384 ../post-meta.php:392
 msgid "Select a slider"
 msgstr "Velg slideshow"
 
@@ -1279,7 +1230,7 @@ msgstr ""
 
 #: ../bbpress/form-topic-tag.php:22
 msgid "Rename"
-msgstr ""
+msgstr "Endre navn"
 
 #: ../bbpress/form-topic-tag.php:25
 msgid "Leave the slug empty to have one automatically generated."
@@ -1293,33 +1244,33 @@ msgstr ""
 
 #: ../bbpress/form-topic-tag.php:35
 msgid "Name:"
-msgstr ""
+msgstr "Navn:"
 
 #: ../bbpress/form-topic-tag.php:40
 msgid "Slug:"
-msgstr ""
+msgstr "Permalenke:"
 
 #: ../bbpress/form-topic-tag.php:59
 msgid "Merge"
-msgstr ""
+msgstr "Slå sammen"
 
 #: ../bbpress/form-topic-tag.php:62
 msgid "Merging tags together cannot be undone."
-msgstr ""
+msgstr "Sammenslåing av stikkord kan ikke omgjøres."
 
 #: ../bbpress/form-topic-tag.php:68
 msgid "Existing tag:"
-msgstr ""
+msgstr "Eksisterende stikkord:"
 
 #: ../bbpress/form-topic-tag.php:73
 #, php-format
 msgid ""
 "Are you sure you want to merge the \"%s\" tag into the tag you specified?"
-msgstr ""
+msgstr "Er du sikker på at du vil slå sammen \"%s\" til ordet do spesifiserte?"
 
 #: ../bbpress/form-topic-tag.php:88
 msgid "Delete"
-msgstr ""
+msgstr "Slett"
 
 #: ../bbpress/form-topic-tag.php:91
 msgid "This does not delete your topics. Only the tag itself is deleted."
@@ -1486,31 +1437,31 @@ msgstr ""
 
 #: ../bbpress/form-user-login.php:22
 msgid "Password"
-msgstr ""
+msgstr "Passord"
 
 #: ../bbpress/form-user-login.php:28
 msgid "Keep me signed in"
-msgstr ""
+msgstr "Hold meg innlogget"
 
 #: ../bbpress/form-user-lost-pass.php:14
 msgid "Lost Password"
-msgstr ""
+msgstr "Mistet passord"
 
 #: ../bbpress/form-user-lost-pass.php:18
 msgid "Username or Email"
-msgstr ""
+msgstr "Brukernavn eller e-post"
 
 #: ../bbpress/form-user-lost-pass.php:27
 msgid "Reset My Password"
-msgstr ""
+msgstr "Nullstill passord"
 
 #: ../bbpress/form-user-register.php:14
 msgid "Create an Account"
-msgstr ""
+msgstr "Lag konto"
 
 #: ../bbpress/form-user-register.php:17
 msgid "Your username must be unique, and cannot be changed later."
-msgstr ""
+msgstr "Ditt brukernavn må være unikt, og kan ikke forandres senere."
 
 #: ../bbpress/form-user-register.php:18
 msgid ""
@@ -1520,7 +1471,7 @@ msgstr ""
 
 #: ../bbpress/form-user-register.php:36
 msgid "Register"
-msgstr ""
+msgstr "Registrér"
 
 #: ../bbpress/form-user-roles.php:13
 msgid "Blog Role"
@@ -1536,8 +1487,10 @@ msgstr ""
 
 #: ../bbpress/loop-forums.php:21 ../bbpress/loop-replies.php:24
 #: ../bbpress/loop-replies.php:66 ../bbpress/loop-topics.php:21
+#: ../includes/documentation/documentation.php:45
+#: ../includes/documentation/nb_NO/posts.php:1
 msgid "Posts"
-msgstr ""
+msgstr "Innlegg"
 
 #: ../bbpress/loop-forums.php:22 ../bbpress/loop-topics.php:22
 msgid "Freshness"
@@ -1615,6 +1568,11 @@ msgstr ""
 msgid "Subscriptions"
 msgstr ""
 
+#: ../bbpress/user-details.php:65 ../framework/functions.php:93
+#: ../woocommerce/myaccount/my-address.php:68
+msgid "Edit"
+msgstr "Redigér"
+
 #: ../bbpress/user-favorites.php:15
 msgid "Favorite Forum Topics"
 msgstr ""
@@ -1690,61 +1648,73 @@ msgstr ""
 msgid "This user has not created any topics."
 msgstr ""
 
-#: ../framework/functions.php:517
+#: ../framework/functions.php:94
+msgid "Reply"
+msgstr "Svar"
+
+#: ../framework/functions.php:99
+msgid "Comment is awaiting moderation"
+msgstr "Kommentaren avventer moderasjon"
+
+#: ../framework/functions.php:314
+msgid "Invalid sidebar ID"
+msgstr "Ugyldig sidebar ID"
+
+#: ../framework/functions.php:542
 msgid "Home"
 msgstr ""
 
-#: ../framework/functions.php:766
+#: ../framework/functions.php:791
 msgid "g:i a"
 msgstr ""
 
-#: ../framework/functions.php:769
+#: ../framework/functions.php:794
 #, php-format
 msgid "Minute %1$s"
 msgstr ""
 
-#: ../framework/functions.php:769
+#: ../framework/functions.php:794
 msgid "i"
 msgstr ""
 
-#: ../framework/functions.php:772
+#: ../framework/functions.php:797
 msgid "g a"
 msgstr ""
 
-#: ../framework/functions.php:783 ../framework/functions.php:789
-#: ../framework/functions.php:794 ../framework/functions.php:799
-#: ../framework/functions.php:864
+#: ../framework/functions.php:808 ../framework/functions.php:814
+#: ../framework/functions.php:819 ../framework/functions.php:824
+#: ../framework/functions.php:889
 msgid "Y"
 msgstr ""
 
-#: ../framework/functions.php:784 ../framework/functions.php:795
-#: ../framework/functions.php:868
+#: ../framework/functions.php:809 ../framework/functions.php:820
+#: ../framework/functions.php:893
 msgid "F"
 msgstr ""
 
-#: ../framework/functions.php:785 ../framework/functions.php:872
+#: ../framework/functions.php:810 ../framework/functions.php:897
 msgid "d"
 msgstr ""
 
-#: ../framework/functions.php:790
+#: ../framework/functions.php:815
 #, php-format
 msgid "Week %1$s"
 msgstr ""
 
-#: ../framework/functions.php:806
+#: ../framework/functions.php:831
 #, php-format
 msgid "Search results for &quot;%1$s&quot;"
 msgstr "Søkeresultat for &quot;%1$s&quot;"
 
-#: ../framework/functions.php:810
+#: ../framework/functions.php:835
 msgid "404 Not Found"
 msgstr "404 - Siden ikke funnet"
 
-#: ../framework/functions.php:1402
+#: ../framework/functions.php:1425
 msgid "Continue reading"
 msgstr "Les mer"
 
-#: ../framework/functions.php:1403
+#: ../framework/functions.php:1426
 msgid "Go back "
 msgstr ""
 
@@ -1753,14 +1723,12 @@ msgid "Something went wrong."
 msgstr "Noe gikk galt."
 
 #: ../framework/plugin-activation.php:158
-#, fuzzy
 msgid "Return to the dashboard"
 msgstr "Gå tilbake til dashboard."
 
 #: ../framework/plugin-activation.php:160
-#, fuzzy
 msgid "The following plugin was activated successfully:"
-msgstr "Følgende innstikk ble installert: %s"
+msgstr "Følgende innstikk ble aktivert: %s"
 
 #: ../framework/plugin-activation.php:161
 #, php-format
@@ -1927,48 +1895,63 @@ msgid "Installing Plugin %1$s (%2$d/%3$d)"
 msgstr ""
 
 #: ../includes/compat-pagebuilder.php:7
-msgid "Edge to edge - content fills the entire browser width."
-msgstr ""
+msgid "Full width content"
+msgstr "Fullbredde - innhold i full bredde"
 
 #: ../includes/compat-pagebuilder.php:8
-msgid "Edge to edge, grey background - content fills the entire browser width."
-msgstr ""
-
-#: ../includes/compat-pagebuilder.php:9
-msgid "Edge to edge, dark background - content fills the entire browser width."
-msgstr ""
-
-#: ../includes/compat-pagebuilder.php:10
-msgid "White with border"
-msgstr ""
-
-#: ../includes/compat-pagebuilder.php:11
-msgid "Grey background"
-msgstr ""
-
-#: ../includes/compat-pagebuilder.php:12
-msgid "Dark background"
-msgstr ""
-
-#: ../includes/compat-pagebuilder.php:13
 msgid "Full width white"
 msgstr ""
 
-#: ../includes/compat-pagebuilder.php:14
-#, fuzzy
+#: ../includes/compat-pagebuilder.php:9
 msgid "Full width grey"
-msgstr "Fullbredde eller normal bredde"
+msgstr "Fullbredde - grå bakgrunn"
 
-#: ../includes/compat-pagebuilder.php:15
-#, fuzzy
+#: ../includes/compat-pagebuilder.php:10
 msgid "Full width dark"
-msgstr "Fullbredde eller normal bredde"
+msgstr "Fullbredde - mørk bakgrunn"
 
-#: ../includes/compat-woocommerce.php:57
+#: ../includes/compat-pagebuilder.php:21
+msgid "Top Border Color"
+msgstr ""
+
+#: ../includes/compat-pagebuilder.php:26
+msgid "Bottom Border Color"
+msgstr ""
+
+#: ../includes/compat-pagebuilder.php:31
+msgid "Background Color"
+msgstr ""
+
+#: ../includes/compat-pagebuilder.php:36
+msgid "Background Image"
+msgstr ""
+
+#: ../includes/compat-pagebuilder.php:41
+msgid "Repeat Background Image"
+msgstr ""
+
+#: ../includes/compat-pagebuilder.php:46
+msgid "Add parallax-effect"
+msgstr ""
+
+#: ../includes/compat-pagebuilder.php:51
+msgid "Parallax speed"
+msgstr ""
+
+#: ../includes/compat-pagebuilder.php:62
+msgid "No Bottom Margin"
+msgstr "Ingen avstand i bunnen"
+
+#: ../includes/compat-woocommerce.php:11
+#, php-format
+msgid " Save %s"
+msgstr ""
+
+#: ../includes/compat-woocommerce.php:67
 msgid "View cart"
 msgstr ""
 
-#: ../includes/compat-woocommerce.php:57
+#: ../includes/compat-woocommerce.php:67
 msgid "Added to cart"
 msgstr ""
 
@@ -1978,9 +1961,9 @@ msgstr "Bildegalleri"
 
 #: ../includes/contextual-help.php:25
 msgid ""
-"You can use the Image Gallery panel to create image sliders and a photo "
+"You can use the Image Gallery panel to create image sliders or an image "
 "gallery."
-msgstr "Du kan bruke bildegalleri til å lage bilde-slideshow og fotogalleri"
+msgstr "Du kan bruke bildegalleri til å lage bilde-slideshow og fotogalleri."
 
 #: ../includes/contextual-help.php:26
 msgid ""
@@ -1993,8 +1976,8 @@ msgid ""
 "In \"Gallery Settings\", enter the appropriate settings for your gallery."
 msgstr ""
 
-#: ../includes/contextual-help.php:30 ../includes/contextual-help.php:68
-msgid "Read the full documentation on Veuse.com."
+#: ../includes/contextual-help.php:30
+msgid "Read the full documentation on veuse.com."
 msgstr ""
 
 #: ../includes/contextual-help.php:50
@@ -2022,6 +2005,10 @@ msgstr ""
 msgid ""
 "If you want to embed a video from Youtube or Vimeo, add the url to the video "
 "page in the Embed video input field."
+msgstr ""
+
+#: ../includes/contextual-help.php:68
+msgid "Read the full documentation on Veuse.com."
 msgstr ""
 
 #: ../includes/customizer.php:72
@@ -2080,65 +2067,105 @@ msgstr "Farger"
 msgid "Body background color"
 msgstr ""
 
-#: ../includes/customizer.php:427
+#: ../includes/customizer.php:382
+msgid "Header background-color"
+msgstr ""
+
+#: ../includes/customizer.php:402
+msgid "Menu link color"
+msgstr "Meny lenkefarge"
+
+#: ../includes/customizer.php:425
+msgid "Page content background-color"
+msgstr ""
+
+#: ../includes/customizer.php:448
 msgid "Footer background color"
 msgstr ""
 
-#: ../includes/customizer.php:449
+#: ../includes/customizer.php:470
 msgid "Main theme color"
 msgstr ""
 
-#: ../includes/customizer.php:470
+#: ../includes/customizer.php:491
 msgid "Link Color"
 msgstr "Lenke farge"
 
-#: ../includes/customizer.php:491
+#: ../includes/customizer.php:512
 msgid "Link color on hover"
 msgstr "Lenke farge når musepeker holdes over"
 
-#: ../includes/sidebar-generator.php:167
-msgid "Create sidebars"
-msgstr ""
+#: ../includes/documentation/documentation.php:17
+msgid "Theme Docs"
+msgstr "Temadokumentasjon"
 
-#: ../includes/sidebar-generator.php:192
-msgid "Sidebar Generator"
-msgstr "Sidebar generator"
+#: ../includes/documentation/documentation.php:39
+msgid "Intro"
+msgstr "Introduksjon"
 
-#: ../includes/sidebar-generator.php:195
-msgid ""
-"Here you can create new sidebars. These sidebars will be selectable in the "
-"Sidebars panel in posts and pages"
-msgstr ""
-"Her kan du lage nye sidebarer/widget-områder. Disse sidebar-områdene vil "
-"være mulig å sette inn på sider og innlegg. "
+#: ../includes/documentation/documentation.php:40
+#: ../includes/documentation/nb_NO/theme-options.php:1
+msgid "Theme options"
+msgstr "Temainnstillinger"
 
-#: ../includes/sidebar-generator.php:198
-msgid "+ Add Sidebar"
-msgstr "+ Ny sidebar"
+#: ../includes/documentation/documentation.php:41
+#: ../includes/documentation/nb_NO/pagebuilder.php:1
+msgid "Page Builder"
+msgstr "Sidebygger"
 
-#: ../includes/sidebar-generator.php:205
+#: ../includes/documentation/documentation.php:42
+#: ../includes/documentation/nb_NO/sidebars.php:1
 msgid "Sidebars"
 msgstr "Sidebarer"
 
-#: ../includes/sidebar-generator.php:206
-msgid "CSS class"
-msgstr "Css klasse"
+#: ../includes/documentation/documentation.php:43
+#: ../includes/documentation/nb_NO/menus.php:1
+msgid "Menus"
+msgstr "Menyer"
 
-#: ../includes/sidebar-generator.php:220
-msgid "Delete sidebar"
-msgstr "Slett sidebar"
+#: ../includes/documentation/documentation.php:44
+#: ../includes/documentation/nb_NO/pages.php:1
+msgid "Pages"
+msgstr "Sider"
 
-#: ../includes/sidebar-generator.php:228
-msgid "No Sidebars created"
-msgstr "Ingen sidebarer laget"
+#: ../includes/documentation/documentation.php:47
+msgid "Other post types"
+msgstr "Andre innleggstyper"
+
+#: ../includes/documentation/documentation.php:48
+#: ../includes/documentation/nb_NO/shortcodes.php:1
+msgid "Shortcodes"
+msgstr "Hurtigkoder"
+
+#: ../includes/documentation/documentation.php:99
+#, php-format
+msgid "%s documentation"
+msgstr "%s dokumentasjon"
+
+#: ../includes/documentation/documentation.php:100
+#, php-format
+msgid ""
+"Here you find instructions on how to use the %s theme. For more in-depth "
+"info, please check out http://veuse.com/support."
+msgstr ""
+"Her finner du instruksjoner om hvordan du bruker %s temaet. For mer "
+"utfyllende info, vennligst gå til http://siteman.no, eller kontakt support."
+
+#: ../includes/documentation/nb_NO/intro.php:1
+msgid "Thank you for using our WordPress theme"
+msgstr "Takk for at du bruker vårt WordPress tema"
+
+#: ../includes/documentation/nb_NO/misc.php:1
+msgid "Miscellannous"
+msgstr "Diverse"
 
 #: ../woocommerce/cart/cart.php:27
 msgid "Product"
-msgstr ""
+msgstr "Produkt"
 
 #: ../woocommerce/cart/cart.php:28
 msgid "Price"
-msgstr ""
+msgstr "Pris"
 
 #: ../woocommerce/cart/cart.php:29
 msgid "Quantity"
@@ -2170,20 +2197,19 @@ msgstr ""
 
 #: ../woocommerce/cart/cart.php:125
 msgid "Update Cart"
-msgstr ""
+msgstr "Oppdater handlekurv"
 
 #: ../woocommerce/cart/cart.php:125
 msgid "Proceed to Checkout"
-msgstr ""
+msgstr "Gå videre til kassen"
 
 #: ../woocommerce/checkout/form-checkout.php:20
-#, fuzzy
 msgid "You must be logged in to checkout."
-msgstr "Du må være <a href=\"%s\">logget inn</a> for å kommentere."
+msgstr "Du må være logget inn for å sjekke ut."
 
 #: ../woocommerce/checkout/form-checkout.php:51
 msgid "Your order"
-msgstr ""
+msgstr "Din ordre"
 
 #: ../woocommerce/loop/no-products-found.php:14
 msgid "No products were found matching your selection."
@@ -2191,63 +2217,57 @@ msgstr ""
 
 #: ../woocommerce/loop/orderby.php:22
 msgid "Default sorting"
-msgstr ""
+msgstr "Standard sortering"
 
 #: ../woocommerce/loop/orderby.php:23
 msgid "Sort by popularity"
-msgstr ""
+msgstr "Sorter etter popularitet"
 
 #: ../woocommerce/loop/orderby.php:24
 msgid "Sort by average rating"
-msgstr ""
+msgstr "Sorter etter rating"
 
 #: ../woocommerce/loop/orderby.php:25
 msgid "Sort by newness"
-msgstr ""
+msgstr "Sorter etter dato"
 
 #: ../woocommerce/loop/orderby.php:26
 msgid "Sort by price: low to high"
-msgstr ""
+msgstr "Sorter etter pris: lav/høy"
 
 #: ../woocommerce/loop/orderby.php:27
 msgid "Sort by price: high to low"
-msgstr ""
+msgstr "Sorter etter pris: høy/lav"
 
 #: ../woocommerce/loop/result-count.php:30
 msgid "Showing the single result"
-msgstr ""
+msgstr "Viser resultat"
 
 #: ../woocommerce/loop/result-count.php:32
 #, php-format
 msgid "Showing all %d results"
 msgstr ""
 
-#: ../woocommerce/loop/sale-flash.php:16
-#: ../woocommerce/single-product/sale-flash.php:16
-msgid "Sale!"
-msgstr ""
-
 #: ../woocommerce/loop/view-details.php:11
-#, fuzzy
 msgid "Details"
-msgstr "Vis detaljer"
+msgstr "Detaljer"
 
 #: ../woocommerce/myaccount/my-address.php:17
 msgid "My Addresses"
-msgstr ""
+msgstr "Mine adresser"
 
 #: ../woocommerce/myaccount/my-address.php:19
 #: ../woocommerce/myaccount/my-address.php:25
 msgid "Billing Address"
-msgstr ""
+msgstr "Fakturaadresse"
 
 #: ../woocommerce/myaccount/my-address.php:20
 msgid "Shipping Address"
-msgstr ""
+msgstr "Forsendelsesadresse"
 
 #: ../woocommerce/myaccount/my-address.php:23
 msgid "My Address"
-msgstr ""
+msgstr "Min adresse"
 
 #: ../woocommerce/myaccount/my-address.php:35
 msgid "The following addresses will be used on the checkout page by default."
@@ -2276,9 +2296,8 @@ msgid "out of 5"
 msgstr ""
 
 #: ../woocommerce/single-product/related.php:36
-#, fuzzy
 msgid "Related Products"
-msgstr "Relaterte innlegg"
+msgstr "Relaterte produkter"
 
 #: ../woocommerce/single-product/review.php:26
 #, php-format
@@ -2291,33 +2310,87 @@ msgstr ""
 
 #: ../woocommerce/single-product/review.php:43
 msgid "verified owner"
-msgstr ""
+msgstr "verifisert eier"
+
+#: ../woocommerce/single-product/sale-flash.php:16
+msgid "Sale!"
+msgstr "Salg!"
 
 #: ../woocommerce/single-product/up-sells.php:39
 msgid "You may also like&hellip;"
-msgstr ""
+msgstr "Du vil kanskje også like&hellip;"
 
 #: ../woocommerce/single-product/add-to-cart/variable.php:25
-#, fuzzy
 msgid "Choose an option"
-msgstr "Overskrift"
+msgstr "Velg en variant"
 
 #: ../woocommerce/single-product/add-to-cart/variable.php:73
 msgid "Clear selection"
-msgstr ""
+msgstr "Nullstill utvalg"
 
 #: ../woocommerce/single-product/add-to-cart/variable.php:103
 msgid "This product is currently out of stock and unavailable."
 msgstr ""
 
 #: ../woocommerce/single-product/tabs/additional-information.php:14
-#, fuzzy
 msgid "Additional Information"
-msgstr "Personlig informasjon"
+msgstr "Tilleggsinformasjon"
 
 #: ../woocommerce/single-product/tabs/description.php:14
 msgid "Product Description"
-msgstr ""
+msgstr "Produktbeskrivelse"
+
+#~ msgid "Typography for H4  (Header 4)"
+#~ msgstr "Overskrift 4"
+
+#~ msgid "Typography for H5  (Header 5)"
+#~ msgstr "Overskrift 5"
+
+#~ msgid "Typography for h6  (Header 6)"
+#~ msgstr "Overskrift 6"
+
+#~ msgid "Typography for H1 (Header 1)"
+#~ msgstr "Overskrift 1"
+
+#~ msgid "Typography for H2  (Header 2)"
+#~ msgstr "Overskrift 2"
+
+#~ msgid "Typography for H3  (Header 3)"
+#~ msgstr "Overskrift 3"
+
+#~ msgid "Theme Information 1"
+#~ msgstr "Temainformasjon 1"
+
+#~ msgid "Theme Information 2"
+#~ msgstr "Temainformasjon 2"
+
+#~ msgid "Columns"
+#~ msgstr "Kolonner"
+
+#~ msgid "Post video"
+#~ msgstr "Video"
+
+#~ msgid "Sidebar Generator"
+#~ msgstr "Sidebar generator"
+
+#~ msgid ""
+#~ "Here you can create new sidebars. These sidebars will be selectable in "
+#~ "the Sidebars panel in posts and pages"
+#~ msgstr ""
+#~ "Her kan du lage nye sidebarer/widget-områder. Disse sidebar-områdene vil "
+#~ "være mulig å sette inn på sider og innlegg. "
+
+#~ msgid "+ Add Sidebar"
+#~ msgstr "+ Ny sidebar"
+
+#~ msgid "CSS class"
+#~ msgstr "Css klasse"
+
+#~ msgid "Delete sidebar"
+#~ msgstr "Slett sidebar"
+
+#~ msgid "No Sidebars created"
+#~ msgstr "Ingen sidebarer laget"
 
 #~ msgid "Posted on"
 #~ msgstr "Publisert den"

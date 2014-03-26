@@ -30,7 +30,7 @@ $subnav-grid-size: 2;
 		
 		.sidebar-left #post-content {
 			@include grid-column($content-grid-size, $float: right);
-			border-left:1px solid darken(#fff,5%);
+			border-left:1px solid darken(#fff,9%);
 			
 		}
 		
@@ -39,7 +39,7 @@ $subnav-grid-size: 2;
 		
 		.sidebar-right #post-content {
 			@include grid-column($content-grid-size, $float: left);
-			border-right:1px solid darken(#fff,5%);
+			border-right:1px solid darken(#fff,9%);
 		}
 		
 		
@@ -52,8 +52,8 @@ $subnav-grid-size: 2;
 			//padding-right:30px !important;
 		}
 
-		.sidebar-right #sidebar { border-left:1px solid darken(#fff,5%); left:-1px !important; position: relative;  }
-		.sidebar-left #sidebar { border-right:1px solid darken(#fff,5%); right:-1px !important; position: relative; }
+		.sidebar-right #sidebar { border-left:1px solid darken(#fff,9%); left:-1px !important; position: relative;  }
+		.sidebar-left #sidebar { border-right:1px solid darken(#fff,9%); right:-1px !important; position: relative; }
 		
 		.single-product,
 		.error404,

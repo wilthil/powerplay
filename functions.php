@@ -63,7 +63,7 @@ function add_oembed_soundcloud(){
 $tmpl_opt  = get_stylesheet_directory() . '/admin/option/option.php';
 
 
-remove_filter('the_content', 'veuse_portfolio_filter_content', 1);
+//remove_filter('the_content', 'veuse_portfolio_filter_content', 1);
 
 
 if(class_exists('ReduxFramework'))

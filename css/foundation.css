@@ -6971,7 +6971,7 @@ abbr.required {
     padding-right: 1.53846rem;
     width: 75%;
     float: right;
-    border-left: 1px solid #f2f2f2;
+    border-left: 1px solid #e8e8e8;
   }
 
   /* Pages with sidebar on right */
@@ -6981,7 +6981,7 @@ abbr.required {
     padding-right: 1.53846rem;
     width: 75%;
     float: left;
-    border-right: 1px solid #f2f2f2;
+    border-right: 1px solid #e8e8e8;
   }
 
   /* line 48, ../scss/theme/_structure.scss */
@@ -6994,14 +6994,14 @@ abbr.required {
 
   /* line 55, ../scss/theme/_structure.scss */
   .sidebar-right #sidebar {
-    border-left: 1px solid #f2f2f2;
+    border-left: 1px solid #e8e8e8;
     left: -1px !important;
     position: relative;
   }
 
   /* line 56, ../scss/theme/_structure.scss */
   .sidebar-left #sidebar {
-    border-right: 1px solid #f2f2f2;
+    border-right: 1px solid #e8e8e8;
     right: -1px !important;
     position: relative;
   }

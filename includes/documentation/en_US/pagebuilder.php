@@ -2,6 +2,14 @@
 
 <div class="about-text">This theme is compatible with the Page Builder plugin by SiteOrigin. The Page Builder has extended functionality via this theme. This extended functionality lets you create parallax sections via the Page Builder.</div>
 
+<p>
+WordPress has evolved into a fully functional CMS. Page Builder (previously called Panels) completes the transition by giving you a way to create responsive column layouts using the widgets you know and love.</p>
+
+<h4>Use Your Widgets</h4>
+<p>You know widgets. They're the things you add to your sidebars. Page Builder makes all your widgets even more useful by turning them into the building blocks of your pages.</p>
+
+
+
 <?php if(!is_plugin_active('siteorigin-panels/siteorigin-panels.php')):?>
 
 <div id="message" class="error below-h2">

@@ -34,7 +34,7 @@ $imagesize = array(
 
 		$allterms = get_terms( $taxonomy, array('hide_empty' => 1)); ?>
      			
-     	<ul class="portfolio-filter">
+     	<ul class="veuse-portfolio-filter">
     		<li class="active"><a href="#" class="showall" ><?php _e('All','veuse');?></a></li>
     			<?php
 
@@ -55,7 +55,7 @@ $imagesize = array(
      			</ul>
      			<?php
 		} ?>
-		<ul class="portfolio-list small-block-portfolio-grid-1 large-block-portfolio-grid-<?php echo $columns;?>">
+		<ul class="veuse-portfolio-list small-block-portfolio-grid-1 large-block-portfolio-grid-<?php echo $columns;?>">
 		<?php
 
 		/* The loop */

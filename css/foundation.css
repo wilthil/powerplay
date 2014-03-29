@@ -12409,7 +12409,7 @@ ul.portfolio-meta li span {
 }
 
 /* line 70, ../scss/plugins/_portfolio.scss */
-ul.portfolio-filter {
+ul.veuse-portfolio-filter {
   margin: 0 0 20px;
   padding: 0;
   list-style: none;
@@ -12417,16 +12417,16 @@ ul.portfolio-filter {
   *zoom: 1;
 }
 /* line 145, ../scss/foundation/components/_global.scss */
-ul.portfolio-filter:before, ul.portfolio-filter:after {
+ul.veuse-portfolio-filter:before, ul.veuse-portfolio-filter:after {
   content: " ";
   display: table;
 }
 /* line 146, ../scss/foundation/components/_global.scss */
-ul.portfolio-filter:after {
+ul.veuse-portfolio-filter:after {
   clear: both;
 }
 /* line 78, ../scss/plugins/_portfolio.scss */
-ul.portfolio-filter li {
+ul.veuse-portfolio-filter li {
   display: inline;
   text-transform: uppercase;
   font-size: 12px;
@@ -12434,7 +12434,7 @@ ul.portfolio-filter li {
   font-weight: normal;
 }
 /* line 86, ../scss/plugins/_portfolio.scss */
-ul.portfolio-filter li a {
+ul.veuse-portfolio-filter li a {
   padding: 6px 0px;
   display: inline-block;
   margin-right: 4px;
@@ -12442,44 +12442,44 @@ ul.portfolio-filter li a {
   color: #838383;
 }
 /* line 88, ../scss/plugins/_portfolio.scss */
-ul.portfolio-filter li.active a {
+ul.veuse-portfolio-filter li.active a {
   color: #209ec4;
 }
 /* line 94, ../scss/plugins/_portfolio.scss */
-ul.portfolio-filter li:after {
+ul.veuse-portfolio-filter li:after {
   margin-right: 2px;
   content: '/';
   color: #ddd;
 }
 
 /* line 105, ../scss/plugins/_portfolio.scss */
-.portfolio-list {
+.veuse-portfolio-list {
   margin-bottom: 30px;
 }
 /* line 109, ../scss/plugins/_portfolio.scss */
-.portfolio-list li {
+.veuse-portfolio-list li {
   clear: none !important;
   overflow: hidden;
 }
 /* line 114, ../scss/plugins/_portfolio.scss */
-.portfolio-list li br {
+.veuse-portfolio-list li br {
   display: none;
 }
 /* line 119, ../scss/plugins/_portfolio.scss */
-.portfolio-list .portfolio-entry {
+.veuse-portfolio-list .portfolio-entry {
   position: relative;
   overflow: hidden;
   margin-bottom: 20px;
 }
 /* line 129, ../scss/plugins/_portfolio.scss */
-.portfolio-list .portfolio-entry:hover .overlay {
+.veuse-portfolio-list .portfolio-entry:hover .overlay {
   opacity: 0.8;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
 /* line 131, ../scss/plugins/_portfolio.scss */
-.portfolio-list .portfolio-entry:hover a.more-link {
+.veuse-portfolio-list .portfolio-entry:hover a.more-link {
   opacity: 1;
   margin-bottom: 0px;
   -webkit-transition: all 0.5s ease-out;
@@ -12487,7 +12487,7 @@ ul.portfolio-filter li:after {
   transition: all 0.5s ease-out;
 }
 /* line 135, ../scss/plugins/_portfolio.scss */
-.portfolio-list .portfolio-entry:hover .entry-thumbnail img {
+.veuse-portfolio-list .portfolio-entry:hover .entry-thumbnail img {
   -moz-transform: scale(1.2, 1.2);
   -webkit-transform: scale(1.2, 1.2);
   -webkit-transition: all 0.3s ease-out;
@@ -12495,7 +12495,7 @@ ul.portfolio-filter li:after {
   transition: all 0.3s ease-out;
 }
 /* line 145, ../scss/plugins/_portfolio.scss */
-.portfolio-list .portfolio-entry:hover h4 {
+.veuse-portfolio-list .portfolio-entry:hover h4 {
   bottom: 50%;
   opacity: 1;
   -webkit-transition: all 0.3s ease-out;
@@ -12503,12 +12503,12 @@ ul.portfolio-filter li:after {
   transition: all 0.3s ease-out;
 }
 /* line 153, ../scss/plugins/_portfolio.scss */
-.portfolio-list .portfolio-entry img {
+.veuse-portfolio-list .portfolio-entry img {
   z-index: 0;
   margin: 0;
 }
 /* line 155, ../scss/plugins/_portfolio.scss */
-.portfolio-list .portfolio-entry .entry-thumbnail {
+.veuse-portfolio-list .portfolio-entry .entry-thumbnail {
   position: relative;
   z-index: 1;
   margin: 0px !important;
@@ -12521,13 +12521,13 @@ ul.portfolio-filter li:after {
   transition: all 0.3s ease-out;
 }
 /* line 168, ../scss/plugins/_portfolio.scss */
-.portfolio-list .portfolio-entry .entry-thumbnail img {
+.veuse-portfolio-list .portfolio-entry .entry-thumbnail img {
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
 /* line 172, ../scss/plugins/_portfolio.scss */
-.portfolio-list .portfolio-entry h4 {
+.veuse-portfolio-list .portfolio-entry h4 {
   opacity: 0;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
@@ -12542,7 +12542,7 @@ ul.portfolio-filter li:after {
   margin-bottom: 0;
 }
 /* line 187, ../scss/plugins/_portfolio.scss */
-.portfolio-list .portfolio-entry h4 a {
+.veuse-portfolio-list .portfolio-entry h4 a {
   clear: both;
   margin-bottom: 0;
   line-height: 1.2em;
@@ -12550,11 +12550,11 @@ ul.portfolio-filter li:after {
   color: #fff;
 }
 /* line 195, ../scss/plugins/_portfolio.scss */
-.portfolio-list .portfolio-entry h4 a:hover {
+.veuse-portfolio-list .portfolio-entry h4 a:hover {
   color: #fff;
 }
 /* line 202, ../scss/plugins/_portfolio.scss */
-.portfolio-list .portfolio-entry .overlay {
+.veuse-portfolio-list .portfolio-entry .overlay {
   background: #209ec4;
   position: absolute;
   top: -5px;
@@ -12568,7 +12568,7 @@ ul.portfolio-filter li:after {
   transition: all 0.4s ease-out;
 }
 /* line 204, ../scss/plugins/_portfolio.scss */
-.portfolio-list .portfolio-entry a.more-link {
+.veuse-portfolio-list .portfolio-entry a.more-link {
   font-size: 12px;
   text-transform: uppercase;
   text-align: center;
@@ -12585,7 +12585,7 @@ ul.portfolio-filter li:after {
   transition: all 0.5s ease-out;
 }
 /* line 220, ../scss/plugins/_portfolio.scss */
-.portfolio-list .portfolio-entry a.more-link span {
+.veuse-portfolio-list .portfolio-entry a.more-link span {
   padding: 0 10px 0px 10px;
   height: 30px;
   line-height: 29px !important;

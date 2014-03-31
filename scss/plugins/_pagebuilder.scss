@@ -3,7 +3,8 @@
 /* Parallax */
 
 .panel-grid.parallax {
-
+	
+	
 	overflow: visible !important;
 	
 	.panel-row-style {  	
@@ -11,7 +12,7 @@
 		background-size: cover !important;
 		position: relative;
 		background-position: center top;
-		
+		@include clearfix();
 	}
 }
 

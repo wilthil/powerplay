@@ -94,12 +94,12 @@ function veuse_panels_panels_row_attributes($attr, $row) {
 	}
 	
 	if(!empty($row['style']['parallax'])) {
-		if(empty($attr['style'])) $attr['style'] = '';
+		if(empty($attr['style']['parallax'])) $attr['parallax'] = '';
 		$attr['class'] .= ' parallax';
 	}
 	
 	if(!empty($row['style']['parallax_speed'])) {
-		if(empty($attr['style'])) $attr['style'] = '';
+		if(empty($attr['style']['data-parallax-speed'])) $attr['data-parallax-speed'] = '';
 		$attr['data-parallax-speed'] .= $row['style']['parallax_speed'];
 	}
 	

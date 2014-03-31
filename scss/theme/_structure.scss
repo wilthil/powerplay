@@ -52,8 +52,14 @@ $subnav-grid-size: 2;
 			//padding-right:30px !important;
 		}
 
-		.sidebar-right #sidebar { border-left:1px solid darken(#fff,9%); left:-1px !important; position: relative;  }
-		.sidebar-left #sidebar { border-right:1px solid darken(#fff,9%); right:-1px !important; position: relative; }
+		.sidebar-right #sidebar { border-left:1px solid darken(#fff,9%); left:-1px !important; position: relative; 
+		
+		
+		 }
+		.sidebar-left #sidebar { border-right:1px solid darken(#fff,9%); right:-1px !important; position: relative;
+		
+			 @include background-image(linear-gradient(left, #f7f7f7, #f4f4f4));
+		 }
 		
 		.single-product,
 		.error404,

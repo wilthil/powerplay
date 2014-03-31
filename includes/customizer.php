@@ -567,6 +567,13 @@ function veuse_print_custom_styles(){
 			#footer { background-color: <?php echo $footer_background;?>;}
 		<?php endif;?>
 		
+		<?php if($logo_margin_top):?>
+			#header #logo img { padding-top: <?php echo $logo_margin_top;?>px;}
+		<?php endif;?>
+		<?php if($logo_margin_bottom):?>
+			#header #logo img { padding-bottom: <?php echo $logo_margin_bottom;?>px;}
+		<?php endif;?>
+		
 		<?php if($primary_color):?>
 			.primary,
 			.portfolio-entry .overlay 

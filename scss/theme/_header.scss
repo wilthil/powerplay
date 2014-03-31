@@ -4,6 +4,26 @@
 
 $header-bg: #fff !default;
 
+/* Set fixed position when admin bar is visible */
+
+@media #{$large-up}{
+	.admin-bar #wrapper[data-header-position=fixed] #header{
+		
+		top:32px;
+	}
+}
+
+#wrapper[data-header-position=fixed] #header{
+	
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 0;
+	padding:0 ;
+	//height: $header-height-sticky;
+	@include single-transition(all, 0.5s);
+
+}
 
 #header { 
 	
@@ -15,14 +35,18 @@ $header-bg: #fff !default;
 	z-index: 100;
 	height: $header-height + 2;
   	background:$header-bg; // $primary-color;
+  	background: rgba(255, 255, 255, 0.8);
   	border-top:2px solid rgba( 0, 0, 0, 0.90);
   	
-  	
+    	
   	//border-bottom: 1px solid #eee;
 	@include box-shadow(0 1px 0px rgba(0,0,0,0.05));
   	@include single-transition(all, 0.5s);
   	
-  	#logo { line-height: $header-height - 9; 
+  	#logo { 
+  	
+  		display: inline-block;
+  		line-height: $header-height - 9; 
 			img { max-height: $header-height - 20;  @include single-transition(all, 0.5s);}
 		 }
   	
@@ -31,21 +55,7 @@ $header-bg: #fff !default;
   	}
   	
 
-	/* Sticky nav styling */  	
-  	&.sticky {
-		position: fixed;
-		width: 100%;
-		left: 0;
-		top: 0;
-		padding:0 ;
-		//height: $header-height-sticky;
-		@include single-transition(all, 0.5s);
-				
-		
-		#logo { line-height: $header-height-sticky - 7; 
-			img { max-height: $header-height-sticky - 20;  @include single-transition(all, 0.5s);}
-		 }
-	}
+	
   	
   	
   	#logo {
@@ -70,7 +80,7 @@ $header-bg: #fff !default;
 	  		color:#fff;
 	  		line-height: $header-height - 7;
 	  		
-	  		img { display: inline; margin: 0;   max-height:$header-height - 34; @include single-transition(all, 0.5s);}
+	  		img { display: inline; margin: 0;   @include single-transition(all, 0.5s);}
   		}
 
 	}
@@ -187,15 +197,7 @@ $header-bg: #fff !default;
 	
 */
 
-@media #{$large-up}{
 
-	.admin-bar {
-		
-		 #header.sticky { margin-top:32px; }
-		
-	}
-	
-}
 
 /* 	Hide header for print  */
 

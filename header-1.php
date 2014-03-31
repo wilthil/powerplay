@@ -1,6 +1,7 @@
 <?php global $veuse; 
 
 	!empty($veuse['menu_layout'] ) ? $menu_layout = $veuse['menu_layout'] : $menu_layout = '' ;
+	
 
 
 ?>

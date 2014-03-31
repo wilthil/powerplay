@@ -289,6 +289,22 @@ function setup_framework_options(){
 			'subtitle' => __('Select or upload logo', 'veuse'),
 			),
 			
+			
+			array(
+				'id'=>'header_position',
+				'type' => 'select',
+				'compiler'=>true,
+				'title' => __('Header position', 'veuse'), 
+				'subtitle' => __('', 'veuse'),
+				'options' => array(
+						'fixed' => 'Fixed to top',
+						'regular' => 'Regular'
+					),
+				'default' => 'fixed'
+				),
+			
+			
+			
 			array(
 				'id'=>'header-height',
 				'type' => 'text',
@@ -317,7 +333,7 @@ function setup_framework_options(){
 				),
 				
 			array(
-				'id'=>'logo-margintop',
+				'id'=>'logo_margin_top',
 				'type' => 'text',
 				'title' => __('Logo Top Margin', 'veuse'), 
 				'subtitle' => __('Add some spacing above your site logo', 'veuse'),
@@ -326,7 +342,7 @@ function setup_framework_options(){
 				),
 				
 			array(
-				'id'=>'logo-marginbottom',
+				'id'=>'logo_margin_bottom',
 				'type' => 'text',
 				'title' => __('Logo Bottom Margin', 'veuse'), 
 				'subtitle' => __('Add some below above your site logo', 'veuse'),

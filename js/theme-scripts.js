@@ -134,12 +134,16 @@
     
     jQuery(document).ready(function($){
     
+    
+    	
+
+    
+    	
+    
     	var pathname = window.location;
     	var wrapper = $('#wrapper');
     	//alert(pathname);
-    
-			
-		
+    		
 		$("#responsiveview").contents().find('html').addClass('hide-adminbar');	
 		
 		
@@ -149,7 +153,7 @@
 					$("#responsiveview").contents().find('html').addClass('hide-adminbar');	
 			}, 1000);
 		}
-		/*
+		
 		$(document).on('click','#wp-admin-bar-screen-mobile-p a',function(){
 		
 			if ( wrapper.css('display') == 'none' ){
@@ -230,7 +234,7 @@
 			
 			return false;
 		});
-		*/
+		
 		
         	
     	$('.parallax > div').parallax({ speed: 0.5 });
@@ -246,6 +250,24 @@
     
 		/* Expanding page-builder panel */
     	$('.panel-row-style-edge .panel-grid-cell').edge();
+    	
+    	jQuery(".veuse-slider").owlCarousel({
+		 
+		      navigation : true, // Show next and prev buttons
+		      slideSpeed : 300,
+		      paginationSpeed : 400,
+		      singleItem:true,
+		      autoHeight : true,
+			  transitionStyle:"fade"
+		 
+		      // "singleItem:true" is a shortcut for:
+		      // items : 1, 
+		      // itemsDesktop : false,
+		      // itemsDesktopSmall : false,
+		      // itemsTablet: false,
+		      // itemsMobile : false
+		 
+		  });
 		
 		/* Responsive video */
 		$('#content').fitVids({ customSelector: 'iframe[src^="https://w.soundcloud.com"]'});
@@ -256,6 +278,8 @@
 		/* Tooltip */
 		$('.tip').tipr({'speed':'500','mode':'top'}); 
 		
+		
+		
 		/* Waypoint */
 		
 		//if($(window).width() > 568 ){ // Only animate on larger screens
@@ -264,11 +288,13 @@
 			$('#post-content > .entry-content .panel, #post-content > .entry-content > ul, #post-content article').css({'position':'relative', 'bottom':'-20px'});
 			$('#post-content .entry-content .panel, #post-content .entry-content > ul, #post-content article').waypoint(function() {
 				$(this).animate({'opacity':'1', 'bottom':'0px'}, 600, 'swing');
+			
 			}, { offset: '100%' });
+			
+			
+			
 		//}
 		
-	   
-	
 	    
 	    /* Toggle header search visiblity */
 	  	$('#menu-open-search').toggle(function(){

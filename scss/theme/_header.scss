@@ -33,13 +33,10 @@ $header-bg: #fff !default;
 	top: 0;
 	padding:0 ;
 	z-index: 100;
-	height: $header-height + 2;
+	height: $header-height;
   	background:$header-bg; // $primary-color;
-  	background: rgba(255, 255, 255, 0.8);
   	border-top:2px solid rgba( 0, 0, 0, 0.90);
   	
-    	
-  	//border-bottom: 1px solid #eee;
 	@include box-shadow(0 1px 0px rgba(0,0,0,0.05));
   	@include single-transition(all, 0.5s);
   	
@@ -119,7 +116,7 @@ $header-bg: #fff !default;
 	  		@include border-radius(2px);
 	  		border:1px solid rgba(0,0,0, 0.1);
 	  		margin:-15px 3px 0 4px;
-	  		background: rgba(0,0,0, 0.03);
+	  		background: #fff;
 	  		
 	  		&:hover { background: #fafafa; }
   		}

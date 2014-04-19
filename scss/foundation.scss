@@ -82,9 +82,10 @@ $header-height-sticky: 70px !default;
 @import "theme/header";
 @import "theme/footer";
 @import "theme/navigation";
-@import "theme/flexslider";
+//@import "theme/flexslider";
 @import "theme/blog";
 @import "theme/comments";
+@import "theme/owl";
 @import "theme/widgets";
 @import "theme/wordpress"; // Required wordpress styles
 
@@ -96,6 +97,13 @@ $header-height-sticky: 70px !default;
 @import "plugins/portfolio";
 @import "plugins/staff";
 @import "plugins/uikit";
+
+
+canvas {
+    display: block;
+   
+}
+
 
 .ab-item i { font-family: FontAwesome !important; }
 

@@ -8,10 +8,13 @@
 
 			<div id="post-content">
 			
-				<?php get_template_part('content','media');	?>
+				  <?php get_template_part('content','media');	?>
 				
 				<?php get_template_part('content','page');	?>
-				<?php wp_link_pages( );?>			
+				<?php wp_link_pages( );?>		
+				
+			
+				
 			</div>			 	
 				
 				

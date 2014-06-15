@@ -71,22 +71,21 @@ foreach( $staff_query as $employee ) :	setup_postdata($employee);
 	
 	/* Post meta */
 	$position = get_post_meta($employee->ID, 'veuse_staff_position', true);
-	$portrait = get_post_meta($employee->ID, 'veuse_staff_portrait', true);
-	$image_src = wp_get_attachment_image_src($portrait, 'full');
+	$portrait = wp_get_attachment_url( get_post_thumbnail_id());
 	$phone 	  = get_post_meta($employee->ID, 'veuse_staff_phone', true);
 	$mobile   = get_post_meta($employee->ID, 'veuse_staff_mobile', true);
 	$email    =	get_post_meta($employee->ID, 'veuse_staff_email', true);
 	$facebook =	get_post_meta($employee->ID, 'veuse_staff_facebook', true);	
 	$linkedin =	get_post_meta($employee->ID, 'veuse_staff_linkedin', true);
 	$twitter  = get_post_meta($employee->ID, 'veuse_staff_twitter', true);
-	
+		
 	?>
 	
 	<li <?php post_class();?>>
 		<article>
-			<?php if(isset($image_src[0]) && $image == true):?>
+			<?php if(isset($portrait) && $image == true):?>
 			<div class="veuse-staff-entry-thumbnail">
-					<?php echo veuse_retina_interchange_image( $image_src[0], $imagesize['width'], $imagesize['height'], true);	?>
+					<?php echo veuse_retina_interchange_image( $portrait, $imagesize['width'], $imagesize['height'], true);	?>
 			</div>
 			<?php endif;?>
 			

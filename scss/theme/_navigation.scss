@@ -11,7 +11,7 @@
 =========================================== */
 
 $primary-menu-font-color: #404040;
-$primary-menu-border-color: rgba(#000, 0.07);
+$primary-menu-border-color: #363636;
 
 $primary-menu-sub-bg: #fff;
 $primary-menu-sub-font-color: #505050;
@@ -23,15 +23,38 @@ $primary-menu-sub-font-color: #505050;
 #open-menu-mobile {
 
 	display: block;
-	width:30px; 
-	height: 30px;
-	line-height: 30px; 
-	display: block;
 	position: absolute;
 	left:20px;
 	margin-left:0px;
 	top:50%;
-	margin-top: -15px;
+	margin-top: -11px;
+	
+	background: transparent;
+	padding:2px 5px 0px;
+	display:block;
+	width:30px;
+	height:28px;
+	@include clearfix();
+	@include border-radius(1px);
+
+
+	&:before,
+	&:after,
+	.menu-icon__text {
+		background: #181818;
+		@include border-radius(0px);
+		content:'';
+		display:block;
+		height:3px;
+		margin:4px 0;
+		@include vendor(transition, all .2s ease-out);
+		width:100%;
+	}
+
+	.menu-icon__text {
+		text-indent:-9999px;
+	}
+
 			
 }
   	
@@ -40,8 +63,8 @@ $primary-menu-sub-font-color: #505050;
 	position: absolute;
 	left:-200%;
 	min-height: 768px;
-	top:0;
-	background: #fff;
+	max-width: 280px;
+	top:70px;
 	width:100%;
 	padding:0;
 	margin:0;
@@ -55,19 +78,36 @@ $primary-menu-sub-font-color: #505050;
 	z-index: 2;
 }
 
-#primary-nav-container.mobile-menu-visible { 
+.mobile-menu-visible {
+
+	 #primary-nav-container{ 
 	
-	left: 0;
-	-webkit-transition: .4s all ease;
-	-moz-transition: .4s all ease;
-	-o-transition: .4s all ease;		
-	-ms-transition: .4s all ease;
-	transition: .4s all ease;
+		left: 0;
+		-webkit-transition: .4s all ease;
+		-moz-transition: .4s all ease;
+		-o-transition: .4s all ease;		
+		-ms-transition: .4s all ease;
+		transition: .4s all ease;
+			
+	}
+	
+	#open-menu-mobile {
 		
+		&:before {
+        @include vendor(transform, rotate(45deg) translate3d(5px,5px,0));
+		}
+		
+		.menu-icon__text {
+        	opacity: 0;
+		}
+		&:after {
+        @include vendor(transform, rotate(-45deg) translate3d(5px,-5px,0));
+      }
+	}
 }
 
 #primary-menu {
-		background: #fff;
+
 		text-align: left;
 		margin:0;
 		padding:0;
@@ -103,18 +143,18 @@ $primary-menu-sub-font-color: #505050;
 	
 			&:hover.fa > a:before {
 			
-				color:$body-font-color;		
+				color:#eee;		
 			}
 			
 			
 			
 			a {
-				padding:20px 30px;
+				padding:20px 25px;
 				line-height: 1em; 
 				display: block;
-				border-bottom: 1px solid #e4e4e4;
+				border-bottom: 1px solid #404040;
 				height: auto;
-				color:$body-font-color;
+				color:#949494;
 			}
 			
 			&.showing-child > li, 
@@ -128,8 +168,7 @@ $primary-menu-sub-font-color: #505050;
 				span.arrow:after{
 					
 					font-family: 'FontAwesome';
-					color:$primary-color;
-					background: #fafafa;
+					color:#fafafa;
 					content:'\f105';
 					display: block;
 					width: 28px;
@@ -145,8 +184,7 @@ $primary-menu-sub-font-color: #505050;
 				&:after { display: block }
 			}
 			
-			&.backlink,
-			&.homelink { 
+			&.backlink { 
 				
 				height:50px; 
 				clear: both; 
@@ -157,7 +195,7 @@ $primary-menu-sub-font-color: #505050;
 				display: block;
 				
 				a {
-					color: $primary-menu-font-color; 
+					color: #fafafa; 
 					display: block; 
 					text-align: center; 
 					line-height: 50px; 
@@ -170,26 +208,22 @@ $primary-menu-sub-font-color: #505050;
 				}
 			}
 			
-			&.backlink a span:after,
-			&.homelink a span:after {	
+			&.backlink a span:after {	
 				
 				font-family: 'FontAwesome';
-				color:$primary-color;
+				color:#fafafa;
 				width: 28px;
 				height: 28px;
 				line-height: 28px;
-				background: #fafafa;
 				display: inline-block;
 				text-align: center;
 			
 			}
 			
 			
-			&.backlink a span  { left:20px; position: absolute;}
-			&.homelink a span  { right:30px; position: absolute;}
+			&.backlink a span  { left:15px; position: absolute;}
 			&.backlink a span:after  { content:'\f104'; }
-			&.homelink a span:after  { content:'\f00d'; font-size: 14px;}
-			&.homelink a { text-align: left; padding-left:28px;}
+
 			
 			/* Level 2 ++ */
 			
@@ -199,7 +233,6 @@ $primary-menu-sub-font-color: #505050;
 			> ul ul,
 			> ul ul ul { 
 				position: absolute; 
-				background: #fff;
 				top: 0; 
 				width: 100%; 
 				left:0;
@@ -217,7 +250,7 @@ $primary-menu-sub-font-color: #505050;
 					padding:20px $column-gutter/2;
 					line-height: 1em; 
 					display: block;
-					border-bottom: 1px solid #e4e4e4;
+					border-bottom: 1px solid #404040;
 					
 					}
 					
@@ -346,9 +379,9 @@ $primary-menu-sub-font-color: #505050;
 								clear: both;
 								float: none;
 								padding: 0;
-								border-bottom:1px dotted rgba(255,255,255,0.03);	
+								border-bottom:1px solid $primary-menu-border-color;	
 								
-								a { padding:8px 0px !important; 
+								a { padding:6px 0px !important; 
 									
 									&:hover { background: none; color: #fafafa; }	
 								}
@@ -373,7 +406,8 @@ $primary-menu-sub-font-color: #505050;
 		#open-menu-mobile { display: block; }
 		
 		#primary-nav-container { 
-			text-align:right; 
+			text-align:right;
+			max-width: none; 
 			margin: 0 15px 0 0; 
 			position: static; 
 			background: transparent; 
@@ -450,12 +484,12 @@ $primary-menu-sub-font-color: #505050;
 				
 		  		margin:0px 0 0;
 		  		width: 200px;
-	  			background: #303030;
+	  			background: #252525;
 		  		text-align: left;
 		  		padding:0px;
 		  		display: none;
 		  		position: absolute;
-		  		top: $header-height;
+		  		top: $header-height - 2;
 		  		left:0;
 				z-index: 99;
 				
@@ -473,7 +507,7 @@ $primary-menu-sub-font-color: #505050;
 			  			display: block; 
 			  			padding:4px 16px;
 			  			border:none;
-			  			color: #fafafa;
+			  			color: #949494;
 			  			
 			  			
 			  			}
@@ -495,14 +529,13 @@ $primary-menu-sub-font-color: #505050;
 			font-weight: 600;
 			
 			
-			/*
+			
 			&:hover {
-				background: #fff;
-				@include box-shadow(0 -1px 0 1px rgba( 0, 0, 0, 0.05) );
+
 				border-top-color: #fff;
 				
 			}
-			*/
+			
 		   	  	
 	  		> a {
 		  		height: $header-height;
@@ -516,19 +549,7 @@ $primary-menu-sub-font-color: #505050;
 		  		
 		  		&:hover {
 		  			
-		  			
-		  			&:before,
-		  			&:after {
-			  			
-			  			color: $primary-color;
-	  			
-		  			
-					}
-					
-					
-					
-					
-			  		
+		 	
 			  		//color: $primary-color;
 		  		}
 	  		}
@@ -538,6 +559,9 @@ $primary-menu-sub-font-color: #505050;
 		  	&.current_page_parent,
 		  	&.current_page_item,
 	  		&.current-menu-item {
+	  		
+	  			//border-top-color:#fff;
+	  			
 	  			> a { 
 	  				 color: $primary-color; 
 	  				 }	
@@ -546,18 +570,9 @@ $primary-menu-sub-font-color: #505050;
 	  		}
 	  		
 	  		&.has-children:hover {
-	  		
-	  			//border-top: 3px solid $primary-color;
+	  			 
+	  				
 	  			
-  		
-	  			 > a {
-		  			
-		  	
-					
-		  			z-index: 100;
-	  			}
-	  			
-	  			ul { z-index: 9;}
 				
 			}
 			
@@ -572,6 +587,9 @@ $primary-menu-sub-font-color: #505050;
 			}
 			
 			> ul {
+				
+				
+				
 				
 		  		padding: 16px;
 		  		width:200px;

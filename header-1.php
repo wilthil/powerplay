@@ -2,19 +2,15 @@
 
 	!empty($veuse['menu_layout'] ) ? $menu_layout = $veuse['menu_layout'] : $menu_layout = '' ;
 	
-
-
 ?>
 
 <header id="header" data-id="header-1" data-layout="<?php echo $menu_layout;?>">
 	<div class="row">
-		<div class="small-12 large-2 columns">
+		<div class="small-12 large-3 columns">
 			<a href="<?php echo home_url();?>" id="logo"> 
 				<?php
-				
-				
-				
-				if($veuse && $veuse['logo']){
+								
+				if( $veuse && $veuse['logo']['url'] ){
 					echo '<img src="'.$veuse['logo']['url'].'" alt="'.get_bloginfo('name').'"/>';
 				}
 				else{ 
@@ -25,10 +21,10 @@
 		</div>	
 					
 		<a href="#" id="open-menu-mobile">
-			<i class="fa fa-list"></i>
+			<span class="menu-icon__text">Show Menu</span>
 		</a>
 		
-		<div class="small-12 large-10 columns text-right" style="position:static">
+		<div class="small-12 large-9 columns text-right" style="position:static">
 	
 			<nav id="primary-nav-container"  data-name="<?php _e('Navigation','veuse');?>">
 				
@@ -63,7 +59,9 @@
 			</div>
 			<?php } ?>
 		
-			<a href="#" id="menu-open-search"><i class="fa fa-search"></i></a>
+			<div id="search-toggle">
+				<a href="#non"></a>
+			</div>
 		
 		</div>
 	

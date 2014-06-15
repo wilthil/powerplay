@@ -55,7 +55,7 @@ $imagesize = array(
      			</ul>
      			<?php
 		} ?>
-		<ul class="veuse-portfolio-list small-block-portfolio-grid-1 large-block-portfolio-grid-<?php echo $columns;?>">
+		<ul class="veuse-portfolio-list small-block-portfolio-grid-1 medium-block-portfolio-grid-2 large-block-portfolio-grid-<?php echo $columns;?>">
 		<?php
 
 		/* The loop */

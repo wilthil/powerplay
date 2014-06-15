@@ -42,15 +42,7 @@
 			</li>
 		<?php endwhile; ?>
 	</ul>
+	
 
-<script type="text/javascript" charset="utf-8">
-	
-	
-		jQuery(document).ready(function() {
- 
-		  		 
-		});
-		
-		
-</script>
+
 

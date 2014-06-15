@@ -59,6 +59,18 @@
 	</div><!-- /#footer -->
 	
 </div><!-- /#wrapper -->
+
+<div id="modal-search">
+
+						<form method="get" id="header-search-form" action="<?php echo home_url();?>/" class="column">
+				<?php $text = __('Search','veuse');?>
+				<input class="text_input" type="text" onfocus="if(this.value == '<?php echo $text;?>') { this.value = ''; }" onblur="if(this.value == '') { this.value = '<?php echo $text;?>'; }" value="<?php echo $text;?>" name="s" id="s"/>
+				<input type="submit" value="<?php _e('Go','veuse');?>"/>
+				
+				<a href="#" id="close-modal-search"><i class="fa fa-times-circle"></i></a>
+			</form>
+
+</div>
 	
 <?php wp_footer();?>
 	

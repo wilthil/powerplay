@@ -281,28 +281,9 @@ $wp_customize->add_section( 'veuse_footer_section', array(
 );
 
 
-$wp_customize->add_setting( 
-	'veuse[footer_textline]', array(
-    	'default'        => 'Some business info here',
-    	'type'           => 'option',
-		'capability'     => 'edit_theme_options'
-	)
-);
- 
-$wp_customize->add_control( 
-	new Example_Customize_Textarea_Control( 
-		$wp_customize, 'textarea_setting', array(
-		    'label'   => 'Textarea Setting',
-		    'section' => 'veuse_footer_section',
-		    'settings'   => 'veuse[footer_textline]',
-		)
-	)
-);
-
-
 
 $wp_customize->add_setting( 
-	'veuse[footer_credits_left]', array(
+	'veuse[footer_text_1]', array(
 		'default'        => 'Your footer credits',
 		'type'           => 'option',
 		'capability'     => 'edit_theme_options',
@@ -313,13 +294,13 @@ $wp_customize->add_control(
 	'footer_credits_left', array(
 		'label'      => __( 'Footer Credits Bottom Left', 'veuse' ),
 		'section'    => 'veuse_footer_section',
-		'settings'   => 'veuse[footer_credits_left]',
+		'settings'   => 'veuse[footer_text_1]',
 		'type'       => 'text',
 	)
 );
 
 $wp_customize->add_setting( 
-	'veuse[footer_credits_right]', array(
+	'veuse[footer_text_2]', array(
 		'default'        => 'Your footer credits',
 		'type'           => 'option',
 		'capability'     => 'edit_theme_options',
@@ -330,7 +311,7 @@ $wp_customize->add_control(
 	'footer_credits_right', array(
 		'label'      => __( 'Footer Credits Bottom Right', 'veuse' ),
 		'section'    => 'veuse_footer_section',
-		'settings'   => 'veuse[footer_credits_right]',
+		'settings'   => 'veuse[footer_text_2]',
 		'type'       => 'text',
 	)
 );

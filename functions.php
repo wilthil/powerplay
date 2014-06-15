@@ -165,6 +165,9 @@ function veuse_enqueue_script(){
 	//wp_enqueue_script('salvattore', get_stylesheet_directory_uri() . '/js/salvattore.min.js', array('jquery'), '', true);
 	wp_enqueue_script('theme-scripts', get_stylesheet_directory_uri() . '/js/theme-scripts.js', array('jquery'), '', true);
 	
+	//wp_enqueue_script('resize-sensor', get_stylesheet_directory_uri() . '/js/ResizeSensor.js', array('jquery'), '', true);
+	//wp_enqueue_script('element-queries', get_stylesheet_directory_uri() . '/js/ElementQueries.js', array('jquery'), '', true);
+	
 
 	if ( is_singular() ) 
 		wp_enqueue_script( "comment-reply" );
@@ -556,9 +559,9 @@ function siteman_register_required_plugins() {
 			'name'     				=> 'Veuse Uikit', // The plugin name
 			'slug'     				=> 'veuse-uikit', // The plugin slug (typically the folder name)
 			'source'   				=> '', // The plugin source
-			'required' 				=> true, // If false, the plugin is only 'recommended' instead of required
+			'required' 				=> false, // If false, the plugin is only 'recommended' instead of required
 			'version' 				=> '', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
-			'force_activation' 		=> true, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
+			'force_activation' 		=> false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
 			'force_deactivation' 	=> false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
 			'external_url' 			=> 'https://github.com/veuse/veuse-uikit/archive/master.zip', // If set, overrides default API URL and points to an external URL
 		),

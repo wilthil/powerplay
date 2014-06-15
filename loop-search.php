@@ -42,6 +42,6 @@ while (have_posts()): the_post();
 </article>
 <?php endwhile;?>
 <?php else:?>
-<div class="veuse-alert veuse-alert-yellow"><?php _e('No entries found. Perhaps try a search?','veuse');?></div>
+<div class="veuse-alert veuse-alert-yellow"><?php _e('Sorry. Your search returned no results. Perhaps try some other keywords?','veuse');?></div>
 
 <?php endif; ?>
